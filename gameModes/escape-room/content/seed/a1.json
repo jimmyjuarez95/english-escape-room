@@ -1,0 +1,61 @@
+{
+  "level": "A1",
+  "title": "El cuarto misterioso",
+  "finalCode": "ESCAPE",
+  "challenges": [
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: I ___ a student." },
+      "correctAnswers": ["am"],
+      "explanation": "Con \"I\" siempre usamos el verbo \"am\": I am.",
+      "grammarPoint": "verb_to_be",
+      "pieceReward": "E",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "She are happy." },
+      "correctAnswers": ["she is happy"],
+      "explanation": "Con \"she\" (tercera persona singular) el verbo \"to be\" es \"is\", no \"are\".",
+      "grammarPoint": "verb_to_be",
+      "pieceReward": "S",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": {
+        "type": "vocab_trivia",
+        "question": "What is the English word for \"gato\"?",
+        "options": ["Cat", "Dog", "Bird", "Fish"]
+      },
+      "correctIndex": 0,
+      "explanation": "\"Cat\" significa \"gato\" en inglés.",
+      "grammarPoint": "basic_vocabulary",
+      "pieceReward": "C",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "The book is on the table.",
+        "question": "Where is the book?",
+        "options": ["On the table", "Under the chair", "In the bag"]
+      },
+      "correctIndex": 0,
+      "explanation": "El audio dice \"on the table\" (sobre la mesa).",
+      "grammarPoint": "listening_comprehension",
+      "pieceReward": "A",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "I like apples." },
+      "correctAnswers": ["i like apples"],
+      "explanation": "\"I like apples\" — recuerda pronunciar la \"s\" final de \"apples\".",
+      "grammarPoint": "pronunciation",
+      "pieceReward": "PE",
+      "timeLimitSeconds": 45
+    }
+  ]
+}
