@@ -53,6 +53,7 @@ export async function POST(
     return NextResponse.json({ room: updatedRoom });
   } catch (err) {
     console.error('Failed to start room', err);
-    return NextResponse.json({ error: 'Could not start the game' }, { status: 500 });
+    const message = err instanceof Error ? err.message : 'Could not start the game';
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

@@ -1,38 +1,277 @@
 {
   "level": "A1",
-  "title": "El cuarto misterioso",
+  "title": "The Locked Classroom",
   "finalCode": "ESCAPE",
   "challenges": [
     {
       "type": "fill_blank",
       "prompt": { "type": "fill_blank", "text": "Complete: I ___ a student." },
       "correctAnswers": ["am"],
-      "explanation": "Con \"I\" siempre usamos el verbo \"am\": I am.",
+      "explanation": "With \"I\" we always use the verb \"am\": I am.",
       "grammarPoint": "verb_to_be",
-      "pieceReward": "E",
+      "pieceReward": "P01",
       "timeLimitSeconds": 45
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: There ___ two cats in the garden." },
+      "correctAnswers": ["are"],
+      "explanation": "With a plural subject (\"two cats\") we use \"are\": there are.",
+      "grammarPoint": "there_is_there_are",
+      "pieceReward": "P02",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: She ___ to school every morning." },
+      "correctAnswers": ["goes"],
+      "explanation": "With \"she\" (third person singular) the present simple verb takes an -s: she goes.",
+      "grammarPoint": "present_simple",
+      "pieceReward": "P03",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: This is ___ apple." },
+      "correctAnswers": ["an"],
+      "explanation": "We use \"an\" before words that start with a vowel sound, like \"apple\".",
+      "grammarPoint": "articles",
+      "pieceReward": "P04",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: ___ dog is sleeping under the table." },
+      "correctAnswers": ["the"],
+      "explanation": "We use \"the\" when we talk about one specific thing that both speakers know.",
+      "grammarPoint": "articles",
+      "pieceReward": "P05",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: My father ___ a doctor." },
+      "correctAnswers": ["is"],
+      "explanation": "With \"my father\" (he, third person singular) the verb \"to be\" is \"is\".",
+      "grammarPoint": "verb_to_be",
+      "pieceReward": "P06",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: We ___ from Peru." },
+      "correctAnswers": ["are"],
+      "explanation": "With \"we\" the verb \"to be\" is \"are\": we are.",
+      "grammarPoint": "verb_to_be",
+      "pieceReward": "P07",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: ___ your sister like pizza?" },
+      "correctAnswers": ["does"],
+      "explanation": "For questions with \"your sister\" (she) in the present simple we use \"does\".",
+      "grammarPoint": "present_simple_questions",
+      "pieceReward": "P08",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: The children ___ playing in the park." },
+      "correctAnswers": ["are"],
+      "explanation": "\"Children\" is plural, so the verb \"to be\" is \"are\".",
+      "grammarPoint": "irregular_plurals",
+      "pieceReward": "P09",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: This is ___ book, not yours." },
+      "correctAnswers": ["my"],
+      "explanation": "\"My\" is a possessive adjective that shows the book belongs to the speaker.",
+      "grammarPoint": "possessives",
+      "pieceReward": "P10",
+      "timeLimitSeconds": 30
     },
     {
       "type": "sentence_correction",
       "prompt": { "type": "sentence_correction", "incorrectSentence": "She are happy." },
       "correctAnswers": ["she is happy"],
-      "explanation": "Con \"she\" (tercera persona singular) el verbo \"to be\" es \"is\", no \"are\".",
+      "explanation": "With \"she\" (third person singular) the verb \"to be\" is \"is\", not \"are\".",
       "grammarPoint": "verb_to_be",
-      "pieceReward": "S",
+      "pieceReward": "P11",
       "timeLimitSeconds": 60
     },
     {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "He don't like coffee." },
+      "correctAnswers": ["he doesn't like coffee", "he does not like coffee"],
+      "explanation": "With \"he\" the negative present simple uses \"doesn't\", not \"don't\".",
+      "grammarPoint": "present_simple",
+      "pieceReward": "P12",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "I have two child." },
+      "correctAnswers": ["i have two children"],
+      "explanation": "\"Child\" has an irregular plural: \"children\", not \"childs\" or \"child\".",
+      "grammarPoint": "irregular_plurals",
+      "pieceReward": "P13",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "This are my shoes." },
+      "correctAnswers": ["these are my shoes"],
+      "explanation": "For plural nouns close to us we use \"these\", not \"this\".",
+      "grammarPoint": "demonstratives",
+      "pieceReward": "P14",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "The cat is in the box on under the chair." },
+      "correctAnswers": ["the cat is under the chair"],
+      "explanation": "We only need one preposition of place to describe a location: \"under the chair\".",
+      "grammarPoint": "prepositions_of_place",
+      "pieceReward": "P15",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "There is three books on the desk." },
+      "correctAnswers": ["there are three books on the desk"],
+      "explanation": "With a plural subject (\"three books\") we use \"there are\", not \"there is\".",
+      "grammarPoint": "there_is_there_are",
+      "pieceReward": "P16",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "She can to swim very well." },
+      "correctAnswers": ["she can swim very well"],
+      "explanation": "After \"can\" we use the base verb without \"to\": \"can swim\".",
+      "grammarPoint": "can_ability",
+      "pieceReward": "P17",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "What time is he go to work?" },
+      "correctAnswers": ["what time does he go to work"],
+      "explanation": "Questions about habits in the present simple need \"does\" plus the base verb: \"does he go\".",
+      "grammarPoint": "present_simple_questions",
+      "pieceReward": "P18",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "Her name are Anna." },
+      "correctAnswers": ["her name is anna"],
+      "explanation": "\"Her name\" is singular (it), so the verb \"to be\" is \"is\", not \"are\".",
+      "grammarPoint": "possessives",
+      "pieceReward": "P19",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "I have a orange for lunch." },
+      "correctAnswers": ["i have an orange for lunch"],
+      "explanation": "We use \"an\" before a vowel sound, like in \"orange\", not \"a\".",
+      "grammarPoint": "articles",
+      "pieceReward": "P20",
+      "timeLimitSeconds": 45
+    },
+    {
       "type": "vocab_trivia",
-      "prompt": {
-        "type": "vocab_trivia",
-        "question": "What is the English word for \"gato\"?",
-        "options": ["Cat", "Dog", "Bird", "Fish"]
-      },
+      "prompt": { "type": "vocab_trivia", "question": "Which animal says \"meow\"?", "options": ["Cat", "Dog", "Bird", "Fish"] },
       "correctIndex": 0,
-      "explanation": "\"Cat\" significa \"gato\" en inglés.",
+      "explanation": "A \"cat\" says \"meow\".",
       "grammarPoint": "basic_vocabulary",
-      "pieceReward": "C",
+      "pieceReward": "P21",
       "timeLimitSeconds": 30
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word names a color?", "options": ["Yellow", "Table", "Run", "Happy"] },
+      "correctIndex": 0,
+      "explanation": "\"Yellow\" is a color.",
+      "grammarPoint": "colors",
+      "pieceReward": "P22",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which piece of clothing do you wear on your feet?", "options": ["Shoes", "Hat", "Gloves", "Scarf"] },
+      "correctIndex": 0,
+      "explanation": "\"Shoes\" are worn on your feet.",
+      "grammarPoint": "clothing",
+      "pieceReward": "P23",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which room in a house is used for cooking?", "options": ["Kitchen", "Bedroom", "Bathroom", "Garage"] },
+      "correctIndex": 0,
+      "explanation": "The \"kitchen\" is the room where we cook food.",
+      "grammarPoint": "house_furniture",
+      "pieceReward": "P24",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which person teaches students at a school?", "options": ["Teacher", "Doctor", "Chef", "Pilot"] },
+      "correctIndex": 0,
+      "explanation": "A \"teacher\" is the person who teaches students.",
+      "grammarPoint": "jobs",
+      "pieceReward": "P25",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which day comes right after Monday?", "options": ["Tuesday", "Sunday", "Friday", "Wednesday"] },
+      "correctIndex": 0,
+      "explanation": "\"Tuesday\" comes right after Monday.",
+      "grammarPoint": "days_of_the_week",
+      "pieceReward": "P26",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which body part do you use to smell things?", "options": ["Nose", "Ear", "Hand", "Knee"] },
+      "correctIndex": 0,
+      "explanation": "You use your \"nose\" to smell things.",
+      "grammarPoint": "body_parts",
+      "pieceReward": "P27",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which vehicle flies in the sky?", "options": ["Airplane", "Bicycle", "Boat", "Train"] },
+      "correctIndex": 0,
+      "explanation": "An \"airplane\" is a vehicle that flies in the sky.",
+      "grammarPoint": "transportation",
+      "pieceReward": "P28",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which month comes right after March?", "options": ["April", "January", "June", "October"] },
+      "correctIndex": 0,
+      "explanation": "\"April\" comes right after March.",
+      "grammarPoint": "months",
+      "pieceReward": "P29",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word describes the weather when water falls from the sky?", "options": ["Rainy", "Sunny", "Windy", "Cloudy"] },
+      "correctIndex": 0,
+      "explanation": "\"Rainy\" describes weather when water falls from the sky.",
+      "grammarPoint": "weather",
+      "pieceReward": "P30",
+      "timeLimitSeconds": 25
     },
     {
       "type": "listening",
@@ -43,18 +282,225 @@
         "options": ["On the table", "Under the chair", "In the bag"]
       },
       "correctIndex": 0,
-      "explanation": "El audio dice \"on the table\" (sobre la mesa).",
+      "explanation": "The audio says \"on the table\".",
       "grammarPoint": "listening_comprehension",
-      "pieceReward": "A",
+      "pieceReward": "P31",
       "timeLimitSeconds": 45
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "My brother has three dogs and one cat.",
+        "question": "How many dogs does my brother have?",
+        "options": ["Three", "One", "Two"]
+      },
+      "correctIndex": 0,
+      "explanation": "The audio says \"three dogs\".",
+      "grammarPoint": "listening_comprehension",
+      "pieceReward": "P32",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "We eat breakfast at seven o'clock every day.",
+        "question": "What time do we eat breakfast?",
+        "options": ["Seven o'clock", "Eight o'clock", "Nine o'clock"]
+      },
+      "correctIndex": 0,
+      "explanation": "The audio says \"at seven o'clock\".",
+      "grammarPoint": "telling_time",
+      "pieceReward": "P33",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "The girl is wearing a red dress and white shoes.",
+        "question": "What color is the girl's dress?",
+        "options": ["Red", "Blue", "Green"]
+      },
+      "correctIndex": 0,
+      "explanation": "The audio says the dress is \"red\".",
+      "grammarPoint": "colors",
+      "pieceReward": "P34",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "There are two chairs next to the window.",
+        "question": "Where are the two chairs?",
+        "options": ["Next to the window", "Under the table", "Behind the door"]
+      },
+      "correctIndex": 0,
+      "explanation": "The audio says \"next to the window\".",
+      "grammarPoint": "prepositions_of_place",
+      "pieceReward": "P35",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "My mother is a nurse and my father is a chef.",
+        "question": "What is the father's job?",
+        "options": ["Chef", "Nurse", "Teacher"]
+      },
+      "correctIndex": 0,
+      "explanation": "The audio says the father is a \"chef\".",
+      "grammarPoint": "jobs",
+      "pieceReward": "P36",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "Today is cold and windy, so wear a jacket.",
+        "question": "What is the weather like today?",
+        "options": ["Cold and windy", "Hot and sunny", "Warm and cloudy"]
+      },
+      "correctIndex": 0,
+      "explanation": "The audio says it is \"cold and windy\".",
+      "grammarPoint": "weather",
+      "pieceReward": "P37",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "Can you play the guitar? Yes, I can play very well.",
+        "question": "Can the speaker play the guitar?",
+        "options": ["Yes, very well", "No, not at all", "A little bit"]
+      },
+      "correctIndex": 0,
+      "explanation": "The audio says \"yes, I can play very well\".",
+      "grammarPoint": "can_ability",
+      "pieceReward": "P38",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "The bus stop is next to the school, between the bank and the park.",
+        "question": "Where is the bus stop?",
+        "options": ["Between the bank and the park", "Behind the school", "Next to the hospital"]
+      },
+      "correctIndex": 0,
+      "explanation": "The audio says the bus stop is \"between the bank and the park\".",
+      "grammarPoint": "prepositions_of_place",
+      "pieceReward": "P39",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "Our English class starts on Monday and finishes on Friday.",
+        "question": "Which day does the English class finish?",
+        "options": ["Friday", "Monday", "Sunday"]
+      },
+      "correctIndex": 0,
+      "explanation": "The audio says the class \"finishes on Friday\".",
+      "grammarPoint": "days_of_the_week",
+      "pieceReward": "P40",
+      "timeLimitSeconds": 40
     },
     {
       "type": "speaking",
       "prompt": { "type": "speaking", "targetSentence": "I like apples." },
       "correctAnswers": ["i like apples"],
-      "explanation": "\"I like apples\" — recuerda pronunciar la \"s\" final de \"apples\".",
+      "explanation": "\"I like apples\" — remember to pronounce the final \"s\" in \"apples\".",
       "grammarPoint": "pronunciation",
-      "pieceReward": "PE",
+      "pieceReward": "P41",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "This is my family." },
+      "correctAnswers": ["this is my family"],
+      "explanation": "\"This is my family\" — say \"family\" clearly, stressing the first syllable.",
+      "grammarPoint": "family",
+      "pieceReward": "P42",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "She has a blue bicycle." },
+      "correctAnswers": ["she has a blue bicycle"],
+      "explanation": "\"She has a blue bicycle\" — remember to pronounce \"has\" with a short, soft \"z\" sound.",
+      "grammarPoint": "possessives",
+      "pieceReward": "P43",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "There are five chairs in the room." },
+      "correctAnswers": ["there are five chairs in the room"],
+      "explanation": "\"There are five chairs in the room\" — practice linking \"there are\" smoothly together.",
+      "grammarPoint": "there_is_there_are",
+      "pieceReward": "P44",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "I can swim in the ocean." },
+      "correctAnswers": ["i can swim in the ocean"],
+      "explanation": "\"I can swim in the ocean\" — say \"can\" quickly and lightly before the main verb.",
+      "grammarPoint": "can_ability",
+      "pieceReward": "P45",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "What is your favorite food?" },
+      "correctAnswers": ["what is your favorite food"],
+      "explanation": "\"What is your favorite food?\" — raise your voice slightly on \"food\" at the end.",
+      "grammarPoint": "question_words",
+      "pieceReward": "P46",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "The keys are under the mat." },
+      "correctAnswers": ["the keys are under the mat"],
+      "explanation": "\"The keys are under the mat\" — pronounce the plural \"keys\" with a clear final \"z\" sound.",
+      "grammarPoint": "prepositions_of_place",
+      "pieceReward": "P47",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "My birthday is in October." },
+      "correctAnswers": ["my birthday is in october"],
+      "explanation": "\"My birthday is in October\" — remember months always start with a capital letter in writing.",
+      "grammarPoint": "months",
+      "pieceReward": "P48",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "It is sunny and warm today." },
+      "correctAnswers": ["it is sunny and warm today"],
+      "explanation": "\"It is sunny and warm today\" — practice the contraction sound \"it's\" if you prefer to link it.",
+      "grammarPoint": "weather",
+      "pieceReward": "P49",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "The classroom door is locked." },
+      "correctAnswers": ["the classroom door is locked"],
+      "explanation": "\"The classroom door is locked\" — practice the final \"-ed\" sound in \"locked\", pronounced as a quick \"t\".",
+      "grammarPoint": "school_objects",
+      "pieceReward": "P50",
       "timeLimitSeconds": 45
     }
   ]

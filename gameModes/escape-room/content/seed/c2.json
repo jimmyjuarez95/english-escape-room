@@ -1,0 +1,502 @@
+{
+  "level": "C2",
+  "title": "The Ambassador's Gambit",
+  "finalCode": "NUANCE",
+  "challenges": [
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: ___ the risks involved, the board approved the merger unanimously." },
+      "correctAnswers": ["notwithstanding"],
+      "explanation": "\"Notwithstanding\" (meaning \"despite\") is a formal discourse marker often placed before a noun phrase.",
+      "grammarPoint": "discourse_markers",
+      "pieceReward": "P01",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: The proposal was accepted, ___ with considerable reluctance from the finance committee." },
+      "correctAnswers": ["albeit"],
+      "explanation": "\"Albeit\" is a formal conjunction meaning \"although\", introducing a concessive qualification.",
+      "grammarPoint": "discourse_markers",
+      "pieceReward": "P02",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: The agreement remains binding ___ both signatories continue to meet the conditions in clause four." },
+      "correctAnswers": ["insofar as"],
+      "explanation": "\"Insofar as\" means \"to the extent that\" and is used to limit the scope of a formal statement.",
+      "grammarPoint": "discourse_markers",
+      "pieceReward": "P03",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: The witness admitted lying under oath, ___ undermining the entire prosecution's case." },
+      "correctAnswers": ["thereby"],
+      "explanation": "\"Thereby\" formally links an action to its resulting consequence, meaning \"by that means\".",
+      "grammarPoint": "discourse_markers",
+      "pieceReward": "P04",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: The board demanded that the CEO ___ immediately, given the scale of the losses uncovered." },
+      "correctAnswers": ["resign"],
+      "explanation": "After verbs of demand like \"demand\", the mandative subjunctive uses the base form of the verb: \"resign\", not \"resigns\".",
+      "grammarPoint": "mandative_subjunctive",
+      "pieceReward": "P05",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: It is imperative that every candidate ___ notified of the outcome before Friday." },
+      "correctAnswers": ["be"],
+      "explanation": "After expressions like \"it is imperative that\", the mandative subjunctive requires the base form \"be\".",
+      "grammarPoint": "mandative_subjunctive",
+      "pieceReward": "P06",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: Given how pale she looks, she ___ have been travelling all night." },
+      "correctAnswers": ["must"],
+      "explanation": "\"Must\" here expresses epistemic modality — a logical deduction — rather than obligation.",
+      "grammarPoint": "epistemic_modality",
+      "pieceReward": "P07",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: Under the new regulations, all contractors ___ submit safety certificates before commencing work." },
+      "correctAnswers": ["must"],
+      "explanation": "\"Must\" here expresses deontic modality — an obligation imposed by a rule — rather than a deduction.",
+      "grammarPoint": "deontic_modality",
+      "pieceReward": "P08",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: Her sudden ___ from the board took everyone by surprise." },
+      "correctAnswers": ["resignation"],
+      "explanation": "\"Resignation\" is the nominalized form of \"resign\", typical of formal written register.",
+      "grammarPoint": "nominalization",
+      "pieceReward": "P09",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: He passed the exam easily, whereas his brother ___ not." },
+      "correctAnswers": ["did"],
+      "explanation": "In formal ellipsis, an auxiliary verb like \"did\" stands in for the omitted main verb phrase (\"pass the exam\").",
+      "grammarPoint": "ellipsis",
+      "pieceReward": "P10",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "Seldom we have witnessed such a display of eloquence." },
+      "correctAnswers": ["seldom have we witnessed such a display of eloquence"],
+      "explanation": "Negative adverbials like \"seldom\" placed at the front of a clause require subject-auxiliary inversion.",
+      "grammarPoint": "inversion",
+      "pieceReward": "P11",
+      "timeLimitSeconds": 70
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "Hardly she had arrived when the meeting was abruptly cancelled." },
+      "correctAnswers": ["hardly had she arrived when the meeting was abruptly cancelled"],
+      "explanation": "\"Hardly\" at the start of a clause triggers subject-auxiliary inversion: \"hardly had she arrived\".",
+      "grammarPoint": "inversion",
+      "pieceReward": "P12",
+      "timeLimitSeconds": 70
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "Not only he missed the deadline, but he also failed to notify his supervisor." },
+      "correctAnswers": ["not only did he miss the deadline but he also failed to notify his supervisor"],
+      "explanation": "\"Not only\" at the front of a clause requires inversion with an auxiliary: \"not only did he miss\".",
+      "grammarPoint": "inversion",
+      "pieceReward": "P13",
+      "timeLimitSeconds": 75
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "Under no circumstances you should disclose the client's financial details." },
+      "correctAnswers": ["under no circumstances should you disclose the clients financial details"],
+      "explanation": "Negative adverbial phrases like \"under no circumstances\" require inversion: \"should you disclose\".",
+      "grammarPoint": "inversion",
+      "pieceReward": "P14",
+      "timeLimitSeconds": 75
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "Had it not the timely rescue, the climbers would not have survived the storm." },
+      "correctAnswers": ["had it not been for the timely rescue the climbers would not have survived the storm"],
+      "explanation": "The inverted conditional \"had it not been for\" replaces \"if it had not been for\" in formal register.",
+      "grammarPoint": "conditional_inversion",
+      "pieceReward": "P15",
+      "timeLimitSeconds": 80
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "What really annoyed me it was his complete lack of preparation." },
+      "correctAnswers": ["what really annoyed me was his complete lack of preparation"],
+      "explanation": "A wh-cleft sentence follows the pattern \"What + clause + be + focus\", without an extra pronoun before \"was\".",
+      "grammarPoint": "cleft_sentences",
+      "pieceReward": "P16",
+      "timeLimitSeconds": 70
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "It was not until she read the letter that she understand the truth." },
+      "correctAnswers": ["it was not until she read the letter that she understood the truth"],
+      "explanation": "In an it-cleft with \"not until\", the verb in the main clause must stay in the past tense: \"she understood\".",
+      "grammarPoint": "cleft_sentences",
+      "pieceReward": "P17",
+      "timeLimitSeconds": 75
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "Despite he was exhausted, he insisted on finishing the report before dawn." },
+      "correctAnswers": ["despite being exhausted he insisted on finishing the report before dawn"],
+      "explanation": "\"Despite\" is followed by a noun phrase or gerund, never a full clause with a subject and finite verb.",
+      "grammarPoint": "complex_subordination",
+      "pieceReward": "P18",
+      "timeLimitSeconds": 70
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "This is the department which our funding was withdrawn from last year." },
+      "correctAnswers": ["this is the department from which our funding was withdrawn last year"],
+      "explanation": "In formal written English, the preposition is placed before the relative pronoun (\"from which\") rather than stranded at the end of the clause.",
+      "grammarPoint": "formal_register",
+      "pieceReward": "P19",
+      "timeLimitSeconds": 70
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "The regulation requires that every applicant submits proof of residence within thirty days." },
+      "correctAnswers": ["the regulation requires that every applicant submit proof of residence within thirty days"],
+      "explanation": "After \"requires that\", the mandative subjunctive takes the base form \"submit\", not \"submits\".",
+      "grammarPoint": "mandative_subjunctive",
+      "pieceReward": "P20",
+      "timeLimitSeconds": 70
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word describes taking pleasure in someone else's misfortune?", "options": ["Schadenfreude", "Empathy", "Altruism", "Nostalgia"] },
+      "correctIndex": 0,
+      "explanation": "\"Schadenfreude\" describes deriving pleasure from another's misfortune.",
+      "grammarPoint": "nuanced_vocabulary",
+      "pieceReward": "P21",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which philosophical term refers to the view that only one's own mind can be known to exist?", "options": ["Empiricism", "Solipsism", "Utilitarianism", "Determinism"] },
+      "correctIndex": 1,
+      "explanation": "\"Solipsism\" is the philosophical position that only one's own mind is certain to exist.",
+      "grammarPoint": "philosophy_vocabulary",
+      "pieceReward": "P22",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which term describes a mild or indirect expression substituted for one considered harsh, such as \"passed away\" instead of \"died\"?", "options": ["Hyperbole", "Innuendo", "Euphemism", "Litotes"] },
+      "correctIndex": 2,
+      "explanation": "A \"euphemism\" softens an unpleasant reality by substituting a gentler expression.",
+      "grammarPoint": "rhetoric_vocabulary",
+      "pieceReward": "P23",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "In law, which term refers to a security or protection against a loss or other financial burden?", "options": ["Jurisdiction", "Litigation", "Custody", "Indemnity"] },
+      "correctIndex": 3,
+      "explanation": "\"Indemnity\" refers to protection or compensation against loss or damage.",
+      "grammarPoint": "legal_vocabulary",
+      "pieceReward": "P24",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which economic term describes strict measures of reduced public spending designed to curb a budget deficit?", "options": ["Austerity", "Inflation", "Arbitrage", "Subsidy"] },
+      "correctIndex": 0,
+      "explanation": "\"Austerity\" refers to government policies of drastically cutting spending to reduce deficits.",
+      "grammarPoint": "economics_vocabulary",
+      "pieceReward": "P25",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which literary term describes the appearance of being true or real within a fictional narrative?", "options": ["Denouement", "Verisimilitude", "Foreshadowing", "Allegory"] },
+      "correctIndex": 1,
+      "explanation": "\"Verisimilitude\" describes the quality of a narrative seeming realistic or plausible.",
+      "grammarPoint": "literary_vocabulary",
+      "pieceReward": "P26",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which scientific term describes the gradual decline of a system into disorder?", "options": ["Symbiosis", "Homeostasis", "Entropy", "Catalyst"] },
+      "correctIndex": 2,
+      "explanation": "\"Entropy\" measures the degree of disorder or randomness within a system.",
+      "grammarPoint": "abstract_science_vocabulary",
+      "pieceReward": "P27",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word best describes a quiet, sad longing for something that cannot be recovered?", "options": ["Exuberance", "Indifference", "Complacency", "Wistfulness"] },
+      "correctIndex": 3,
+      "explanation": "\"Wistfulness\" conveys a gentle, sad yearning for something past or unattainable.",
+      "grammarPoint": "nuanced_vocabulary",
+      "pieceReward": "P28",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which philosophical term denotes the belief that life is without objective meaning, purpose, or intrinsic value?", "options": ["Nihilism", "Stoicism", "Idealism", "Pragmatism"] },
+      "correctIndex": 0,
+      "explanation": "\"Nihilism\" is the view that existence lacks inherent meaning or value.",
+      "grammarPoint": "philosophy_vocabulary",
+      "pieceReward": "P29",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which rhetorical device involves emphasizing a point by denying its opposite, as in \"not bad at all\"?", "options": ["Hyperbole", "Litotes", "Anaphora", "Euphemism"] },
+      "correctIndex": 1,
+      "explanation": "\"Litotes\" is a form of understatement that affirms something by negating its opposite.",
+      "grammarPoint": "rhetoric_vocabulary",
+      "pieceReward": "P30",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "Were it not for her intervention, the negotiations would have collapsed entirely.", "question": "What does the sentence imply?", "options": ["Her intervention saved the negotiations", "She caused the negotiations to fail", "The negotiations never took place"] },
+      "correctIndex": 0,
+      "explanation": "\"Were it not for\" is a formal inverted conditional meaning \"if it were not for\" — her intervention prevented collapse.",
+      "grammarPoint": "conditional_inversion",
+      "pieceReward": "P31",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "It was only after the results were published that the true scale of the problem became apparent.",
+        "question": "What does this sentence emphasize?",
+        "options": ["The problem was solved before the results were published", "The problem's scale was not evident until the results were published", "The results were never published"]
+      },
+      "correctIndex": 1,
+      "explanation": "The it-cleft structure \"It was only after... that...\" emphasizes the specific moment something became clear.",
+      "grammarPoint": "cleft_sentences",
+      "pieceReward": "P32",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "No sooner had the announcement been made than the shares plummeted.",
+        "question": "What happened immediately after the announcement?",
+        "options": ["The shares rose sharply", "Nothing changed", "The shares plummeted"]
+      },
+      "correctIndex": 2,
+      "explanation": "\"No sooner had... than\" signals that the second event followed the first almost instantly.",
+      "grammarPoint": "inversion",
+      "pieceReward": "P33",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "She must have missed her flight; her phone has been switched off all morning.",
+        "question": "What can we infer from this statement?",
+        "options": ["The speaker is making a logical deduction that she probably missed her flight", "The speaker is certain she caught her flight", "The speaker is giving her permission to miss her flight"]
+      },
+      "correctIndex": 0,
+      "explanation": "\"Must have missed\" expresses epistemic modality — a confident deduction based on evidence, not obligation.",
+      "grammarPoint": "epistemic_modality",
+      "pieceReward": "P34",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "All visitors must sign the register before entering the laboratory.",
+        "question": "What does \"must\" express here?",
+        "options": ["A logical deduction about visitors", "A mandatory obligation imposed by a rule", "A polite suggestion"]
+      },
+      "correctIndex": 1,
+      "explanation": "In this context, \"must\" expresses deontic modality — an obligation required by policy.",
+      "grammarPoint": "deontic_modality",
+      "pieceReward": "P35",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "The defendant was found liable for damages, though not criminally culpable for the incident.",
+        "question": "What is the difference described between \"liable\" and \"culpable\" here?",
+        "options": ["He is blamed for a crime but owes no compensation", "He is entirely free of any responsibility", "He owes compensation but is not blamed for a crime"]
+      },
+      "correctIndex": 2,
+      "explanation": "\"Liable\" refers to civil responsibility for damages, while \"culpable\" implies criminal blame — here only the former applies.",
+      "grammarPoint": "legal_vocabulary",
+      "pieceReward": "P36",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "The two species evolved a relationship of mutual dependence, each benefiting from the other's presence.",
+        "question": "Which term best describes this relationship?",
+        "options": ["Symbiosis", "Entropy", "Catalyst"]
+      },
+      "correctIndex": 0,
+      "explanation": "\"Symbiosis\" describes a close, mutually beneficial relationship between two organisms.",
+      "grammarPoint": "abstract_science_vocabulary",
+      "pieceReward": "P37",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "The northern branch reported record profits, whereas the southern branch barely broke even.",
+        "question": "What does \"whereas\" indicate about the two branches?",
+        "options": ["A similarity between their financial performance", "A contrast between their financial performance", "A cause-and-effect relationship between them"]
+      },
+      "correctIndex": 1,
+      "explanation": "\"Whereas\" is a formal discourse marker used to introduce a contrast between two facts.",
+      "grammarPoint": "discourse_markers",
+      "pieceReward": "P38",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "The sheer magnitude of the company's expansion necessitated a complete overhaul of its logistics network.",
+        "question": "What did the company's growth require?",
+        "options": ["A reduction in its logistics network", "No changes to its logistics network", "A complete overhaul of its logistics network"]
+      },
+      "correctIndex": 2,
+      "explanation": "\"Necessitated\" is a formal verb meaning \"made necessary\", commonly found in high-register writing.",
+      "grammarPoint": "formal_register",
+      "pieceReward": "P39",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "In the novel's denouement, all the loose threads of the plot were finally resolved.",
+        "question": "What happens in a \"denouement\"?",
+        "options": ["The plot's remaining issues are resolved", "The story's conflict first begins", "The main character is introduced"]
+      },
+      "correctIndex": 0,
+      "explanation": "The \"denouement\" is the final part of a narrative where the plot's complications are resolved.",
+      "grammarPoint": "literary_vocabulary",
+      "pieceReward": "P40",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "Little did they know that the decision would change the course of the entire company." },
+      "correctAnswers": ["little did they know that the decision would change the course of the entire company"],
+      "explanation": "\"Little did they know\" is an inverted structure emphasizing unexpectedness.",
+      "grammarPoint": "inversion",
+      "pieceReward": "P41",
+      "timeLimitSeconds": 65
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "Had it not been for the translator's quick thinking, the negotiations would have ended in disaster." },
+      "correctAnswers": ["had it not been for the translators quick thinking the negotiations would have ended in disaster"],
+      "explanation": "\"Had it not been for\" is an inverted conditional meaning \"if it had not been for\", used to describe an averted negative outcome.",
+      "grammarPoint": "conditional_inversion",
+      "pieceReward": "P42",
+      "timeLimitSeconds": 65
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "What truly distinguishes a great leader is the ability to remain composed under pressure." },
+      "correctAnswers": ["what truly distinguishes a great leader is the ability to remain composed under pressure"],
+      "explanation": "This wh-cleft sentence places the focus of the statement — the defining quality — after \"is\".",
+      "grammarPoint": "cleft_sentences",
+      "pieceReward": "P43",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "The professor recommended that the thesis be revised before the final defense." },
+      "correctAnswers": ["the professor recommended that the thesis be revised before the final defense"],
+      "explanation": "After \"recommend that\", the mandative subjunctive uses the base form \"be\", not \"is\" or \"was\".",
+      "grammarPoint": "mandative_subjunctive",
+      "pieceReward": "P44",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "The board's reluctance to approve the expansion stemmed from concerns about long-term profitability." },
+      "correctAnswers": ["the boards reluctance to approve the expansion stemmed from concerns about long term profitability"],
+      "explanation": "\"Reluctance\" is the nominalized form of \"reluctant\", typical of formal, abstract written style.",
+      "grammarPoint": "nominalization",
+      "pieceReward": "P45",
+      "timeLimitSeconds": 65
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "Some delegates supported the amendment, while others did not." },
+      "correctAnswers": ["some delegates supported the amendment while others did not"],
+      "explanation": "The verb phrase after \"others\" is omitted through ellipsis, since it is understood from the earlier clause.",
+      "grammarPoint": "ellipsis",
+      "pieceReward": "P46",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "Although the evidence was largely circumstantial, the jury reached a unanimous verdict." },
+      "correctAnswers": ["although the evidence was largely circumstantial the jury reached a unanimous verdict"],
+      "explanation": "\"Although\" introduces a subordinate clause of concession, contrasting with the main clause that follows.",
+      "grammarPoint": "complex_subordination",
+      "pieceReward": "P47",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "The company's profits were tantamount to an admission that its rivals had misjudged the market." },
+      "correctAnswers": ["the companys profits were tantamount to an admission that its rivals had misjudged the market"],
+      "explanation": "\"Tantamount to\" is a formal expression meaning \"equivalent to\", often used to describe an implicit consequence.",
+      "grammarPoint": "economics_vocabulary",
+      "pieceReward": "P48",
+      "timeLimitSeconds": 65
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "Her doctoral thesis examined epistemology, particularly how we distinguish justified belief from mere opinion." },
+      "correctAnswers": ["her doctoral thesis examined epistemology particularly how we distinguish justified belief from mere opinion"],
+      "explanation": "\"Epistemology\" is the branch of philosophy concerned with the nature and limits of knowledge.",
+      "grammarPoint": "philosophy_vocabulary",
+      "pieceReward": "P49",
+      "timeLimitSeconds": 65
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "He felt a profound ambivalence about accepting the promotion, torn between ambition and loyalty to his team." },
+      "correctAnswers": ["he felt a profound ambivalence about accepting the promotion torn between ambition and loyalty to his team"],
+      "explanation": "\"Ambivalence\" describes the coexistence of conflicting feelings or attitudes toward something.",
+      "grammarPoint": "nuanced_vocabulary",
+      "pieceReward": "P50",
+      "timeLimitSeconds": 60
+    }
+  ]
+}

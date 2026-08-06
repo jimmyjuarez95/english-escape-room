@@ -22,7 +22,7 @@ export default function JoinForm() {
         body: JSON.stringify({ name }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error ?? 'No se pudo unir a la sala');
+      if (!res.ok) throw new Error(data.error ?? 'Could not join the room');
 
       localStorage.setItem(
         `player:${pin}`,
@@ -34,7 +34,7 @@ export default function JoinForm() {
       );
       router.push(`/play/${pin}`);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'No se pudo unir a la sala');
+      setError(err instanceof Error ? err.message : 'Could not join the room');
       setLoading(false);
     }
   }
@@ -42,14 +42,14 @@ export default function JoinForm() {
   return (
     <main className="mx-auto flex w-full max-w-sm flex-1 flex-col justify-center gap-8 px-6 py-12">
       <div className="text-center">
-        <h1 className="font-display text-3xl font-extrabold text-brand">Unirse a una sala 🔐</h1>
-        <p className="mt-2 text-muted">Ingresa el PIN que ves en la pantalla del host.</p>
+        <h1 className="font-display text-3xl font-extrabold text-brand">Join a room 🔐</h1>
+        <p className="mt-2 text-muted">Enter the PIN you see on the host&apos;s screen.</p>
       </div>
 
       <form onSubmit={handleJoin} className="flex flex-col gap-5">
         <label className="flex flex-col gap-2">
           <span className="font-display text-sm font-bold uppercase tracking-wide text-muted">
-            PIN de la sala
+            Room PIN
           </span>
           <input
             inputMode="numeric"
@@ -63,14 +63,14 @@ export default function JoinForm() {
         </label>
         <label className="flex flex-col gap-2">
           <span className="font-display text-sm font-bold uppercase tracking-wide text-muted">
-            Tu nombre
+            Your name
           </span>
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
             maxLength={30}
             required
-            placeholder="Ej. Jimmy"
+            placeholder="E.g. Jimmy"
             className="rounded-xl border-2 border-border bg-surface px-4 py-4 text-lg font-semibold text-foreground focus:border-brand focus:outline-none"
           />
         </label>
@@ -86,7 +86,7 @@ export default function JoinForm() {
           disabled={loading}
           className="rounded-xl bg-brand px-6 py-4 font-display text-lg font-bold text-brand-foreground shadow-sm transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
         >
-          {loading ? 'Entrando...' : 'Entrar'}
+          {loading ? 'Joining...' : 'Join'}
         </button>
       </form>
     </main>

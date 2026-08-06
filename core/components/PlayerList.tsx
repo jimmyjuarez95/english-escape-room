@@ -6,10 +6,10 @@ export default function PlayerList({ players }: { players: Player[] }) {
   return (
     <div className="w-full">
       <p className="font-display text-sm font-bold uppercase tracking-wide text-muted">
-        Jugadores ({players.length})
+        Players ({players.length})
       </p>
       {players.length === 0 ? (
-        <p className="mt-3 text-muted">Esperando a que se unan jugadores...</p>
+        <p className="mt-3 text-muted">Waiting for players to join...</p>
       ) : (
         <ul className="mt-3 flex flex-wrap justify-center gap-2">
           {players.map((player) => (

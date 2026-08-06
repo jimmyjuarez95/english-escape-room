@@ -1,0 +1,457 @@
+{
+  "level": "C1",
+  "title": "The Philosopher's Vault",
+  "finalCode": "VERITY",
+  "challenges": [
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: If she ___ (study) harder for the bar exam, she would have passed on her first attempt." },
+      "correctAnswers": ["had studied"],
+      "explanation": "The third conditional requires \"had + past participle\" in the if-clause: \"had studied\".",
+      "grammarPoint": "third_conditional",
+      "pieceReward": "P01",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: If he ___ (not/lose) his job last year, he would be financially secure right now." },
+      "correctAnswers": ["had not lost", "hadnt lost"],
+      "explanation": "A mixed conditional pairs a past condition (\"had not lost\") with a present result (\"would be secure now\").",
+      "grammarPoint": "mixed_conditional",
+      "pieceReward": "P02",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: Never ___ (I/encounter) a bureaucratic system so convoluted as this one." },
+      "correctAnswers": ["have i encountered"],
+      "explanation": "The negative adverbial \"never\" at the start of a sentence triggers subject-auxiliary inversion: \"have I encountered\".",
+      "grammarPoint": "inversion",
+      "pieceReward": "P03",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: Not until the results were published ___ (the researchers/realize) the scale of their discovery." },
+      "correctAnswers": ["did the researchers realize"],
+      "explanation": "\"Not until\" fronted for emphasis requires inversion of the auxiliary and subject: \"did the researchers realize\".",
+      "grammarPoint": "inversion",
+      "pieceReward": "P04",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: The board insists that every member ___ (submit) a written report by Friday." },
+      "correctAnswers": ["submit"],
+      "explanation": "After verbs of insistence like \"insist\", the subjunctive requires the base form of the verb: \"submit\".",
+      "grammarPoint": "subjunctive_mood",
+      "pieceReward": "P05",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: What the negotiations truly ___ (lack) is a spirit of genuine compromise." },
+      "correctAnswers": ["lack"],
+      "explanation": "In a \"what...\" cleft sentence, the verb in the relative clause agrees with the subject \"what\": \"lack\".",
+      "grammarPoint": "cleft_sentences",
+      "pieceReward": "P06",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: The engineers ___ (should/inspect) the bridge more thoroughly before declaring it safe." },
+      "correctAnswers": ["should have inspected"],
+      "explanation": "\"Should have inspected\" expresses criticism of a past action that was not done thoroughly enough.",
+      "grammarPoint": "modal_perfect",
+      "pieceReward": "P07",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: You ___ (needn't/apologize); the misunderstanding was entirely my fault." },
+      "correctAnswers": ["neednt have apologized"],
+      "explanation": "\"Needn't have apologized\" shows an action that happened but was, in retrospect, unnecessary.",
+      "grammarPoint": "modal_perfect",
+      "pieceReward": "P08",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: It is widely believed that the treaty ___ (draft) in secret long before it was announced." },
+      "correctAnswers": ["was drafted"],
+      "explanation": "The passive voice requires the past participle after \"was\": \"was drafted\".",
+      "grammarPoint": "advanced_passive",
+      "pieceReward": "P09",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: The series of setbacks that the expedition ___ (face) has discouraged even the most seasoned climbers." },
+      "correctAnswers": ["has faced"],
+      "explanation": "The subject \"the series\" is singular, so the verb inside the relative clause takes the singular form \"has faced\".",
+      "grammarPoint": "subject_verb_agreement",
+      "pieceReward": "P10",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "The professor recommended that the student studies harder before the final exam." },
+      "correctAnswers": ["the professor recommended that the student study harder before the final exam"],
+      "explanation": "After verbs like \"recommend\" expressing suggestion, the subjunctive requires the base form of the verb, \"study\", not \"studies\".",
+      "grammarPoint": "subjunctive_mood",
+      "pieceReward": "P11",
+      "timeLimitSeconds": 65
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "If they would have known about the traffic, they would have left earlier." },
+      "correctAnswers": ["if they had known about the traffic they would have left earlier"],
+      "explanation": "The third conditional uses \"had + past participle\" in the if-clause, not \"would have\".",
+      "grammarPoint": "third_conditional",
+      "pieceReward": "P12",
+      "timeLimitSeconds": 70
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "Despite of the heavy rain, the match continued as scheduled." },
+      "correctAnswers": ["despite the heavy rain the match continued as scheduled"],
+      "explanation": "\"Despite\" is followed directly by a noun phrase, unlike \"in spite of\", which requires \"of\".",
+      "grammarPoint": "discourse_markers",
+      "pieceReward": "P13",
+      "timeLimitSeconds": 65
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "The new legislation is expect to be passed within the next few months." },
+      "correctAnswers": ["the new legislation is expected to be passed within the next few months"],
+      "explanation": "The passive voice requires the past participle \"expected\", not the base form \"expect\".",
+      "grammarPoint": "advanced_passive",
+      "pieceReward": "P14",
+      "timeLimitSeconds": 70
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "The list of requirements, along with the application forms, are due by Friday." },
+      "correctAnswers": ["the list of requirements along with the application forms is due by friday"],
+      "explanation": "The subject is the singular \"list\"; the added phrase \"along with the application forms\" does not make the verb plural.",
+      "grammarPoint": "subject_verb_agreement",
+      "pieceReward": "P15",
+      "timeLimitSeconds": 65
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "What surprised everyone were the sudden collapse of the negotiations." },
+      "correctAnswers": ["what surprised everyone was the sudden collapse of the negotiations"],
+      "explanation": "In a \"what...\" cleft sentence, the verb agrees with the singular complement \"the sudden collapse\", so \"was\" is correct.",
+      "grammarPoint": "cleft_sentences",
+      "pieceReward": "P16",
+      "timeLimitSeconds": 75
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "Rarely we have seen such dedication among new employees." },
+      "correctAnswers": ["rarely have we seen such dedication among new employees"],
+      "explanation": "The negative adverbial \"rarely\" at the start of a sentence triggers subject-auxiliary inversion: \"rarely have we seen\".",
+      "grammarPoint": "inversion",
+      "pieceReward": "P17",
+      "timeLimitSeconds": 65
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "He should have studying harder for the certification test." },
+      "correctAnswers": ["he should have studied harder for the certification test"],
+      "explanation": "\"Should have\" is followed by a past participle (\"studied\"), not a gerund (\"studying\").",
+      "grammarPoint": "modal_perfect",
+      "pieceReward": "P18",
+      "timeLimitSeconds": 70
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "The company's decision of implement new policies caused confusion among staff." },
+      "correctAnswers": ["the companys decision to implement new policies caused confusion among staff"],
+      "explanation": "The noun \"decision\" is followed by an infinitive (\"to implement\"), not \"of\" plus a verb.",
+      "grammarPoint": "nominalization",
+      "pieceReward": "P19",
+      "timeLimitSeconds": 75
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "If she wasn't so ambitious, she wouldn't have taken that risky job overseas." },
+      "correctAnswers": ["if she werent so ambitious she wouldnt have taken that risky job overseas"],
+      "explanation": "Formal hypothetical conditionals use the subjunctive \"were\" for all subjects in the if-clause, not \"was\".",
+      "grammarPoint": "mixed_conditional",
+      "pieceReward": "P20",
+      "timeLimitSeconds": 80
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which philosophical term describes the view that human beings create their own meaning through free choice and action?", "options": ["Existentialism", "Empiricism", "Nihilism", "Utilitarianism"] },
+      "correctIndex": 0,
+      "explanation": "\"Existentialism\" holds that individuals are free and responsible for creating their own meaning in life.",
+      "grammarPoint": "philosophy_vocabulary",
+      "pieceReward": "P21",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which term describes the belief that all events, including human actions, are the inevitable result of preceding causes?", "options": ["Determinism", "Idealism", "Skepticism", "Relativism"] },
+      "correctIndex": 0,
+      "explanation": "\"Determinism\" is the view that every event, including choices, is caused by prior events.",
+      "grammarPoint": "philosophy_vocabulary",
+      "pieceReward": "P22",
+      "timeLimitSeconds": 32
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which psychological term describes the discomfort felt when a person holds two contradictory beliefs at the same time?", "options": ["Cognitive dissonance", "Confirmation bias", "Groupthink", "Placebo effect"] },
+      "correctIndex": 0,
+      "explanation": "\"Cognitive dissonance\" refers to the mental tension caused by conflicting beliefs or actions.",
+      "grammarPoint": "psychology_vocabulary",
+      "pieceReward": "P23",
+      "timeLimitSeconds": 34
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word describes an intense, irrational fear of a specific object or situation?", "options": ["Phobia", "Paranoia", "Neurosis", "Delusion"] },
+      "correctIndex": 0,
+      "explanation": "A \"phobia\" is an excessive and irrational fear of a particular thing or situation.",
+      "grammarPoint": "psychology_vocabulary",
+      "pieceReward": "P24",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which term refers to the manipulation of electoral district boundaries to favor one political party?", "options": ["Gerrymandering", "Federalism", "Suffrage", "Autocracy"] },
+      "correctIndex": 0,
+      "explanation": "\"Gerrymandering\" is the practice of redrawing voting districts for political advantage.",
+      "grammarPoint": "politics_vocabulary",
+      "pieceReward": "P25",
+      "timeLimitSeconds": 32
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which economic term refers to a sustained rise in the general price level of goods and services?", "options": ["Inflation", "Deflation", "Recession", "Stagnation"] },
+      "correctIndex": 0,
+      "explanation": "\"Inflation\" describes a continuous increase in prices across an economy over time.",
+      "grammarPoint": "economics_vocabulary",
+      "pieceReward": "P26",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which literary device involves expressing the opposite of the literal meaning, often for emphasis or humor?", "options": ["Irony", "Simile", "Alliteration", "Onomatopoeia"] },
+      "correctIndex": 0,
+      "explanation": "\"Irony\" occurs when the intended meaning contrasts with the literal words used.",
+      "grammarPoint": "literature_vocabulary",
+      "pieceReward": "P27",
+      "timeLimitSeconds": 32
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which ethical theory judges the morality of an action based solely on its consequences?", "options": ["Consequentialism", "Deontology", "Virtue ethics", "Relativism"] },
+      "correctIndex": 0,
+      "explanation": "\"Consequentialism\" evaluates whether an action is right based on its outcomes.",
+      "grammarPoint": "ethics_vocabulary",
+      "pieceReward": "P28",
+      "timeLimitSeconds": 34
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which term refers to the complete set of genetic material found in an organism?", "options": ["Genome", "Enzyme", "Organism", "Molecule"] },
+      "correctIndex": 0,
+      "explanation": "The \"genome\" is the entire collection of an organism's hereditary genetic information.",
+      "grammarPoint": "science_vocabulary",
+      "pieceReward": "P29",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which term describes a substance that speeds up a chemical reaction without being consumed in the process?", "options": ["Catalyst", "Solvent", "Isotope", "Compound"] },
+      "correctIndex": 0,
+      "explanation": "A \"catalyst\" accelerates a chemical reaction while remaining chemically unchanged itself.",
+      "grammarPoint": "science_vocabulary",
+      "pieceReward": "P30",
+      "timeLimitSeconds": 32
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "Had she left for the airport ten minutes earlier, she would not have missed her flight.", "question": "What actually happened?", "options": ["She missed her flight", "She caught her flight easily", "She never went to the airport"] },
+      "correctIndex": 0,
+      "explanation": "The inverted third conditional (\"Had she left...\") implies the opposite occurred: she left too late and missed her flight.",
+      "grammarPoint": "conditional_inversion",
+      "pieceReward": "P31",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "If he hadn't dropped out of college, he would have a much more stable career today.", "question": "What is true about the man's career today?", "options": ["It is not very stable", "It is extremely stable", "He is still in college"] },
+      "correctIndex": 0,
+      "explanation": "This mixed conditional links a past condition to a present result, showing that his career today is unstable.",
+      "grammarPoint": "mixed_conditional",
+      "pieceReward": "P32",
+      "timeLimitSeconds": 58
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "You should have booked the tickets weeks ago; now the concert is completely sold out.", "question": "What does the speaker imply about the tickets?", "options": ["They were not booked in time", "They were booked early enough", "The concert was cancelled"] },
+      "correctIndex": 0,
+      "explanation": "\"Should have booked\" criticizes a past failure to act, implying the tickets were not booked in time.",
+      "grammarPoint": "modal_perfect",
+      "pieceReward": "P33",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "You needn't have brought an umbrella; the forecast was wrong and it never rained.", "question": "What does the sentence suggest about bringing the umbrella?", "options": ["It turned out to be unnecessary", "It was absolutely necessary", "It was forgotten at home"] },
+      "correctIndex": 0,
+      "explanation": "\"Needn't have brought\" shows the action was carried out but was, in hindsight, unnecessary.",
+      "grammarPoint": "modal_perfect",
+      "pieceReward": "P34",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "The proposal was approved, albeit with several significant reservations from the board.", "question": "How did the board feel about the proposal?", "options": ["They approved it but had some concerns", "They rejected it completely", "They were entirely enthusiastic"] },
+      "correctIndex": 0,
+      "explanation": "\"Albeit\" introduces a concession, indicating the approval came along with some reservations.",
+      "grammarPoint": "discourse_markers",
+      "pieceReward": "P35",
+      "timeLimitSeconds": 52
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "It is essential that every candidate submit the application before midnight.", "question": "What is required of every candidate?", "options": ["Submitting the application before midnight", "Submitting the application after midnight", "Submitting the application only upon request"] },
+      "correctIndex": 0,
+      "explanation": "The subjunctive \"submit\" after \"it is essential that\" expresses a strong requirement to apply before midnight.",
+      "grammarPoint": "subjunctive_mood",
+      "pieceReward": "P36",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "The ancient ruins are believed to have been constructed by a civilization that vanished over two thousand years ago.", "question": "What is believed about the civilization that built the ruins?", "options": ["It disappeared long ago", "It still exists today", "It built the ruins recently"] },
+      "correctIndex": 0,
+      "explanation": "The audio states the civilization \"vanished over two thousand years ago\", meaning it disappeared long ago.",
+      "grammarPoint": "advanced_passive",
+      "pieceReward": "P37",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "What truly convinced the jury was the forensic evidence, not the witness testimony.", "question": "What convinced the jury the most?", "options": ["The forensic evidence", "The witness testimony", "The lawyer's closing speech"] },
+      "correctIndex": 0,
+      "explanation": "The cleft sentence \"What truly convinced... was...\" emphasizes the forensic evidence as the decisive factor.",
+      "grammarPoint": "cleft_sentences",
+      "pieceReward": "P38",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "The implementation of the new policy resulted in a significant reduction in traffic accidents.", "question": "What was the effect of the new policy?", "options": ["Traffic accidents decreased significantly", "Traffic accidents increased significantly", "There was no change in traffic accidents"] },
+      "correctIndex": 0,
+      "explanation": "\"A significant reduction\" indicates that traffic accidents decreased noticeably after the policy began.",
+      "grammarPoint": "nominalization",
+      "pieceReward": "P39",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "Not only did the scandal damage his reputation, but it also cost him his position on the board.", "question": "What were the consequences of the scandal for him?", "options": ["He lost both his reputation and his board position", "He kept his position but lost his reputation", "He lost his position but his reputation was untouched"] },
+      "correctIndex": 0,
+      "explanation": "\"Not only... but also\" links two consequences: damage to his reputation and the loss of his board position.",
+      "grammarPoint": "inversion",
+      "pieceReward": "P40",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "Under no circumstances should you reveal the details of this agreement." },
+      "correctAnswers": ["under no circumstances should you reveal the details of this agreement"],
+      "explanation": "\"Under no circumstances\" is a negative adverbial that triggers subject-auxiliary inversion: \"should you reveal\".",
+      "grammarPoint": "inversion",
+      "pieceReward": "P41",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "If they had listened to the warnings, the disaster could have been avoided." },
+      "correctAnswers": ["if they had listened to the warnings the disaster could have been avoided"],
+      "explanation": "The third conditional expresses an unreal past situation with \"had + past participle\" and \"could have been avoided\".",
+      "grammarPoint": "third_conditional",
+      "pieceReward": "P42",
+      "timeLimitSeconds": 53
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "The judge demanded that the witness tell the whole truth." },
+      "correctAnswers": ["the judge demanded that the witness tell the whole truth"],
+      "explanation": "After verbs like \"demand\", the subjunctive uses the base form of the verb (\"tell\"), regardless of subject.",
+      "grammarPoint": "subjunctive_mood",
+      "pieceReward": "P43",
+      "timeLimitSeconds": 56
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "It was the lack of communication that ultimately destroyed their partnership." },
+      "correctAnswers": ["it was the lack of communication that ultimately destroyed their partnership"],
+      "explanation": "This \"it was... that\" cleft sentence emphasizes \"the lack of communication\" as the true cause.",
+      "grammarPoint": "cleft_sentences",
+      "pieceReward": "P44",
+      "timeLimitSeconds": 59
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "We should have anticipated the delays before signing the contract." },
+      "correctAnswers": ["we should have anticipated the delays before signing the contract"],
+      "explanation": "\"Should have anticipated\" expresses regret about a past failure to predict something.",
+      "grammarPoint": "modal_perfect",
+      "pieceReward": "P45",
+      "timeLimitSeconds": 62
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "Nevertheless, the team pressed on despite the setback." },
+      "correctAnswers": ["nevertheless the team pressed on despite the setback"],
+      "explanation": "\"Nevertheless\" is a discourse marker used to introduce a contrast with the previous statement.",
+      "grammarPoint": "discourse_markers",
+      "pieceReward": "P46",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "The suspect is believed to have fled the country shortly after the incident." },
+      "correctAnswers": ["the suspect is believed to have fled the country shortly after the incident"],
+      "explanation": "This advanced passive construction (\"is believed to have fled\") reports an assumption about a past action.",
+      "grammarPoint": "advanced_passive",
+      "pieceReward": "P47",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "The rapid deterioration of the ecosystem alarmed environmental scientists." },
+      "correctAnswers": ["the rapid deterioration of the ecosystem alarmed environmental scientists"],
+      "explanation": "\"Deterioration\" is the nominalized form of the verb \"deteriorate\", turning an action into an abstract noun.",
+      "grammarPoint": "nominalization",
+      "pieceReward": "P48",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "If she hadn't moved abroad, she wouldn't be fluent in three languages now." },
+      "correctAnswers": ["if she hadnt moved abroad she wouldnt be fluent in three languages now"],
+      "explanation": "This mixed conditional combines a past condition (\"hadn't moved\") with a present result (\"wouldn't be fluent now\").",
+      "grammarPoint": "mixed_conditional",
+      "pieceReward": "P49",
+      "timeLimitSeconds": 65
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "The committee, along with its advisors, has finally reached a decision." },
+      "correctAnswers": ["the committee along with its advisors has finally reached a decision"],
+      "explanation": "\"The committee\" is the singular subject; \"along with its advisors\" does not affect subject-verb agreement, so \"has\" is correct.",
+      "grammarPoint": "subject_verb_agreement",
+      "pieceReward": "P50",
+      "timeLimitSeconds": 63
+    }
+  ]
+}

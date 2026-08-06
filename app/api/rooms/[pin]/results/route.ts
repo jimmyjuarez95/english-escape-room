@@ -57,13 +57,21 @@ export async function GET(
 
   let commonMistakes: ResultsData['commonMistakes'] = [];
   if (topMistakePoints.length > 0) {
-    const { data: explanationRows } = await supabase
-      .from('escape_room_challenges')
-      .select('grammar_point, explanation')
-      .in('grammar_point', topMistakePoints);
+    // A room only ever has one game_mode, so only one of these two queries
+    // returns rows for any given room's grammar points — safe to merge.
+    const [{ data: escapeRoomRows }, { data: triviaRows }] = await Promise.all([
+      supabase
+        .from('escape_room_challenges')
+        .select('grammar_point, explanation')
+        .in('grammar_point', topMistakePoints),
+      supabase
+        .from('trivia_questions')
+        .select('grammar_point, explanation')
+        .in('grammar_point', topMistakePoints),
+    ]);
 
     const explanationByPoint = new Map(
-      (explanationRows ?? []).map((row) => [row.grammar_point, row.explanation])
+      [...(escapeRoomRows ?? []), ...(triviaRows ?? [])].map((row) => [row.grammar_point, row.explanation])
     );
     commonMistakes = topMistakePoints.map((grammarPoint) => ({
       grammarPoint,

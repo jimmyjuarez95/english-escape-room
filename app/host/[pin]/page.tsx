@@ -39,7 +39,7 @@ export default function HostRoomPage() {
       : await supabase.from('rooms').select().eq('pin', pin).neq('status', 'finished').maybeSingle();
 
     if (roomError || !roomData) {
-      setError('No se encontró una sala activa con ese PIN.');
+      setError('No active room was found with that PIN.');
       return;
     }
     roomIdRef.current = roomData.id;
@@ -67,7 +67,7 @@ export default function HostRoomPage() {
     const raw = localStorage.getItem(`host:${pin}`);
     const stored: StoredHost | null = raw ? JSON.parse(raw) : null;
     if (!stored) {
-      setError('No se encontró la credencial de host para esta sala en este navegador.');
+      setError('No host credentials were found for this room in this browser.');
       return;
     }
 
@@ -79,10 +79,10 @@ export default function HostRoomPage() {
         body: JSON.stringify({ hostSecret: stored.hostSecret }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error ?? 'No se pudo iniciar el juego');
+      if (!res.ok) throw new Error(data.error ?? 'Could not start the game');
       setRoom(data.room);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'No se pudo iniciar el juego');
+      setError(err instanceof Error ? err.message : 'Could not start the game');
     } finally {
       setStarting(false);
     }
@@ -101,7 +101,7 @@ export default function HostRoomPage() {
   if (!room) {
     return (
       <main className="flex flex-1 items-center justify-center">
-        <p className="text-muted">Cargando sala...</p>
+        <p className="text-muted">Loading room...</p>
       </main>
     );
   }
@@ -113,7 +113,7 @@ export default function HostRoomPage() {
         {mode ? (
           <mode.HostView room={room} players={players} />
         ) : (
-          <p className="text-error">Modo de juego desconocido.</p>
+          <p className="text-error">Unknown game mode.</p>
         )}
         <Footer />
       </main>
@@ -123,7 +123,7 @@ export default function HostRoomPage() {
   if (room.status === 'finished') {
     return (
       <main className="mx-auto flex w-full max-w-4xl flex-1 flex-col px-6 py-10">
-        {results ? <ResultsScreen results={results} /> : <p className="text-muted">Cargando resultados...</p>}
+        {results ? <ResultsScreen results={results} /> : <p className="text-muted">Loading results...</p>}
         <Footer />
       </main>
     );
@@ -135,10 +135,10 @@ export default function HostRoomPage() {
 
       <div className="flex gap-3">
         <span className="rounded-full bg-surface border border-border px-4 py-1.5 font-semibold text-foreground">
-          Nivel {room.level}
+          Level {room.level}
         </span>
         <span className="rounded-full bg-surface border border-border px-4 py-1.5 font-semibold text-foreground">
-          {room.play_style === 'teams' ? '⚔️ 2 equipos' : '🤝 Colaborativo'}
+          {room.play_style === 'teams' ? '⚔️ 2 teams' : '🤝 Collaborative'}
         </span>
       </div>
 
@@ -150,19 +150,19 @@ export default function HostRoomPage() {
           disabled={starting || players.length === 0}
           className="rounded-xl bg-brand px-6 py-4 font-display font-bold text-brand-foreground shadow-sm transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
         >
-          {starting ? 'Iniciando...' : 'Iniciar juego'}
+          {starting ? 'Starting...' : 'Start game'}
         </button>
         <button
           onClick={refresh}
           className="rounded-xl border border-border px-6 py-2 text-sm font-semibold text-muted transition hover:text-foreground"
         >
-          Refrescar
+          Refresh
         </button>
       </div>
 
       <p className="text-muted">
-        Entra a <span className="font-semibold text-foreground">/play</span> desde tu celular e
-        ingresa el PIN para unirte.
+        Go to <span className="font-semibold text-foreground">/play</span> on your phone and
+        enter the PIN to join.
       </p>
 
       <Footer />

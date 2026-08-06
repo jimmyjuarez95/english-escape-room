@@ -138,6 +138,7 @@ export interface Database {
           track_id: string;
           current_index: number;
           current_challenge_id: string | null;
+          challenge_sequence: string[];
           challenge_deadline: string | null;
           finished_at: string | null;
         };
@@ -147,10 +148,182 @@ export interface Database {
           track_id: string;
           current_index?: number;
           current_challenge_id?: string | null;
+          challenge_sequence?: string[];
           challenge_deadline?: string | null;
           finished_at?: string | null;
         };
         Update: Partial<Database['public']['Tables']['escape_room_sessions']['Insert']>;
+        Relationships: [];
+      };
+      trivia_tracks: {
+        Row: {
+          id: string;
+          level: CefrLevel;
+          title: string;
+          is_active: boolean;
+        };
+        Insert: {
+          id?: string;
+          level: CefrLevel;
+          title: string;
+          is_active?: boolean;
+        };
+        Update: Partial<Database['public']['Tables']['trivia_tracks']['Insert']>;
+        Relationships: [];
+      };
+      trivia_questions: {
+        Row: {
+          id: string;
+          track_id: string;
+          order_index: number;
+          question: string;
+          options: Json;
+          correct_index: number;
+          explanation: string;
+          grammar_point: string | null;
+          time_limit_seconds: number;
+        };
+        Insert: {
+          id?: string;
+          track_id: string;
+          order_index: number;
+          question: string;
+          options: Json;
+          correct_index: number;
+          explanation: string;
+          grammar_point?: string | null;
+          time_limit_seconds?: number;
+        };
+        Update: Partial<Database['public']['Tables']['trivia_questions']['Insert']>;
+        Relationships: [];
+      };
+      trivia_sessions: {
+        Row: {
+          room_id: string;
+          track_id: string;
+          current_index: number;
+          current_question_id: string | null;
+          question_sequence: string[];
+          phase: 'question' | 'reveal';
+          question_deadline: string | null;
+          finished_at: string | null;
+        };
+        Insert: {
+          room_id: string;
+          track_id: string;
+          current_index?: number;
+          current_question_id?: string | null;
+          question_sequence?: string[];
+          phase?: 'question' | 'reveal';
+          question_deadline?: string | null;
+          finished_at?: string | null;
+        };
+        Update: Partial<Database['public']['Tables']['trivia_sessions']['Insert']>;
+        Relationships: [];
+      };
+      impostor_tracks: {
+        Row: {
+          id: string;
+          level: CefrLevel;
+          title: string;
+          is_active: boolean;
+        };
+        Insert: {
+          id?: string;
+          level: CefrLevel;
+          title: string;
+          is_active?: boolean;
+        };
+        Update: Partial<Database['public']['Tables']['impostor_tracks']['Insert']>;
+        Relationships: [];
+      };
+      impostor_words: {
+        Row: {
+          id: string;
+          track_id: string;
+          order_index: number;
+          word: string;
+          category: string;
+          discussion_seconds: number;
+          voting_seconds: number;
+        };
+        Insert: {
+          id?: string;
+          track_id: string;
+          order_index: number;
+          word: string;
+          category: string;
+          discussion_seconds?: number;
+          voting_seconds?: number;
+        };
+        Update: Partial<Database['public']['Tables']['impostor_words']['Insert']>;
+        Relationships: [];
+      };
+      impostor_sessions: {
+        Row: {
+          room_id: string;
+          track_id: string;
+          word_sequence: string[];
+        };
+        Insert: {
+          room_id: string;
+          track_id: string;
+          word_sequence?: string[];
+        };
+        Update: Partial<Database['public']['Tables']['impostor_sessions']['Insert']>;
+        Relationships: [];
+      };
+      impostor_rounds: {
+        Row: {
+          room_id: string;
+          round_index: number;
+          phase: 'discussion' | 'voting' | 'reveal';
+          phase_deadline: string | null;
+          finished_at: string | null;
+        };
+        Insert: {
+          room_id: string;
+          round_index: number;
+          phase?: 'discussion' | 'voting' | 'reveal';
+          phase_deadline?: string | null;
+          finished_at?: string | null;
+        };
+        Update: Partial<Database['public']['Tables']['impostor_rounds']['Insert']>;
+        Relationships: [];
+      };
+      impostor_round_secrets: {
+        Row: {
+          room_id: string;
+          round_index: number;
+          track_id: string;
+          word_id: string;
+          impostor_player_id: string;
+        };
+        Insert: {
+          room_id: string;
+          round_index: number;
+          track_id: string;
+          word_id: string;
+          impostor_player_id: string;
+        };
+        Update: Partial<Database['public']['Tables']['impostor_round_secrets']['Insert']>;
+        Relationships: [];
+      };
+      impostor_votes: {
+        Row: {
+          room_id: string;
+          round_index: number;
+          voter_player_id: string;
+          voted_player_id: string;
+          created_at: string;
+        };
+        Insert: {
+          room_id: string;
+          round_index: number;
+          voter_player_id: string;
+          voted_player_id: string;
+        };
+        Update: Partial<Database['public']['Tables']['impostor_votes']['Insert']>;
         Relationships: [];
       };
       attempts: {
@@ -160,6 +333,7 @@ export interface Database {
           player_id: string;
           game_mode: string;
           escape_room_challenge_id: string | null;
+          trivia_question_id: string | null;
           is_correct: boolean;
           answer_payload: Json;
           grammar_point: string | null;
@@ -172,6 +346,7 @@ export interface Database {
           player_id: string;
           game_mode: string;
           escape_room_challenge_id?: string | null;
+          trivia_question_id?: string | null;
           is_correct: boolean;
           answer_payload: Json;
           grammar_point?: string | null;

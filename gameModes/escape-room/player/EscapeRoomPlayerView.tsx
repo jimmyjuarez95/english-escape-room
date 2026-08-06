@@ -92,12 +92,12 @@ export default function EscapeRoomPlayerView({
         }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data.error ?? 'No se pudo enviar la respuesta');
+      if (!res.ok) throw new Error(data.error ?? 'Could not submit the answer');
       setFeedback({ correct: data.correct, explanation: data.explanation ?? '' });
     } catch (err) {
       setFeedback({
         correct: false,
-        explanation: err instanceof Error ? err.message : 'No se pudo enviar la respuesta',
+        explanation: err instanceof Error ? err.message : 'Could not submit the answer',
       });
     } finally {
       setSubmitting(false);
@@ -107,13 +107,13 @@ export default function EscapeRoomPlayerView({
   if (session?.finished_at) {
     return (
       <p className="flex flex-1 items-center justify-center text-center font-display text-2xl font-bold text-success">
-        ¡Tu equipo terminó el escape room! 🎉
+        Your team finished the escape room! 🎉
       </p>
     );
   }
 
   if (!challenge) {
-    return <p className="flex flex-1 items-center justify-center text-muted">Cargando reto...</p>;
+    return <p className="flex flex-1 items-center justify-center text-muted">Loading challenge...</p>;
   }
 
   const ChallengeInput = getChallengeComponent(challenge.challenge_type);
@@ -142,7 +142,7 @@ export default function EscapeRoomPlayerView({
             feedback.correct ? 'bg-success/10 text-success' : 'bg-error/10 text-error'
           }`}
         >
-          {feedback.correct ? 'Correcto ✅' : 'Incorrecto ❌'}
+          {feedback.correct ? 'Correct ✅' : 'Incorrect ❌'}
           {feedback.explanation ? ` — ${feedback.explanation}` : ''}
         </p>
       )}

@@ -1,0 +1,457 @@
+{
+  "level": "A2",
+  "title": "The Language Lab Lockdown",
+  "finalCode": "UNLOCK",
+  "challenges": [
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: Last summer, we ___ (travel) to the coast for two weeks." },
+      "correctAnswers": ["traveled", "travelled"],
+      "explanation": "Regular verbs form the past simple by adding \"-ed\": travel -> traveled.",
+      "grammarPoint": "past_simple_regular",
+      "pieceReward": "P01",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "We buyed a new car last month." },
+      "correctAnswers": ["we bought a new car last month"],
+      "explanation": "\"Buy\" is irregular in the past simple: buy -> bought, not \"buyed\".",
+      "grammarPoint": "past_simple_irregular",
+      "pieceReward": "P02",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which sport is played on ice with a stick and a puck?", "options": ["Ice hockey", "Basketball", "Volleyball", "Golf"] },
+      "correctIndex": 0,
+      "explanation": "\"Ice hockey\" is played on an ice rink with a stick and a puck.",
+      "grammarPoint": "sports_vocabulary",
+      "pieceReward": "P03",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "Before the guests arrive, please wash the dishes and take out the trash.", "question": "What should be done before the guests arrive?", "options": ["Wash the dishes and take out the trash", "Cook a big dinner", "Clean the car"] },
+      "correctIndex": 0,
+      "explanation": "The audio says to \"wash the dishes and take out the trash\" before the guests arrive.",
+      "grammarPoint": "household_chores_vocabulary",
+      "pieceReward": "P04",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "I rarely eat fast food." },
+      "correctAnswers": ["i rarely eat fast food"],
+      "explanation": "\"Rarely\" is an adverb of frequency placed before the main verb.",
+      "grammarPoint": "adverbs_of_frequency",
+      "pieceReward": "P05",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: My sister ___ (not/finish) her homework before dinner yesterday." },
+      "correctAnswers": ["didnt finish", "did not finish"],
+      "explanation": "Negative past simple uses \"didn't\" + the base form of the verb: didn't finish.",
+      "grammarPoint": "past_simple_negative",
+      "pieceReward": "P06",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "This exercise is more easy than the last one." },
+      "correctAnswers": ["this exercise is easier than the last one"],
+      "explanation": "Short adjectives like \"easy\" (ending in -y) form the comparative with \"-ier\": easier.",
+      "grammarPoint": "comparatives",
+      "pieceReward": "P07",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "What do we call small pieces of frozen water that fall from the sky in winter?", "options": ["Fog", "Snow", "Thunder", "Rainbow"] },
+      "correctIndex": 1,
+      "explanation": "\"Snow\" is frozen water that falls from the sky, common in winter.",
+      "grammarPoint": "weather_vocabulary",
+      "pieceReward": "P08",
+      "timeLimitSeconds": 20
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "On weekends, Maria enjoys painting pictures and reading mystery novels.", "question": "What does Maria enjoy doing on weekends?", "options": ["Playing football", "Painting and reading", "Cooking and dancing"] },
+      "correctIndex": 1,
+      "explanation": "The audio mentions Maria enjoys \"painting pictures and reading mystery novels\".",
+      "grammarPoint": "hobbies_vocabulary",
+      "pieceReward": "P09",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "Can you help me with this bag?" },
+      "correctAnswers": ["can you help me with this bag"],
+      "explanation": "\"Me\" is the object pronoun used after the verb \"help\".",
+      "grammarPoint": "object_pronouns",
+      "pieceReward": "P10",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: ___ you clean your room before you went out?" },
+      "correctAnswers": ["did"],
+      "explanation": "Past simple questions start with \"Did\" + subject + base verb.",
+      "grammarPoint": "past_simple_questions",
+      "pieceReward": "P11",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "That was the more difficult test of the year." },
+      "correctAnswers": ["that was the most difficult test of the year"],
+      "explanation": "Long adjectives like \"difficult\" form the superlative with \"the most\", not \"the more\".",
+      "grammarPoint": "superlatives",
+      "pieceReward": "P12",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which type of transportation travels on rails?", "options": ["Bus", "Bicycle", "Train", "Taxi"] },
+      "correctIndex": 2,
+      "explanation": "A \"train\" moves along rails or tracks.",
+      "grammarPoint": "travel_vocabulary",
+      "pieceReward": "P13",
+      "timeLimitSeconds": 20
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "Last night, the students studied for three hours and then watched a movie.", "question": "What did the students do after studying?", "options": ["Played soccer", "Went to sleep immediately", "Watched a movie"] },
+      "correctIndex": 2,
+      "explanation": "The audio says they \"studied ... and then watched a movie\".",
+      "grammarPoint": "past_simple_regular",
+      "pieceReward": "P14",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "You should see a doctor today." },
+      "correctAnswers": ["you should see a doctor today"],
+      "explanation": "\"Should\" gives advice and is followed by the base form of the verb.",
+      "grammarPoint": "modal_should",
+      "pieceReward": "P15",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: Be quiet! The baby ___ (sleep) in the next room." },
+      "correctAnswers": ["is sleeping"],
+      "explanation": "We use the present continuous (is/are + verb-ing) for actions happening right now.",
+      "grammarPoint": "present_continuous",
+      "pieceReward": "P16",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "There was many people at the concert." },
+      "correctAnswers": ["there were many people at the concert"],
+      "explanation": "With plural countable nouns we use \"there were\", not \"there was\".",
+      "grammarPoint": "there_was_there_were",
+      "pieceReward": "P17",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which of these do most people do every morning before leaving the house?", "options": ["Go to bed", "Watch the sunset", "Have dinner", "Get dressed"] },
+      "correctIndex": 3,
+      "explanation": "\"Get dressed\" is a common part of a morning routine before going out.",
+      "grammarPoint": "daily_routines_vocabulary",
+      "pieceReward": "P18",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "Next month, our whole family is going to move to a bigger house near the beach.", "question": "What is the family going to do next month?", "options": ["Move to a bigger house near the beach", "Go on vacation", "Buy a new car"] },
+      "correctIndex": 0,
+      "explanation": "The audio says the family \"is going to move to a bigger house near the beach\".",
+      "grammarPoint": "going_to_future",
+      "pieceReward": "P19",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "The meeting starts at three o'clock." },
+      "correctAnswers": ["the meeting starts at three oclock"],
+      "explanation": "We use \"at\" with exact clock times, like \"at three o'clock\".",
+      "grammarPoint": "prepositions_of_time",
+      "pieceReward": "P20",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: I ___ (have) dinner with my parents on Friday night." },
+      "correctAnswers": ["am having"],
+      "explanation": "The present continuous can describe fixed future plans and arrangements: am having.",
+      "grammarPoint": "present_continuous_future",
+      "pieceReward": "P21",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "I don't have many money for this trip." },
+      "correctAnswers": ["i dont have much money for this trip"],
+      "explanation": "\"Money\" is uncountable, so we use \"much\", not \"many\".",
+      "grammarPoint": "countable_uncountable",
+      "pieceReward": "P22",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "What do you often use to pay for things instead of cash?", "options": ["A credit card", "A spoon", "A map", "A ticket"] },
+      "correctIndex": 0,
+      "explanation": "A \"credit card\" is commonly used to pay for goods instead of cash.",
+      "grammarPoint": "shopping_vocabulary",
+      "pieceReward": "P23",
+      "timeLimitSeconds": 20
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "Right now, the children are playing in the garden while their mother is cooking lunch.", "question": "What are the children doing right now?", "options": ["Cooking lunch", "Playing in the garden", "Sleeping upstairs"] },
+      "correctIndex": 1,
+      "explanation": "The audio says the children \"are playing in the garden\" right now.",
+      "grammarPoint": "present_continuous",
+      "pieceReward": "P24",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "Please close the window." },
+      "correctAnswers": ["please close the window"],
+      "explanation": "Imperative sentences give instructions and start with the base verb.",
+      "grammarPoint": "imperatives",
+      "pieceReward": "P25",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: This new phone is ___ (cheap) than my old one." },
+      "correctAnswers": ["cheaper"],
+      "explanation": "Short adjectives like \"cheap\" form the comparative by adding \"-er\": cheaper.",
+      "grammarPoint": "comparatives",
+      "pieceReward": "P26",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "She is go to start a new job next week." },
+      "correctAnswers": ["she is going to start a new job next week"],
+      "explanation": "The \"going to\" future needs the -ing form: is going to start.",
+      "grammarPoint": "going_to_future",
+      "pieceReward": "P27",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Who usually fixes broken pipes and water leaks?", "options": ["A dentist", "A plumber", "A pilot", "A waiter"] },
+      "correctIndex": 1,
+      "explanation": "A \"plumber\" repairs pipes and water systems.",
+      "grammarPoint": "jobs_vocabulary",
+      "pieceReward": "P28",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "The train to the city center leaves at nine o'clock in the morning.", "question": "When does the train leave?", "options": ["At nine at night", "In the afternoon", "At nine o'clock in the morning"] },
+      "correctIndex": 2,
+      "explanation": "The audio specifies the train leaves \"at nine o'clock in the morning\"; we use \"at\" with clock times.",
+      "grammarPoint": "prepositions_of_time",
+      "pieceReward": "P29",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "This road is more dangerous than that one." },
+      "correctAnswers": ["this road is more dangerous than that one"],
+      "explanation": "Long adjectives like \"dangerous\" form the comparative with \"more\".",
+      "grammarPoint": "comparatives",
+      "pieceReward": "P30",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: We don't have ___ time to finish this today." },
+      "correctAnswers": ["much"],
+      "explanation": "\"Much\" is used with uncountable nouns like \"time\" in negative sentences.",
+      "grammarPoint": "countable_uncountable",
+      "pieceReward": "P31",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "You must to wear a helmet when you ride a motorbike." },
+      "correctAnswers": ["you must wear a helmet when you ride a motorbike"],
+      "explanation": "The modal verb \"must\" is followed directly by the base verb, without \"to\".",
+      "grammarPoint": "modal_must",
+      "pieceReward": "P32",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which device do you use to make a video call to a friend?", "options": ["A frying pan", "A hammer", "A smartphone", "A blanket"] },
+      "correctIndex": 2,
+      "explanation": "A \"smartphone\" can be used to make video calls.",
+      "grammarPoint": "technology_vocabulary",
+      "pieceReward": "P33",
+      "timeLimitSeconds": 20
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "If you have a headache, you should drink some water and rest for a while.", "question": "What should you do if you have a headache?", "options": ["Drink water and rest", "Go for a run", "Eat a big meal"] },
+      "correctIndex": 0,
+      "explanation": "The audio advises you \"should drink some water and rest\" for a headache.",
+      "grammarPoint": "modal_should",
+      "pieceReward": "P34",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "That was the best day of my life." },
+      "correctAnswers": ["that was the best day of my life"],
+      "explanation": "\"Best\" is the irregular superlative form of \"good\".",
+      "grammarPoint": "superlatives",
+      "pieceReward": "P35",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: Look at those clouds! It ___ (rain) soon." },
+      "correctAnswers": ["is going to rain"],
+      "explanation": "We use \"going to\" for predictions based on present evidence: is going to rain.",
+      "grammarPoint": "going_to_future",
+      "pieceReward": "P36",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "He always is late for the school bus." },
+      "correctAnswers": ["he is always late for the school bus"],
+      "explanation": "Adverbs of frequency like \"always\" go after the verb \"to be\", not before it.",
+      "grammarPoint": "adverbs_of_frequency",
+      "pieceReward": "P37",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "What do you ask a waiter for when you finish eating and want to pay?", "options": ["The menu again", "The recipe", "The kitchen", "The bill"] },
+      "correctIndex": 3,
+      "explanation": "You ask for \"the bill\" when you are ready to pay at a restaurant.",
+      "grammarPoint": "food_vocabulary",
+      "pieceReward": "P38",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "It's very windy and cloudy today, so don't forget to bring a jacket.", "question": "What is the weather like today?", "options": ["Hot and sunny", "Windy and cloudy", "Snowy and cold"] },
+      "correctIndex": 1,
+      "explanation": "The audio describes the weather as \"very windy and cloudy\".",
+      "grammarPoint": "weather_vocabulary",
+      "pieceReward": "P39",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "We saw a wonderful movie last night." },
+      "correctAnswers": ["we saw a wonderful movie last night"],
+      "explanation": "\"See\" is irregular in the past simple: see -> saw.",
+      "grammarPoint": "past_simple_irregular",
+      "pieceReward": "P40",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: Passengers ___ (have to) show their tickets before boarding the plane." },
+      "correctAnswers": ["have to"],
+      "explanation": "\"Have to\" expresses an obligation or rule: passengers have to show their tickets.",
+      "grammarPoint": "modal_have_to",
+      "pieceReward": "P41",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "Can you give the keys to I, please?" },
+      "correctAnswers": ["can you give the keys to me please"],
+      "explanation": "After a preposition like \"to\", we use the object pronoun \"me\", not the subject pronoun \"I\".",
+      "grammarPoint": "object_pronouns",
+      "pieceReward": "P42",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Who should you see if you have a bad toothache?", "options": ["A dentist", "A chef", "A driver", "A librarian"] },
+      "correctIndex": 0,
+      "explanation": "A \"dentist\" treats problems with teeth, like a toothache.",
+      "grammarPoint": "health_vocabulary",
+      "pieceReward": "P43",
+      "timeLimitSeconds": 20
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "My uncle works as a mechanic; he repairs cars and trucks every day.", "question": "What is the uncle's job?", "options": ["Teacher", "Doctor", "Mechanic"] },
+      "correctIndex": 2,
+      "explanation": "The audio says the uncle \"works as a mechanic\".",
+      "grammarPoint": "jobs_vocabulary",
+      "pieceReward": "P44",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "You must wear your seatbelt." },
+      "correctAnswers": ["you must wear your seatbelt"],
+      "explanation": "\"Must\" expresses a strong obligation and is followed by the base verb.",
+      "grammarPoint": "modal_must",
+      "pieceReward": "P45",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: My little brother ___ (can) already ride a bike." },
+      "correctAnswers": ["can"],
+      "explanation": "\"Can\" expresses ability in the present: can ride.",
+      "grammarPoint": "modal_can",
+      "pieceReward": "P46",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "You close the door, please." },
+      "correctAnswers": ["close the door please"],
+      "explanation": "Imperative sentences give instructions without a subject pronoun: \"Close the door\".",
+      "grammarPoint": "imperatives",
+      "pieceReward": "P47",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which phrase means to continue moving forward without turning?", "options": ["Turn around", "Go straight on", "Go back", "Stop here"] },
+      "correctIndex": 1,
+      "explanation": "\"Go straight on\" means to continue forward without turning.",
+      "grammarPoint": "directions_vocabulary",
+      "pieceReward": "P48",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "When we arrived at the park, there were hundreds of people at the festival.", "question": "What was there when they arrived at the park?", "options": ["Hundreds of people at the festival", "An empty park", "Only a few dogs"] },
+      "correctIndex": 0,
+      "explanation": "The audio says \"there were hundreds of people\" at the festival.",
+      "grammarPoint": "there_was_there_were",
+      "pieceReward": "P49",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "She is learning how to swim." },
+      "correctAnswers": ["she is learning how to swim"],
+      "explanation": "\"Is learning\" is the present continuous form, used for actions in progress.",
+      "grammarPoint": "present_continuous",
+      "pieceReward": "P50",
+      "timeLimitSeconds": 35
+    }
+  ]
+}

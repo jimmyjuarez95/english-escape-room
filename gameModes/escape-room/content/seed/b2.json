@@ -1,0 +1,457 @@
+{
+  "level": "B2",
+  "title": "The Corporate Cipher",
+  "finalCode": "CIPHER",
+  "challenges": [
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: If the manager ___ (approve) the budget sooner, the project wouldn't have been delayed." },
+      "correctAnswers": ["had approved"],
+      "explanation": "Third conditional describes an unreal past situation, using \"had + past participle\" in the if-clause.",
+      "grammarPoint": "third_conditional",
+      "pieceReward": "P01",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "The company had to lay off with hundreds of workers during the recession." },
+      "correctAnswers": ["the company had to lay off hundreds of workers during the recession"],
+      "explanation": "\"Lay off\" (to dismiss employees) is transitive and takes a direct object without a preposition like \"with\".",
+      "grammarPoint": "phrasal_verbs_advanced",
+      "pieceReward": "P02",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word describes a sudden, sharp decrease in the value of a currency?", "options": ["Devaluation", "Subsidy", "Merger", "Dividend"] },
+      "correctIndex": 0,
+      "explanation": "\"Devaluation\" refers to a deliberate downward adjustment in the value of a currency.",
+      "grammarPoint": "business_economics_vocabulary",
+      "pieceReward": "P03",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "My colleague asked me whether I would be attending the conference next week.", "question": "What did the colleague want to know?", "options": ["Whether the listener would attend the conference", "Where the conference was being held", "Who organized the conference"] },
+      "correctIndex": 0,
+      "explanation": "Reported yes/no questions use \"whether\" or \"if\" with normal statement word order, not question word order.",
+      "grammarPoint": "reported_speech_questions",
+      "pieceReward": "P04",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "By the time we arrived, the movie had already started." },
+      "correctAnswers": ["by the time we arrived the movie had already started"],
+      "explanation": "Past perfect simple shows the movie started before another past action (our arrival).",
+      "grammarPoint": "past_perfect_simple",
+      "pieceReward": "P05",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: If I ___ (be) in your position, I would negotiate a higher salary." },
+      "correctAnswers": ["were", "was"],
+      "explanation": "The second conditional uses a past form (traditionally \"were\" for all persons) to talk about an unreal present situation.",
+      "grammarPoint": "second_conditional",
+      "pieceReward": "P06",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "Is the deadline that worries me the most, not the budget." },
+      "correctAnswers": ["it is the deadline that worries me the most not the budget"],
+      "explanation": "Cleft sentences begin with the dummy subject \"It\" before \"is/was\" to emphasize a specific element of the sentence.",
+      "grammarPoint": "cleft_sentences",
+      "pieceReward": "P07",
+      "timeLimitSeconds": 65
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word describes a news story shared to deliberately mislead the public?", "options": ["Editorial", "Disinformation", "Headline", "Broadcast"] },
+      "correctIndex": 1,
+      "explanation": "\"Disinformation\" is false information spread deliberately to deceive people.",
+      "grammarPoint": "media_journalism_vocabulary",
+      "pieceReward": "P08",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "The coach told the players not to argue with the referee during the match.", "question": "What did the coach instruct the players to do?", "options": ["To argue with the referee", "Not to argue with the referee", "To replace the referee"] },
+      "correctIndex": 1,
+      "explanation": "Negative reported commands are formed with \"told + someone + not to + infinitive\".",
+      "grammarPoint": "reported_speech_commands",
+      "pieceReward": "P09",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "If she had asked for help, she would have finished the project on time." },
+      "correctAnswers": ["if she had asked for help she would have finished the project on time", "if shed asked for help shed have finished the project on time"],
+      "explanation": "Third conditional combines \"if + past perfect\" with \"would have + past participle\" to talk about unreal past situations.",
+      "grammarPoint": "third_conditional",
+      "pieceReward": "P10",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: By the time the ambulance arrived, the patient ___ (lose) consciousness." },
+      "correctAnswers": ["had lost"],
+      "explanation": "Past perfect simple shows an action completed before another past action (the ambulance arriving).",
+      "grammarPoint": "past_perfect_simple",
+      "pieceReward": "P11",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "The officer told to the driver to pull over immediately." },
+      "correctAnswers": ["the officer told the driver to pull over immediately"],
+      "explanation": "Reported commands follow the pattern \"tell + someone + to + infinitive\", with no preposition before the object.",
+      "grammarPoint": "reported_speech_commands",
+      "pieceReward": "P12",
+      "timeLimitSeconds": 70
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word refers to a school's official plan of what students should learn?", "options": ["Detention", "Enrollment", "Curriculum", "Faculty"] },
+      "correctIndex": 2,
+      "explanation": "The \"curriculum\" is the set of subjects and content taught in a course of study.",
+      "grammarPoint": "education_vocabulary",
+      "pieceReward": "P13",
+      "timeLimitSeconds": 28
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "After months of negotiation, the two companies finally called off the merger.", "question": "What happened to the merger?", "options": ["It was approved", "It was delayed by a year", "It was cancelled"] },
+      "correctIndex": 2,
+      "explanation": "\"Call off\" is a phrasal verb meaning to cancel something that was planned.",
+      "grammarPoint": "phrasal_verbs_advanced",
+      "pieceReward": "P14",
+      "timeLimitSeconds": 48
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "If I won the lottery, I would travel around the world." },
+      "correctAnswers": ["if i won the lottery i would travel around the world", "if i won the lottery id travel around the world"],
+      "explanation": "Second conditional uses \"if + past simple\" with \"would + base verb\" for hypothetical present or future situations.",
+      "grammarPoint": "second_conditional",
+      "pieceReward": "P15",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: She was exhausted because she ___ (work) on the report all night." },
+      "correctAnswers": ["had been working"],
+      "explanation": "Past perfect continuous emphasizes the duration of an action that continued up to another point in the past.",
+      "grammarPoint": "past_perfect_continuous",
+      "pieceReward": "P16",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "The contract is currently reviewing by the legal team." },
+      "correctAnswers": ["the contract is currently being reviewed by the legal team"],
+      "explanation": "Present continuous passive requires \"is/are + being + past participle\", not the active \"-ing\" form.",
+      "grammarPoint": "passive_voice",
+      "pieceReward": "P17",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which term describes the ability to understand and share another person's feelings?", "options": ["Apathy", "Anxiety", "Denial", "Empathy"] },
+      "correctIndex": 3,
+      "explanation": "\"Empathy\" is the capacity to understand and share the feelings of another person.",
+      "grammarPoint": "psychology_vocabulary",
+      "pieceReward": "P18",
+      "timeLimitSeconds": 32
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "It was the marketing team that came up with the winning slogan, not the design department.", "question": "According to the speaker, who created the winning slogan?", "options": ["The marketing team", "The design department", "An outside agency"] },
+      "correctIndex": 0,
+      "explanation": "The cleft structure \"It was...that...\" is used here to emphasize which team deserves the credit.",
+      "grammarPoint": "cleft_sentences",
+      "pieceReward": "P19",
+      "timeLimitSeconds": 52
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "I was tired because I had been studying for six hours straight." },
+      "correctAnswers": ["i was tired because i had been studying for six hours straight", "i was tired because id been studying for six hours straight"],
+      "explanation": "Past perfect continuous highlights the duration of an activity leading up to another past moment.",
+      "grammarPoint": "past_perfect_continuous",
+      "pieceReward": "P20",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: The new regulations ___ (introduce) by the government last month." },
+      "correctAnswers": ["were introduced"],
+      "explanation": "The passive voice is formed with \"to be\" plus the past participle; here the past simple passive is used.",
+      "grammarPoint": "passive_voice",
+      "pieceReward": "P21",
+      "timeLimitSeconds": 48
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "If they would have listened to the experts, the crisis could have been avoided." },
+      "correctAnswers": ["if they had listened to the experts the crisis could have been avoided", "if they had listened to the experts the crisis couldve been avoided"],
+      "explanation": "The if-clause of a third conditional needs the past perfect (\"had + past participle\"), not \"would have\".",
+      "grammarPoint": "third_conditional",
+      "pieceReward": "P22",
+      "timeLimitSeconds": 68
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word describes a formal accusation that a person has committed a crime?", "options": ["Allegation", "Verdict", "Acquittal", "Testimony"] },
+      "correctIndex": 0,
+      "explanation": "An \"allegation\" is a claim or assertion that someone has done something wrong, usually without proof yet.",
+      "grammarPoint": "law_vocabulary",
+      "pieceReward": "P23",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "Every Sunday when I was a child, my grandfather would take me fishing at the lake.", "question": "What does the speaker describe?", "options": ["A single event that happened once", "A repeated past habit with his grandfather", "A plan for the future"] },
+      "correctIndex": 1,
+      "explanation": "\"Would\" here describes a repeated action in the past, similar to \"used to\".",
+      "grammarPoint": "used_to_would_habits",
+      "pieceReward": "P24",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "The decision will be announced by the board next week." },
+      "correctAnswers": ["the decision will be announced by the board next week"],
+      "explanation": "This future passive form uses \"will be + past participle\" to focus on the action rather than who performs it.",
+      "grammarPoint": "passive_voice",
+      "pieceReward": "P25",
+      "timeLimitSeconds": 52
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: She asked me ___ I had finished the assignment." },
+      "correctAnswers": ["if", "whether"],
+      "explanation": "Reported yes/no questions use \"if\" or \"whether\" instead of a question word.",
+      "grammarPoint": "reported_speech_questions",
+      "pieceReward": "P26",
+      "timeLimitSeconds": 52
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "This is the company which products I have always trusted." },
+      "correctAnswers": ["this is the company whose products i have always trusted"],
+      "explanation": "\"Whose\" is used instead of \"which\" when the relative clause expresses possession.",
+      "grammarPoint": "relative_clauses_advanced",
+      "pieceReward": "P27",
+      "timeLimitSeconds": 72
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word best describes a person's sense of who they are?", "options": ["Liability", "Identity", "Diversity", "Currency"] },
+      "correctIndex": 1,
+      "explanation": "\"Identity\" refers to the qualities and characteristics that make someone who they are.",
+      "grammarPoint": "abstract_concepts_vocabulary",
+      "pieceReward": "P28",
+      "timeLimitSeconds": 27
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "The newspaper had to issue a retraction after publishing inaccurate information about the mayor.", "question": "What did the newspaper do?", "options": ["Won a journalism award", "Interviewed the mayor", "Publicly withdrew a false statement"] },
+      "correctIndex": 2,
+      "explanation": "A \"retraction\" is a public statement withdrawing something previously published.",
+      "grammarPoint": "media_journalism_vocabulary",
+      "pieceReward": "P29",
+      "timeLimitSeconds": 47
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "She wanted to know if the flight had been delayed." },
+      "correctAnswers": ["she wanted to know if the flight had been delayed"],
+      "explanation": "Reported questions drop question-word order and follow normal statement word order.",
+      "grammarPoint": "reported_speech_questions",
+      "pieceReward": "P30",
+      "timeLimitSeconds": 58
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: The lights are off and the car isn't here, so they ___ (leave) already." },
+      "correctAnswers": ["must have left", "mustve left"],
+      "explanation": "\"Must have + past participle\" expresses a confident deduction about a past event.",
+      "grammarPoint": "modals_of_speculation_past",
+      "pieceReward": "P31",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "She might have knew the answer, but she stayed silent." },
+      "correctAnswers": ["she might have known the answer but she stayed silent"],
+      "explanation": "After \"might have\" we need the past participle \"known\", not the past simple \"knew\".",
+      "grammarPoint": "modals_of_speculation_past",
+      "pieceReward": "P32",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word describes a scientist's proposed explanation that has not yet been proven?", "options": ["Formula", "Molecule", "Hypothesis", "Habitat"] },
+      "correctIndex": 2,
+      "explanation": "A \"hypothesis\" is a tentative explanation that can be tested through experiments.",
+      "grammarPoint": "science_vocabulary",
+      "pieceReward": "P33",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "The therapist explained that his constant worry about small mistakes was a form of anxiety.", "question": "How does the therapist describe the man's worry?", "options": ["As a form of anxiety", "As a sign of confidence", "As normal excitement"] },
+      "correctIndex": 0,
+      "explanation": "\"Anxiety\" refers to persistent worry or nervousness, often about things that may go wrong.",
+      "grammarPoint": "psychology_vocabulary",
+      "pieceReward": "P34",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "They might have missed the train because of the traffic." },
+      "correctAnswers": ["they might have missed the train because of the traffic", "they mightve missed the train because of the traffic"],
+      "explanation": "\"Might have + past participle\" expresses an uncertain guess about a past event.",
+      "grammarPoint": "modals_of_speculation_past",
+      "pieceReward": "P35",
+      "timeLimitSeconds": 48
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: The professor ___ research I admire most is retiring this year." },
+      "correctAnswers": ["whose"],
+      "explanation": "\"Whose\" introduces a relative clause showing possession, referring to the professor's research.",
+      "grammarPoint": "relative_clauses_advanced",
+      "pieceReward": "P36",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "There is a little evidence to support this theory, so most scientists reject it." },
+      "correctAnswers": ["there is little evidence to support this theory so most scientists reject it"],
+      "explanation": "\"Little\" (without \"a\") means almost none, matching the idea that scientists reject the theory; \"a little\" would mean a small but sufficient amount.",
+      "grammarPoint": "quantifiers",
+      "pieceReward": "P37",
+      "timeLimitSeconds": 65
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word describes a strong feeling of annoyance mixed with impatience?", "options": ["Nostalgia", "Relief", "Curiosity", "Frustration"] },
+      "correctIndex": 3,
+      "explanation": "\"Frustration\" describes the feeling of being upset or annoyed because of an inability to change a situation.",
+      "grammarPoint": "emotions_vocabulary",
+      "pieceReward": "P38",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "After reviewing the evidence, the jury reached a unanimous verdict of not guilty.", "question": "What did the jury decide?", "options": ["The trial needed to be repeated", "The defendant was not guilty", "The evidence was insufficient to continue"] },
+      "correctIndex": 1,
+      "explanation": "A \"verdict\" is the jury's formal decision on whether someone is guilty or not guilty.",
+      "grammarPoint": "law_vocabulary",
+      "pieceReward": "P39",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "That's the client whose contract we renewed last month." },
+      "correctAnswers": ["thats the client whose contract we renewed last month", "that is the client whose contract we renewed last month"],
+      "explanation": "\"Whose\" introduces a relative clause that shows possession, here referring to the client's contract.",
+      "grammarPoint": "relative_clauses_advanced",
+      "pieceReward": "P40",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: When we were children, we ___ (spend) every summer at our grandparents' farm." },
+      "correctAnswers": ["used to spend", "would spend"],
+      "explanation": "Both \"used to\" and \"would\" can describe repeated past habits, though only \"used to\" works for past states.",
+      "grammarPoint": "used_to_would_habits",
+      "pieceReward": "P41",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "By the time she got the promotion, she had been work at the company for ten years." },
+      "correctAnswers": ["by the time she got the promotion she had been working at the company for ten years"],
+      "explanation": "Past perfect continuous needs \"had been + verb-ing\", not the base form.",
+      "grammarPoint": "past_perfect_continuous",
+      "pieceReward": "P42",
+      "timeLimitSeconds": 75
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which term refers to unequal treatment of people based on characteristics like race or gender?", "options": ["Discrimination", "Cooperation", "Migration", "Taxation"] },
+      "correctIndex": 0,
+      "explanation": "\"Discrimination\" is the unjust treatment of different categories of people.",
+      "grammarPoint": "social_issues_vocabulary",
+      "pieceReward": "P43",
+      "timeLimitSeconds": 33
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "The researchers observed the experiment closely to see whether their hypothesis would be confirmed.", "question": "What were the researchers testing?", "options": ["Whether the lab was safe", "Whether the equipment was expensive", "Whether their hypothesis was correct"] },
+      "correctIndex": 2,
+      "explanation": "A \"hypothesis\" is a proposed explanation that researchers test through experiments.",
+      "grammarPoint": "science_vocabulary",
+      "pieceReward": "P44",
+      "timeLimitSeconds": 53
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "We need to figure out a solution before the deadline." },
+      "correctAnswers": ["we need to figure out a solution before the deadline"],
+      "explanation": "\"Figure out\" is a phrasal verb meaning to understand or solve something through thought.",
+      "grammarPoint": "phrasal_verbs_advanced",
+      "pieceReward": "P45",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "fill_blank",
+      "prompt": { "type": "fill_blank", "text": "Complete: ___ employees actually read the entire company handbook, even though everyone receives one." },
+      "correctAnswers": ["few"],
+      "explanation": "\"Few\" (without \"a\") has a negative meaning, emphasizing a small, insufficient number.",
+      "grammarPoint": "quantifiers",
+      "pieceReward": "P46",
+      "timeLimitSeconds": 42
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": { "type": "sentence_correction", "incorrectSentence": "If I was you, I will accept that job offer immediately." },
+      "correctAnswers": ["if i were you i would accept that job offer immediately", "if i were you id accept that job offer immediately"],
+      "explanation": "The second conditional pairs \"if + past simple\" with \"would + base verb\" in the main clause, not \"will\".",
+      "grammarPoint": "second_conditional",
+      "pieceReward": "P47",
+      "timeLimitSeconds": 58
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": { "type": "vocab_trivia", "question": "Which word describes a situation where a company spends more money than it earns?", "options": ["Surplus", "Deficit", "Revenue", "Asset"] },
+      "correctIndex": 1,
+      "explanation": "A \"deficit\" occurs when expenses exceed income or revenue.",
+      "grammarPoint": "business_economics_vocabulary",
+      "pieceReward": "P48",
+      "timeLimitSeconds": 29
+    },
+    {
+      "type": "listening",
+      "prompt": { "type": "listening", "audioText": "The charity works to reduce inequality by giving disadvantaged children access to good schools.", "question": "What is the charity's main goal?", "options": ["Reducing inequality in education", "Building new hospitals", "Promoting tourism"] },
+      "correctIndex": 0,
+      "explanation": "\"Inequality\" refers to unfair differences in opportunities or resources between groups of people.",
+      "grammarPoint": "social_issues_vocabulary",
+      "pieceReward": "P49",
+      "timeLimitSeconds": 49
+    },
+    {
+      "type": "speaking",
+      "prompt": { "type": "speaking", "targetSentence": "We used to walk to school together every morning." },
+      "correctAnswers": ["we used to walk to school together every morning"],
+      "explanation": "\"Used to\" describes a habitual action or state that was true in the past but isn't anymore.",
+      "grammarPoint": "used_to_would_habits",
+      "pieceReward": "P50",
+      "timeLimitSeconds": 50
+    }
+  ]
+}

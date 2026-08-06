@@ -1,0 +1,801 @@
+{
+  "level": "B1",
+  "title": "The Intermediate Vault",
+  "finalCode": "VAULTB",
+  "challenges": [
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "type": "fill_blank",
+        "text": "Complete: She ___ (not/finish) her homework yet."
+      },
+      "correctAnswers": [
+        "hasnt finished",
+        "has not finished"
+      ],
+      "explanation": "The negative present perfect uses \"hasn't/has not + past participle\" for actions not completed up to now.",
+      "grammarPoint": "present_perfect",
+      "pieceReward": "P01",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "type": "fill_blank",
+        "text": "Complete: We ___ (learn) a lot of new vocabulary this month."
+      },
+      "correctAnswers": [
+        "have been learning"
+      ],
+      "explanation": "Present perfect continuous (\"have/has been + -ing\") emphasizes an activity that started in the past and continues now.",
+      "grammarPoint": "present_perfect_continuous",
+      "pieceReward": "P02",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "type": "fill_blank",
+        "text": "Complete: While I ___ (walk) to work, it started to rain."
+      },
+      "correctAnswers": [
+        "was walking"
+      ],
+      "explanation": "Past continuous (\"was/were + -ing\") describes an action in progress when another action interrupted it.",
+      "grammarPoint": "past_continuous",
+      "pieceReward": "P03",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "type": "fill_blank",
+        "text": "Complete: If it ___ (rain) tomorrow, we will cancel the picnic."
+      },
+      "correctAnswers": [
+        "rains"
+      ],
+      "explanation": "In first conditional sentences, the \"if\" clause uses the present simple even though it refers to the future.",
+      "grammarPoint": "first_conditional",
+      "pieceReward": "P04",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "type": "fill_blank",
+        "text": "Complete: He hasn't eaten anything all day, so he ___ (must/be) very hungry now."
+      },
+      "correctAnswers": [
+        "must be"
+      ],
+      "explanation": "\"Must be\" expresses a strong, confident deduction based on evidence.",
+      "grammarPoint": "modals_of_deduction",
+      "pieceReward": "P05",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "type": "fill_blank",
+        "text": "Complete: The man ___ lives next door is a doctor."
+      },
+      "correctAnswers": [
+        "who",
+        "that"
+      ],
+      "explanation": "\"Who\" (or \"that\") introduces a relative clause that gives more information about a person.",
+      "grammarPoint": "relative_clauses",
+      "pieceReward": "P06",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "type": "fill_blank",
+        "text": "Complete: I've decided to ___ (give up) eating junk food this year."
+      },
+      "correctAnswers": [
+        "give up"
+      ],
+      "explanation": "The phrasal verb \"give up\" means to stop doing something, often a habit.",
+      "grammarPoint": "phrasal_verbs",
+      "pieceReward": "P07",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "type": "fill_blank",
+        "text": "Complete: English ___ (speak) in many countries around the world."
+      },
+      "correctAnswers": [
+        "is spoken"
+      ],
+      "explanation": "The simple present passive (\"is/are + past participle\") focuses on the action rather than who does it.",
+      "grammarPoint": "passive_voice_present",
+      "pieceReward": "P08",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "type": "fill_blank",
+        "text": "Complete: She enjoys ___ (read) mystery novels before bed."
+      },
+      "correctAnswers": [
+        "reading"
+      ],
+      "explanation": "The verb \"enjoy\" is followed by a gerund (-ing form), not an infinitive.",
+      "grammarPoint": "gerunds_vs_infinitives",
+      "pieceReward": "P09",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "fill_blank",
+      "prompt": {
+        "type": "fill_blank",
+        "text": "Complete: By the time the police arrived, the thief ___ (already/escape)."
+      },
+      "correctAnswers": [
+        "had already escaped"
+      ],
+      "explanation": "Past perfect (\"had + past participle\") shows an action completed before another past action.",
+      "grammarPoint": "past_perfect",
+      "pieceReward": "P10",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": {
+        "type": "sentence_correction",
+        "incorrectSentence": "I have seen that movie yesterday."
+      },
+      "correctAnswers": [
+        "i saw that movie yesterday"
+      ],
+      "explanation": "Present perfect isn't used with a finished time expression like \"yesterday\"; use the simple past instead.",
+      "grammarPoint": "present_perfect",
+      "pieceReward": "P11",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": {
+        "type": "sentence_correction",
+        "incorrectSentence": "If she will finish her work early, she will meet us for dinner."
+      },
+      "correctAnswers": [
+        "if she finishes her work early she will meet us for dinner"
+      ],
+      "explanation": "The \"if\" clause of a first conditional takes the present simple, not \"will\", even though the meaning is future.",
+      "grammarPoint": "first_conditional",
+      "pieceReward": "P12",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": {
+        "type": "sentence_correction",
+        "incorrectSentence": "My brother is as taller as me."
+      },
+      "correctAnswers": [
+        "my brother is as tall as me",
+        "my brother is as tall as i am"
+      ],
+      "explanation": "The structure \"as...as\" uses the base adjective, not the comparative form: \"as tall as\", not \"as taller as\".",
+      "grammarPoint": "comparatives_as_as",
+      "pieceReward": "P13",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": {
+        "type": "sentence_correction",
+        "incorrectSentence": "She isn't answering her phone, she can be in a meeting."
+      },
+      "correctAnswers": [
+        "she isnt answering her phone she must be in a meeting",
+        "she is not answering her phone she must be in a meeting"
+      ],
+      "explanation": "\"Must\" (not \"can\") expresses a confident positive deduction.",
+      "grammarPoint": "modals_of_deduction",
+      "pieceReward": "P14",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": {
+        "type": "sentence_correction",
+        "incorrectSentence": "That's the restaurant which the chef is famous."
+      },
+      "correctAnswers": [
+        "thats the restaurant where the chef is famous",
+        "that is the restaurant where the chef is famous"
+      ],
+      "explanation": "\"Where\" introduces a relative clause referring to a place, not \"which\".",
+      "grammarPoint": "relative_clauses",
+      "pieceReward": "P15",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": {
+        "type": "sentence_correction",
+        "incorrectSentence": "Please turn the television, it's too loud."
+      },
+      "correctAnswers": [
+        "please turn down the television its too loud",
+        "please turn down the television it is too loud"
+      ],
+      "explanation": "The phrasal verb \"turn down\" means to reduce the volume or intensity of something.",
+      "grammarPoint": "phrasal_verbs",
+      "pieceReward": "P16",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": {
+        "type": "sentence_correction",
+        "incorrectSentence": "The Eiffel Tower was completing in 1889."
+      },
+      "correctAnswers": [
+        "the eiffel tower was completed in 1889"
+      ],
+      "explanation": "The simple past passive uses \"was/were + past participle\", not the -ing form.",
+      "grammarPoint": "passive_voice_past",
+      "pieceReward": "P17",
+      "timeLimitSeconds": 55
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": {
+        "type": "sentence_correction",
+        "incorrectSentence": "He said that he is tired."
+      },
+      "correctAnswers": [
+        "he said that he was tired"
+      ],
+      "explanation": "In reported speech, present tense in direct speech usually shifts back to past tense: \"is\" becomes \"was\".",
+      "grammarPoint": "reported_speech",
+      "pieceReward": "P18",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": {
+        "type": "sentence_correction",
+        "incorrectSentence": "She suggested to go to the beach this weekend."
+      },
+      "correctAnswers": [
+        "she suggested going to the beach this weekend"
+      ],
+      "explanation": "The verb \"suggest\" is followed by a gerund (-ing form), not a \"to\" infinitive.",
+      "grammarPoint": "gerunds_vs_infinitives",
+      "pieceReward": "P19",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "sentence_correction",
+      "prompt": {
+        "type": "sentence_correction",
+        "incorrectSentence": "I cooked dinner when the phone was ringing."
+      },
+      "correctAnswers": [
+        "i was cooking dinner when the phone rang"
+      ],
+      "explanation": "Use past continuous for the longer background action and simple past for the shorter action that interrupted it.",
+      "grammarPoint": "past_continuous",
+      "pieceReward": "P20",
+      "timeLimitSeconds": 60
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": {
+        "type": "vocab_trivia",
+        "question": "Which word describes exercise that makes your heart beat faster and improves stamina, like running or swimming?",
+        "options": [
+          "Cardio",
+          "Static",
+          "Passive",
+          "Sedentary"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "\"Cardio\" (cardiovascular exercise) raises your heart rate and builds endurance.",
+      "grammarPoint": "health_fitness_vocabulary",
+      "pieceReward": "P21",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": {
+        "type": "vocab_trivia",
+        "question": "Which word means materials thrown away that can be processed and used again?",
+        "options": [
+          "Recyclable",
+          "Disposable",
+          "Flammable",
+          "Perishable"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "\"Recyclable\" materials can be collected and processed to make new products.",
+      "grammarPoint": "environment_vocabulary",
+      "pieceReward": "P22",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": {
+        "type": "vocab_trivia",
+        "question": "Which word means a copy of your files kept in case the originals are lost or damaged?",
+        "options": [
+          "Backup",
+          "Download",
+          "Update",
+          "Shortcut"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "A \"backup\" is a saved copy of data used to restore it if something goes wrong.",
+      "grammarPoint": "technology_vocabulary",
+      "pieceReward": "P23",
+      "timeLimitSeconds": 28
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": {
+        "type": "vocab_trivia",
+        "question": "Which word describes two people who trust each other completely and share personal feelings?",
+        "options": [
+          "Close",
+          "Distant",
+          "Rude",
+          "Formal"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "\"Close\" describes a relationship with strong trust and emotional connection.",
+      "grammarPoint": "relationships_vocabulary",
+      "pieceReward": "P24",
+      "timeLimitSeconds": 32
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": {
+        "type": "vocab_trivia",
+        "question": "Which word means being given more responsibility and a higher position at work?",
+        "options": [
+          "Promotion",
+          "Resignation",
+          "Vacation",
+          "Deduction"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "A \"promotion\" is an advancement to a higher position, often with more responsibility.",
+      "grammarPoint": "work_careers_vocabulary",
+      "pieceReward": "P25",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": {
+        "type": "vocab_trivia",
+        "question": "Which word refers to the place where a plane, train, or trip finally arrives?",
+        "options": [
+          "Destination",
+          "Departure",
+          "Luggage",
+          "Itinerary"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "The \"destination\" is the final place someone is traveling to.",
+      "grammarPoint": "travel_vocabulary",
+      "pieceReward": "P26",
+      "timeLimitSeconds": 25
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": {
+        "type": "vocab_trivia",
+        "question": "Which word describes someone who easily gets annoyed or angry?",
+        "options": [
+          "Irritable",
+          "Generous",
+          "Modest",
+          "Patient"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "\"Irritable\" describes a person who becomes annoyed or angry very easily.",
+      "grammarPoint": "personality_vocabulary",
+      "pieceReward": "P27",
+      "timeLimitSeconds": 35
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": {
+        "type": "vocab_trivia",
+        "question": "Which word describes the feeling of being worried and uncomfortable about something uncertain?",
+        "options": [
+          "Anxious",
+          "Delighted",
+          "Confident",
+          "Relieved"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "\"Anxious\" describes worry or unease about something that might happen.",
+      "grammarPoint": "emotions_vocabulary",
+      "pieceReward": "P28",
+      "timeLimitSeconds": 30
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": {
+        "type": "vocab_trivia",
+        "question": "Which word describes people who help others without expecting payment?",
+        "options": [
+          "Volunteers",
+          "Employees",
+          "Customers",
+          "Tourists"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "\"Volunteers\" offer their time and effort to help others, usually without pay.",
+      "grammarPoint": "society_community_vocabulary",
+      "pieceReward": "P29",
+      "timeLimitSeconds": 28
+    },
+    {
+      "type": "vocab_trivia",
+      "prompt": {
+        "type": "vocab_trivia",
+        "question": "Which word describes a violent storm with a spinning column of air that can destroy buildings?",
+        "options": [
+          "Tornado",
+          "Drizzle",
+          "Breeze",
+          "Frost"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "A \"tornado\" is a rotating column of air capable of causing severe destruction.",
+      "grammarPoint": "weather_vocabulary",
+      "pieceReward": "P30",
+      "timeLimitSeconds": 32
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "When Sarah got to the station, the train had already left.",
+        "question": "What had already happened when Sarah got to the station?",
+        "options": [
+          "The train had left",
+          "The train had arrived",
+          "Sarah had missed her alarm"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "Past perfect (\"had left\") describes an action completed before another past action (arriving at the station).",
+      "grammarPoint": "past_perfect",
+      "pieceReward": "P31",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "I've been waiting for the bus for almost forty minutes.",
+        "question": "How long has the speaker been waiting?",
+        "options": [
+          "For almost forty minutes",
+          "For a few minutes",
+          "Since yesterday"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "Present perfect continuous (\"have been waiting\") emphasizes the duration of an ongoing action.",
+      "grammarPoint": "present_perfect_continuous",
+      "pieceReward": "P32",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "Tom told me that he had lost his keys and couldn't get into his apartment.",
+        "question": "What did Tom say had happened?",
+        "options": [
+          "He had lost his keys",
+          "He had found his keys",
+          "He had moved to a new apartment"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "Reported speech often shifts the tense back; \"had lost\" reports what Tom originally said.",
+      "grammarPoint": "reported_speech",
+      "pieceReward": "P33",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "This coffee is grown in Colombia and exported to countries all over the world.",
+        "question": "Where is the coffee grown?",
+        "options": [
+          "In Colombia",
+          "In Brazil",
+          "In Mexico"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "The passive voice (\"is grown\") focuses on the coffee itself rather than who grows it.",
+      "grammarPoint": "passive_voice_present",
+      "pieceReward": "P34",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "This laptop isn't as expensive as the one I saw yesterday, but it's just as fast.",
+        "question": "How does the speaker compare the two laptops?",
+        "options": [
+          "This one is cheaper but equally fast",
+          "This one is more expensive and slower",
+          "Both laptops are identical in price"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "\"Not as expensive as\" shows a difference, while \"just as fast\" shows equality using the \"as...as\" structure.",
+      "grammarPoint": "comparatives_as_as",
+      "pieceReward": "P35",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "If it doesn't rain this weekend, we'll go camping by the lake.",
+        "question": "What will they do if it doesn't rain?",
+        "options": [
+          "Go camping by the lake",
+          "Stay home and rest",
+          "Visit their grandparents"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "This is a first conditional: present simple in the \"if\" clause, \"will\" in the result clause.",
+      "grammarPoint": "first_conditional",
+      "pieceReward": "P36",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "The lights are off and the car isn't in the driveway, so they must be out.",
+        "question": "What does the speaker conclude?",
+        "options": [
+          "They must be out",
+          "They must be asleep",
+          "They must be cooking"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "\"Must be\" expresses a logical deduction based on the evidence described.",
+      "grammarPoint": "modals_of_deduction",
+      "pieceReward": "P37",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "The woman who lives in the apartment above mine works as a nurse.",
+        "question": "What does the woman above the speaker's apartment do?",
+        "options": [
+          "She works as a nurse",
+          "She works as a teacher",
+          "She is unemployed"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "\"Who\" introduces a relative clause identifying the woman being described.",
+      "grammarPoint": "relative_clauses",
+      "pieceReward": "P38",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "I need to look after my little sister while my parents are at work.",
+        "question": "What does the speaker need to do?",
+        "options": [
+          "Take care of his/her sister",
+          "Search for his/her sister",
+          "Wait for his/her sister"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "The phrasal verb \"look after\" means to take care of someone or something.",
+      "grammarPoint": "phrasal_verbs",
+      "pieceReward": "P39",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "listening",
+      "prompt": {
+        "type": "listening",
+        "audioText": "I was jogging in the park when I suddenly twisted my ankle.",
+        "question": "What was the speaker doing when he/she twisted his/her ankle?",
+        "options": [
+          "Jogging in the park",
+          "Sitting on a bench",
+          "Driving a car"
+        ]
+      },
+      "correctIndex": 0,
+      "explanation": "Past continuous (\"was jogging\") describes the action in progress when the shorter action (twisting the ankle) happened.",
+      "grammarPoint": "past_continuous",
+      "pieceReward": "P40",
+      "timeLimitSeconds": 40
+    },
+    {
+      "type": "speaking",
+      "prompt": {
+        "type": "speaking",
+        "targetSentence": "I've been learning English for two years."
+      },
+      "correctAnswers": [
+        "ive been learning english for two years",
+        "i have been learning english for two years"
+      ],
+      "explanation": "Present perfect continuous highlights the duration of an activity that started in the past and continues now.",
+      "grammarPoint": "present_perfect_continuous",
+      "pieceReward": "P41",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": {
+        "type": "speaking",
+        "targetSentence": "I don't mind waiting a few more minutes."
+      },
+      "correctAnswers": [
+        "i dont mind waiting a few more minutes",
+        "i do not mind waiting a few more minutes"
+      ],
+      "explanation": "The expression \"don't mind\" is followed by a gerund (-ing form), not an infinitive.",
+      "grammarPoint": "gerunds_vs_infinitives",
+      "pieceReward": "P42",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": {
+        "type": "speaking",
+        "targetSentence": "The letter was sent last Friday."
+      },
+      "correctAnswers": [
+        "the letter was sent last friday"
+      ],
+      "explanation": "The simple past passive (\"was sent\") focuses on the letter, not on who sent it.",
+      "grammarPoint": "passive_voice_past",
+      "pieceReward": "P43",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": {
+        "type": "speaking",
+        "targetSentence": "She said that she would call me later."
+      },
+      "correctAnswers": [
+        "she said that she would call me later",
+        "she said she would call me later"
+      ],
+      "explanation": "In reported speech, \"will\" in direct speech usually becomes \"would\".",
+      "grammarPoint": "reported_speech",
+      "pieceReward": "P44",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "speaking",
+      "prompt": {
+        "type": "speaking",
+        "targetSentence": "This exam wasn't as difficult as I expected."
+      },
+      "correctAnswers": [
+        "this exam wasnt as difficult as i expected",
+        "this exam was not as difficult as i expected"
+      ],
+      "explanation": "\"Not as...as\" compares two things showing that one has less of a quality than the other.",
+      "grammarPoint": "comparatives_as_as",
+      "pieceReward": "P45",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": {
+        "type": "speaking",
+        "targetSentence": "She can't be at home; her car isn't in the driveway."
+      },
+      "correctAnswers": [
+        "she cant be at home her car isnt in the driveway",
+        "she cannot be at home her car is not in the driveway"
+      ],
+      "explanation": "\"Can't be\" expresses a confident negative deduction, the opposite of \"must be\".",
+      "grammarPoint": "modals_of_deduction",
+      "pieceReward": "P46",
+      "timeLimitSeconds": 50
+    },
+    {
+      "type": "speaking",
+      "prompt": {
+        "type": "speaking",
+        "targetSentence": "If you study hard, you'll pass the exam."
+      },
+      "correctAnswers": [
+        "if you study hard youll pass the exam",
+        "if you study hard you will pass the exam"
+      ],
+      "explanation": "First conditional sentences use the present simple in the \"if\" clause and \"will\" in the result clause.",
+      "grammarPoint": "first_conditional",
+      "pieceReward": "P47",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": {
+        "type": "speaking",
+        "targetSentence": "I'd never seen snow before that winter."
+      },
+      "correctAnswers": [
+        "id never seen snow before that winter",
+        "i had never seen snow before that winter"
+      ],
+      "explanation": "Past perfect (\"had never seen\") describes an experience that hadn't happened before a specific point in the past.",
+      "grammarPoint": "past_perfect",
+      "pieceReward": "P48",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": {
+        "type": "speaking",
+        "targetSentence": "That's the restaurant where we had our first date."
+      },
+      "correctAnswers": [
+        "thats the restaurant where we had our first date",
+        "that is the restaurant where we had our first date"
+      ],
+      "explanation": "\"Where\" introduces a relative clause describing a place.",
+      "grammarPoint": "relative_clauses",
+      "pieceReward": "P49",
+      "timeLimitSeconds": 45
+    },
+    {
+      "type": "speaking",
+      "prompt": {
+        "type": "speaking",
+        "targetSentence": "I need to figure out how to fix this problem."
+      },
+      "correctAnswers": [
+        "i need to figure out how to fix this problem"
+      ],
+      "explanation": "The phrasal verb \"figure out\" means to understand or solve something after thinking about it.",
+      "grammarPoint": "phrasal_verbs",
+      "pieceReward": "P50",
+      "timeLimitSeconds": 45
+    }
+  ]
+}

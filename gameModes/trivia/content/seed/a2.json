@@ -1,0 +1,406 @@
+{
+  "level": "A2",
+  "title": "Everyday English Challenge",
+  "questions": [
+    {
+      "question": "Complete: Last weekend, we ___ (visit) our cousins in the countryside.",
+      "options": ["visited", "visit", "visiting", "have visit"],
+      "correctIndex": 0,
+      "explanation": "Regular verbs add \"-ed\" in the past simple: visit -> visited.",
+      "grammarPoint": "past_simple_regular",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Which hobby involves collecting stamps from different countries?",
+      "options": ["Fishing", "Stamp collecting", "Cycling", "Painting"],
+      "correctIndex": 1,
+      "explanation": "Collecting stamps from different countries is called \"stamp collecting\".",
+      "grammarPoint": "hobbies_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: She ___ (write) a long letter to her best friend last night.",
+      "options": ["writed", "wrote", "writing", "has write"],
+      "correctIndex": 1,
+      "explanation": "\"Write\" is irregular in the past simple: write -> wrote.",
+      "grammarPoint": "past_simple_irregular",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Which of these is a hobby you usually do at home, alone and quietly?",
+      "options": ["Playing football", "Going to a concert", "Swimming in the sea", "Reading a book"],
+      "correctIndex": 3,
+      "explanation": "\"Reading a book\" is a quiet hobby usually done at home.",
+      "grammarPoint": "hobbies_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: They ___ finish the project on time.",
+      "options": ["doesn't", "don't", "not", "didn't"],
+      "correctIndex": 3,
+      "explanation": "Past simple negative uses \"didn't\" + the base verb.",
+      "grammarPoint": "past_simple_negative",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Which sport is played with a racket and a small ball over a net?",
+      "options": ["Football", "Tennis", "Swimming", "Boxing"],
+      "correctIndex": 1,
+      "explanation": "\"Tennis\" is played with a racket and a ball over a net.",
+      "grammarPoint": "sports_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"___ you sleep well last night?\"",
+      "options": ["Do", "Are", "Did", "Were"],
+      "correctIndex": 2,
+      "explanation": "Past simple questions begin with \"Did\" + subject + base verb.",
+      "grammarPoint": "past_simple_questions",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "In which sport do players try to score goals by kicking a ball into a net?",
+      "options": ["Football", "Basketball", "Tennis", "Golf"],
+      "correctIndex": 0,
+      "explanation": "\"Football\" (soccer) involves kicking a ball into a net to score.",
+      "grammarPoint": "sports_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: Please be quiet, the baby ___ right now.",
+      "options": ["is sleeping", "sleeps", "sleep", "slept"],
+      "correctIndex": 0,
+      "explanation": "We use the present continuous for actions happening right now: is sleeping.",
+      "grammarPoint": "present_continuous",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "What word describes weather with a lot of sunshine and no clouds?",
+      "options": ["Rainy", "Foggy", "Sunny", "Stormy"],
+      "correctIndex": 2,
+      "explanation": "\"Sunny\" describes weather with lots of sunshine and clear skies.",
+      "grammarPoint": "weather_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: I ___ dinner with my boss tomorrow evening; it's already arranged.",
+      "options": ["have", "am having", "had", "will has"],
+      "correctIndex": 1,
+      "explanation": "The present continuous can express fixed future arrangements: am having.",
+      "grammarPoint": "present_continuous_future",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Which word means there is a lot of water falling from the sky?",
+      "options": ["Windy", "Cloudy", "Icy", "Rainy"],
+      "correctIndex": 3,
+      "explanation": "\"Rainy\" describes weather with a lot of rain.",
+      "grammarPoint": "weather_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: My new laptop is ___ than my old one.",
+      "options": ["fast", "more fast", "fastest", "faster"],
+      "correctIndex": 3,
+      "explanation": "Short adjectives like \"fast\" form the comparative by adding \"-er\": faster.",
+      "grammarPoint": "comparatives",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "What do you need to show before boarding an international flight?",
+      "options": ["A recipe", "A passport", "A receipt", "A map only"],
+      "correctIndex": 1,
+      "explanation": "A \"passport\" is required for identification on international flights.",
+      "grammarPoint": "travel_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: Mount Everest is ___ mountain in the world.",
+      "options": ["the higher", "higher", "the highest", "more high"],
+      "correctIndex": 2,
+      "explanation": "Superlatives use \"the\" + adjective + \"-est\" for short adjectives: the highest.",
+      "grammarPoint": "superlatives",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Which vehicle usually travels underground in big cities?",
+      "options": ["A subway/underground train", "A bicycle", "A sailboat", "A helicopter"],
+      "correctIndex": 0,
+      "explanation": "A \"subway\" (or underground train) travels beneath city streets.",
+      "grammarPoint": "travel_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: Is there ___ sugar in the kitchen?",
+      "options": ["any", "some", "much", "many"],
+      "correctIndex": 0,
+      "explanation": "We usually use \"any\" in questions with uncountable or plural nouns.",
+      "grammarPoint": "countable_uncountable",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Which activity do most people do right after waking up?",
+      "options": ["Have dinner", "Go to sleep", "Get out of bed", "Watch the sunset"],
+      "correctIndex": 2,
+      "explanation": "\"Get out of bed\" typically happens right after waking up.",
+      "grammarPoint": "daily_routines_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: There aren't ___ apples left in the basket.",
+      "options": ["much", "many", "a lot", "little"],
+      "correctIndex": 1,
+      "explanation": "\"Apples\" is countable and plural, so we use \"many\", not \"much\".",
+      "grammarPoint": "countable_uncountable",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "What do people usually do before going to bed at night?",
+      "options": ["Eat breakfast", "Go to work", "Take a shower before waking up", "Brush their teeth"],
+      "correctIndex": 3,
+      "explanation": "\"Brush their teeth\" is a common part of a nighttime routine.",
+      "grammarPoint": "daily_routines_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: Look at the sky! It ___ rain soon.",
+      "options": ["is go to", "going", "will going to", "is going to"],
+      "correctIndex": 3,
+      "explanation": "\"Going to\" + base verb is used for predictions based on evidence: is going to rain.",
+      "grammarPoint": "going_to_future",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "What do you get from a cashier after paying for your shopping?",
+      "options": ["A passport", "A receipt", "A ticket to a concert", "A menu"],
+      "correctIndex": 1,
+      "explanation": "A \"receipt\" is proof of payment given after a purchase.",
+      "grammarPoint": "shopping_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: My grandmother ___ speak four languages.",
+      "options": ["cans", "canning", "can", "could to"],
+      "correctIndex": 2,
+      "explanation": "\"Can\" expresses present ability and never changes form: can speak.",
+      "grammarPoint": "modal_can",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Where do you usually go to buy fruit, vegetables, and bread?",
+      "options": ["A supermarket", "A hospital", "A gym", "A library"],
+      "correctIndex": 0,
+      "explanation": "A \"supermarket\" is a common place to buy food like fruit, vegetables, and bread.",
+      "grammarPoint": "shopping_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: When I was young, I ___ climb trees very quickly.",
+      "options": ["could", "can", "cans", "could to"],
+      "correctIndex": 0,
+      "explanation": "\"Could\" expresses past ability: I could climb trees when I was young.",
+      "grammarPoint": "modal_could",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Who teaches students in a classroom?",
+      "options": ["A plumber", "A pilot", "A teacher", "A cashier"],
+      "correctIndex": 2,
+      "explanation": "A \"teacher\" is the person who teaches students.",
+      "grammarPoint": "jobs_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: You ___ wear a seatbelt in the car; it's the law.",
+      "options": ["musts", "must", "must to", "musting"],
+      "correctIndex": 1,
+      "explanation": "\"Must\" is followed directly by the base verb, without \"to\": must wear.",
+      "grammarPoint": "modal_must",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Who flies an airplane?",
+      "options": ["A waiter", "A dentist", "A librarian", "A pilot"],
+      "correctIndex": 3,
+      "explanation": "A \"pilot\" is the person who flies an airplane.",
+      "grammarPoint": "jobs_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: You look tired. You ___ go to bed earlier.",
+      "options": ["should to", "shoulds", "shoulding", "should"],
+      "correctIndex": 3,
+      "explanation": "\"Should\" gives advice and is followed by the base form of the verb.",
+      "grammarPoint": "modal_should",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "What do you use to search for information on the internet?",
+      "options": ["A frying pan", "A search engine", "A hammer", "A calendar only"],
+      "correctIndex": 1,
+      "explanation": "A \"search engine\" helps you find information online.",
+      "grammarPoint": "technology_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: Doctors ___ study for many years before they can practice.",
+      "options": ["has to", "must to", "have to", "having to"],
+      "correctIndex": 2,
+      "explanation": "With the plural subject \"doctors\" we use \"have to\", not \"has to\".",
+      "grammarPoint": "modal_have_to",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "What do you call the device you use to type documents and browse the internet?",
+      "options": ["A computer", "A refrigerator", "A washing machine", "A vacuum cleaner"],
+      "correctIndex": 0,
+      "explanation": "A \"computer\" is used to type documents and browse the internet.",
+      "grammarPoint": "technology_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: My father ___ drinks coffee in the morning.",
+      "options": ["always", "is always", "being always", "always is"],
+      "correctIndex": 0,
+      "explanation": "Adverbs of frequency like \"always\" go before the main verb (but after \"to be\").",
+      "grammarPoint": "adverbs_of_frequency",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "What do you call the list of dishes available at a restaurant?",
+      "options": ["The bill", "The recipe book", "The menu", "The receipt"],
+      "correctIndex": 2,
+      "explanation": "\"The menu\" lists the dishes available at a restaurant.",
+      "grammarPoint": "food_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: The shop closes ___ nine o'clock.",
+      "options": ["in", "at", "on", "for"],
+      "correctIndex": 1,
+      "explanation": "We use \"at\" with exact clock times: at nine o'clock.",
+      "grammarPoint": "prepositions_of_time",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Which meal do people usually eat in the morning?",
+      "options": ["Dinner", "Supper", "Midnight snack", "Breakfast"],
+      "correctIndex": 3,
+      "explanation": "\"Breakfast\" is the meal eaten in the morning.",
+      "grammarPoint": "food_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: This letter is for ___, not for your brother.",
+      "options": ["your", "yours", "you're", "you"],
+      "correctIndex": 3,
+      "explanation": "After the preposition \"for\" we use the object pronoun \"you\".",
+      "grammarPoint": "object_pronouns",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "What should you do if you have a high fever?",
+      "options": ["Go for a swim", "See a doctor", "Eat spicy food", "Go to a party"],
+      "correctIndex": 1,
+      "explanation": "Seeing a \"doctor\" is the right action for a high fever.",
+      "grammarPoint": "health_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which sentence is a correct instruction (imperative)?",
+      "options": ["You open the door, please.", "You are open the door.", "Open the door, please.", "Opening the door, please."],
+      "correctIndex": 2,
+      "explanation": "Imperatives start directly with the base verb, without a subject pronoun: \"Open the door\".",
+      "grammarPoint": "imperatives",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Which word describes feeling sick with a stomach pain?",
+      "options": ["Stomachache", "Toothache", "Backache", "Headache"],
+      "correctIndex": 0,
+      "explanation": "\"Stomachache\" describes pain in the stomach.",
+      "grammarPoint": "health_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: ___ a strong storm in our city last week.",
+      "options": ["There was", "There were", "There is", "There are"],
+      "correctIndex": 0,
+      "explanation": "With a singular noun (\"a storm\") we use \"there was\".",
+      "grammarPoint": "there_was_there_were",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Which phrase tells someone to turn to the right side?",
+      "options": ["Turn left", "Go straight on", "Turn right", "Go back"],
+      "correctIndex": 2,
+      "explanation": "\"Turn right\" tells someone to change direction to the right side.",
+      "grammarPoint": "directions_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: Her new house is ___ than her old apartment.",
+      "options": ["more big", "bigger", "biggest", "big"],
+      "correctIndex": 1,
+      "explanation": "Short adjectives like \"big\" double the final consonant and add \"-er\": bigger.",
+      "grammarPoint": "comparatives",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "What do you call a building where you can ask for directions and information in a city?",
+      "options": ["A hospital", "A supermarket", "A gym", "A tourist information center"],
+      "correctIndex": 3,
+      "explanation": "A \"tourist information center\" provides directions and information for visitors.",
+      "grammarPoint": "directions_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: We ___ to Peru for our holidays two years ago.",
+      "options": ["goed", "go", "gone", "went"],
+      "correctIndex": 3,
+      "explanation": "\"Go\" is irregular in the past simple: go -> went.",
+      "grammarPoint": "past_simple_irregular",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Which chore involves using a machine to clean clothes?",
+      "options": ["Cooking dinner", "Doing the laundry", "Washing the dishes", "Ironing shirts only"],
+      "correctIndex": 1,
+      "explanation": "\"Doing the laundry\" means washing clothes, often using a washing machine.",
+      "grammarPoint": "household_chores_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: They ___ to buy a new car next month.",
+      "options": ["is going", "go", "are going", "going"],
+      "correctIndex": 2,
+      "explanation": "\"Going to\" future needs the auxiliary \"are\" with the plural subject \"they\": are going to buy.",
+      "grammarPoint": "going_to_future",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "Which chore means cleaning the floor with a machine that sucks up dust?",
+      "options": ["Vacuuming", "Dusting shelves", "Washing windows", "Making the bed"],
+      "correctIndex": 0,
+      "explanation": "\"Vacuuming\" is cleaning the floor with a vacuum cleaner.",
+      "grammarPoint": "household_chores_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: ___ many books on the shelf yesterday.",
+      "options": ["There were", "There was", "There is", "There are"],
+      "correctIndex": 0,
+      "explanation": "With the plural noun \"books\" we use \"there were\".",
+      "grammarPoint": "there_was_there_were",
+      "timeLimitSeconds": 22
+    },
+    {
+      "question": "What is the word for cleaning dirty plates and cups after a meal?",
+      "options": ["Making the bed", "Doing the laundry", "Washing the dishes", "Taking out the trash"],
+      "correctIndex": 2,
+      "explanation": "\"Washing the dishes\" means cleaning plates and cups after eating.",
+      "grammarPoint": "household_chores_vocabulary",
+      "timeLimitSeconds": 20
+    }
+  ]
+}

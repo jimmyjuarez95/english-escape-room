@@ -15,8 +15,8 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Escape Room de Inglés",
-  description: "Practica inglés en grupo, en tiempo real — hecho por Jimmy | IA con Claude",
+  title: "English Games",
+  description: "Practice English in a group, in real time — made by Jimmy | IA con Claude",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="es"
+      lang="en"
       className={`${baloo.variable} ${nunito.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground font-body">

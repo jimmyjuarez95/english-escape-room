@@ -1,0 +1,406 @@
+{
+  "level": "A1",
+  "title": "Basic Trivia",
+  "questions": [
+    {
+      "question": "Which animal barks?",
+      "options": ["Cat", "Bird", "Fish", "Dog"],
+      "correctIndex": 3,
+      "explanation": "A \"dog\" is the animal that barks.",
+      "grammarPoint": "basic_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Choose the correct sentence about her car:",
+      "options": ["She have a car.", "She having a car.", "She haves a car.", "She has a car."],
+      "correctIndex": 3,
+      "explanation": "With \"she\" (third person) we use \"has\", not \"have\".",
+      "grammarPoint": "verb_have",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "What time is it? 3:00",
+      "options": ["It's three o'clock.", "It's three hours.", "It's three clock.", "It's the three."],
+      "correctIndex": 0,
+      "explanation": "To say the time on the hour we use \"o'clock\": \"It's three o'clock\".",
+      "grammarPoint": "telling_time",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"___ you like coffee?\"",
+      "options": ["Are", "Is", "Do", "Does"],
+      "correctIndex": 2,
+      "explanation": "For questions with \"you\" in the present simple we use \"Do\": \"Do you like coffee?\".",
+      "grammarPoint": "present_simple_questions",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "What is the plural of \"child\"?",
+      "options": ["Childs", "Childes", "Children", "Child's"],
+      "correctIndex": 2,
+      "explanation": "\"Child\" has an irregular plural: \"children\".",
+      "grammarPoint": "irregular_plurals",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which word refers to the day before today?",
+      "options": ["Today", "Tomorrow", "Yesterday", "Now"],
+      "correctIndex": 2,
+      "explanation": "\"Yesterday\" refers to the day before today.",
+      "grammarPoint": "basic_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"I ___ to the gym every day.\"",
+      "options": ["go", "goes", "going", "went"],
+      "correctIndex": 0,
+      "explanation": "With \"I\" in the present simple we use the base form: \"I go\".",
+      "grammarPoint": "present_simple",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word means the same as \"large\"?",
+      "options": ["Small", "Big", "Short", "Thin"],
+      "correctIndex": 1,
+      "explanation": "\"Big\" means the same as \"large\".",
+      "grammarPoint": "basic_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"My mother ___ a teacher.\"",
+      "options": ["am", "is", "are", "be"],
+      "correctIndex": 1,
+      "explanation": "With \"my mother\" (she) the verb \"to be\" is \"is\".",
+      "grammarPoint": "verb_to_be",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which fruit is yellow and curved?",
+      "options": ["Apple", "Grape", "Orange", "Banana"],
+      "correctIndex": 3,
+      "explanation": "A \"banana\" is a yellow, curved fruit.",
+      "grammarPoint": "food_and_drink",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"There ___ a book on the desk.\"",
+      "options": ["is", "are", "am", "be"],
+      "correctIndex": 0,
+      "explanation": "With a singular subject (\"a book\") we use \"there is\".",
+      "grammarPoint": "there_is_there_are",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which word names a body part used for hearing?",
+      "options": ["Eye", "Nose", "Mouth", "Ear"],
+      "correctIndex": 3,
+      "explanation": "The \"ear\" is the body part used for hearing.",
+      "grammarPoint": "body_parts",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Choose the correct sentence about the keys:",
+      "options": ["This are my keys.", "These is my keys.", "These are my keys.", "This is my keys."],
+      "correctIndex": 2,
+      "explanation": "For plural nouns close to us we use \"these are\".",
+      "grammarPoint": "demonstratives",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which season comes after winter?",
+      "options": ["Summer", "Spring", "Autumn", "Fall"],
+      "correctIndex": 1,
+      "explanation": "\"Spring\" comes right after winter.",
+      "grammarPoint": "basic_vocabulary",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"They ___ from Canada.\"",
+      "options": ["is", "am", "are", "be"],
+      "correctIndex": 2,
+      "explanation": "With \"they\" the verb \"to be\" is \"are\".",
+      "grammarPoint": "verb_to_be",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which item of clothing covers your head?",
+      "options": ["Sock", "Belt", "Glove", "Hat"],
+      "correctIndex": 3,
+      "explanation": "A \"hat\" is worn to cover your head.",
+      "grammarPoint": "clothing",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Choose the correct question:",
+      "options": ["Where you live?", "Where do you live?", "Where you do live?", "Where does you live?"],
+      "correctIndex": 1,
+      "explanation": "Present simple questions with \"you\" need \"do\": \"Where do you live?\".",
+      "grammarPoint": "present_simple_questions",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which number comes after nine?",
+      "options": ["Eight", "Eleven", "Ten", "Seven"],
+      "correctIndex": 2,
+      "explanation": "\"Ten\" is the number that comes right after nine.",
+      "grammarPoint": "numbers",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which piece of furniture do people sleep on?",
+      "options": ["Chair", "Table", "Shelf", "Bed"],
+      "correctIndex": 3,
+      "explanation": "A \"bed\" is the piece of furniture people sleep on.",
+      "grammarPoint": "house_furniture",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"He can ___ very fast.\"",
+      "options": ["running", "runs", "run", "to run"],
+      "correctIndex": 2,
+      "explanation": "After \"can\" we always use the base form of the verb: \"can run\".",
+      "grammarPoint": "can_ability",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word describes hot, sunny weather?",
+      "options": ["Snowy", "Sunny", "Rainy", "Foggy"],
+      "correctIndex": 1,
+      "explanation": "\"Sunny\" describes hot weather with a lot of sun.",
+      "grammarPoint": "weather",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Choose the correct sentence about the book:",
+      "options": ["This is book on the table.", "This is a book on the table.", "This is an book on the table.", "This a book on the table."],
+      "correctIndex": 1,
+      "explanation": "\"Book\" starts with a consonant sound, so we use \"a book\".",
+      "grammarPoint": "articles",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which family member is your mother's mother?",
+      "options": ["Aunt", "Sister", "Grandmother", "Cousin"],
+      "correctIndex": 2,
+      "explanation": "Your mother's mother is your \"grandmother\".",
+      "grammarPoint": "family",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"The cat is ___ the box.\"",
+      "options": ["in", "on", "at", "under"],
+      "correctIndex": 0,
+      "explanation": "\"In\" describes something inside a container like a box.",
+      "grammarPoint": "prepositions_of_place",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which job involves flying an airplane?",
+      "options": ["Nurse", "Chef", "Farmer", "Pilot"],
+      "correctIndex": 3,
+      "explanation": "A \"pilot\" is the person who flies an airplane.",
+      "grammarPoint": "jobs",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Choose the correct sentence about the pen:",
+      "options": ["I don't have a pen.", "I not have a pen.", "I doesn't have a pen.", "I amn't have a pen."],
+      "correctIndex": 0,
+      "explanation": "With \"I\" the negative present simple uses \"don't\": \"I don't have\".",
+      "grammarPoint": "present_simple",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which color do you get by mixing blue and yellow?",
+      "options": ["Purple", "Orange", "Pink", "Green"],
+      "correctIndex": 3,
+      "explanation": "Mixing blue and yellow makes \"green\".",
+      "grammarPoint": "colors",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"Whose bag is this? It's ___ bag.\"",
+      "options": ["she", "her", "hers is", "she's"],
+      "correctIndex": 1,
+      "explanation": "\"Her\" is the possessive adjective used before a noun: \"her bag\".",
+      "grammarPoint": "possessives",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which vehicle travels on train tracks?",
+      "options": ["Bus", "Car", "Boat", "Train"],
+      "correctIndex": 3,
+      "explanation": "A \"train\" is the vehicle that travels on train tracks.",
+      "grammarPoint": "transportation",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which month comes right before December?",
+      "options": ["October", "November", "January", "September"],
+      "correctIndex": 1,
+      "explanation": "\"November\" comes right before December.",
+      "grammarPoint": "months",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"___ is your favorite color?\"",
+      "options": ["Who", "Where", "What", "When"],
+      "correctIndex": 2,
+      "explanation": "We use \"what\" to ask about things, like a favorite color.",
+      "grammarPoint": "question_words",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which school object do you use to write?",
+      "options": ["Pencil", "Chair", "Backpack", "Window"],
+      "correctIndex": 0,
+      "explanation": "A \"pencil\" is a school object used for writing.",
+      "grammarPoint": "school_objects",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Choose the correct sentence about the shelf:",
+      "options": ["The book are on the shelf.", "The books is on the shelf.", "The books are on the shelf.", "The book am on the shelf."],
+      "correctIndex": 2,
+      "explanation": "With the plural noun \"books\" the verb \"to be\" is \"are\".",
+      "grammarPoint": "verb_to_be",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which day comes right before Saturday?",
+      "options": ["Sunday", "Thursday", "Friday", "Monday"],
+      "correctIndex": 2,
+      "explanation": "\"Friday\" comes right before Saturday.",
+      "grammarPoint": "days_of_the_week",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"The keys are ___ the table, next to the lamp.\"",
+      "options": ["on", "in", "under", "at"],
+      "correctIndex": 0,
+      "explanation": "\"On\" describes something resting on top of a surface like a table.",
+      "grammarPoint": "prepositions_of_place",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which drink is usually made from coffee beans?",
+      "options": ["Tea", "Juice", "Milk", "Coffee"],
+      "correctIndex": 3,
+      "explanation": "\"Coffee\" is the drink made from coffee beans.",
+      "grammarPoint": "food_and_drink",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"___ are those people?\" \"They are my cousins.\"",
+      "options": ["What", "Who", "Where", "How"],
+      "correctIndex": 1,
+      "explanation": "We use \"who\" to ask about people.",
+      "grammarPoint": "question_words",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which body part do you use to walk?",
+      "options": ["Hands", "Feet", "Arms", "Ears"],
+      "correctIndex": 1,
+      "explanation": "You use your \"feet\" to walk.",
+      "grammarPoint": "body_parts",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Choose the correct question about tea:",
+      "options": ["Does she likes tea?", "Does she like tea?", "Do she like tea?", "Is she like tea?"],
+      "correctIndex": 1,
+      "explanation": "In present simple questions with \"she\", we use \"does\" plus the base verb: \"does she like\".",
+      "grammarPoint": "present_simple_questions",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which weather word describes a lot of white snow falling?",
+      "options": ["Windy", "Cloudy", "Sunny", "Snowy"],
+      "correctIndex": 3,
+      "explanation": "\"Snowy\" describes weather with a lot of snow falling.",
+      "grammarPoint": "weather",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"He is ___ engineer.\"",
+      "options": ["a", "the", "an", "-"],
+      "correctIndex": 2,
+      "explanation": "\"Engineer\" starts with a vowel sound, so we use \"an\".",
+      "grammarPoint": "articles",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which family member is your father's brother?",
+      "options": ["Uncle", "Nephew", "Grandfather", "Cousin"],
+      "correctIndex": 0,
+      "explanation": "Your father's brother is your \"uncle\".",
+      "grammarPoint": "family",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "What time is it? 7:30",
+      "options": ["It's seven thirty.", "It's thirty seven.", "It's half seven.", "It's seven half."],
+      "correctIndex": 0,
+      "explanation": "We can say the hour and minutes together: \"seven thirty\".",
+      "grammarPoint": "telling_time",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which number is one more than twelve?",
+      "options": ["Eleven", "Fourteen", "Twelve", "Thirteen"],
+      "correctIndex": 3,
+      "explanation": "\"Thirteen\" is one more than twelve.",
+      "grammarPoint": "numbers",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"I ___ swim, but I can't play the piano.\"",
+      "options": ["am", "can", "do", "is"],
+      "correctIndex": 1,
+      "explanation": "\"Can\" is used to talk about ability: \"I can swim\".",
+      "grammarPoint": "can_ability",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which piece of furniture do you sit on at a desk?",
+      "options": ["Chair", "Bed", "Shelf", "Mirror"],
+      "correctIndex": 0,
+      "explanation": "A \"chair\" is the piece of furniture you sit on.",
+      "grammarPoint": "house_furniture",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Choose the correct sentence about the apples:",
+      "options": ["There is many apples in the basket.", "There be many apples in the basket.", "There am many apples in the basket.", "There are many apples in the basket."],
+      "correctIndex": 3,
+      "explanation": "With the plural noun \"apples\" we use \"there are\".",
+      "grammarPoint": "there_is_there_are",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which job takes care of sick people in a hospital?",
+      "options": ["Nurse", "Farmer", "Actor", "Waiter"],
+      "correctIndex": 0,
+      "explanation": "A \"nurse\" takes care of sick people in a hospital.",
+      "grammarPoint": "jobs",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Complete: \"___ do you go to school?\" \"By bus.\"",
+      "options": ["What", "How", "Who", "When"],
+      "correctIndex": 1,
+      "explanation": "We use \"how\" to ask about the way something is done, like traveling by bus.",
+      "grammarPoint": "question_words",
+      "timeLimitSeconds": 20
+    },
+    {
+      "question": "Which item of clothing do you wear when it is cold, on your hands?",
+      "options": ["Gloves", "Sandals", "Shorts", "Sunglasses"],
+      "correctIndex": 0,
+      "explanation": "\"Gloves\" are worn on your hands to keep warm.",
+      "grammarPoint": "clothing",
+      "timeLimitSeconds": 20
+    }
+  ]
+}

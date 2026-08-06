@@ -16,13 +16,13 @@ function describeChallenge(prompt: ChallengePrompt): string {
     case 'fill_blank':
       return prompt.text;
     case 'sentence_correction':
-      return `Corrige: "${prompt.incorrectSentence}"`;
+      return `Correct: "${prompt.incorrectSentence}"`;
     case 'vocab_trivia':
       return prompt.question;
     case 'listening':
       return prompt.question;
     case 'speaking':
-      return `Di en voz alta: "${prompt.targetSentence}"`;
+      return `Say out loud: "${prompt.targetSentence}"`;
   }
 }
 
@@ -40,13 +40,13 @@ function SessionPanel({
   return (
     <div className="flex flex-1 flex-col gap-4 rounded-3xl bg-surface border border-border p-8">
       {showTeamLabel && (
-        <h2 className="font-display text-xl font-extrabold text-brand">Equipo {session.team}</h2>
+        <h2 className="font-display text-xl font-extrabold text-brand">Team {session.team}</h2>
       )}
       <p className="text-sm text-muted">{players.map((p) => p.name).join(', ') || '—'}</p>
 
       {session.finished_at ? (
         <p className="font-display text-2xl font-bold text-success">
-          ¡Terminaron el escape room! 🎉
+          You finished the escape room! 🎉
         </p>
       ) : challenge ? (
         <div className="flex flex-1 flex-col items-center justify-center gap-6 text-center">
@@ -56,7 +56,7 @@ function SessionPanel({
           </p>
         </div>
       ) : (
-        <p className="text-muted">Cargando reto...</p>
+        <p className="text-muted">Loading challenge...</p>
       )}
     </div>
   );

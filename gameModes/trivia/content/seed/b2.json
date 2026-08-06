@@ -1,0 +1,406 @@
+{
+  "level": "B2",
+  "title": "The B2 Knowledge Challenge",
+  "questions": [
+    {
+      "question": "Complete: If I ___ more free time, I would take up painting.",
+      "options": ["had", "have", "having", "has"],
+      "correctIndex": 0,
+      "explanation": "Second conditional uses \"if + past simple\" (\"had\") to describe a hypothetical present situation.",
+      "grammarPoint": "second_conditional",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word describes money a company earns from selling goods or services?",
+      "options": ["Revenue", "Liability", "Depreciation", "Overhead"],
+      "correctIndex": 0,
+      "explanation": "\"Revenue\" is the total income generated from normal business operations.",
+      "grammarPoint": "business_economics_vocabulary",
+      "timeLimitSeconds": 27
+    },
+    {
+      "question": "Choose the sentence that correctly uses the second conditional:",
+      "options": ["If she was rich, she would travel constantly.", "If she were rich, she would travel constantly.", "If she is rich, she would travel constantly.", "If she will be rich, she would travel constantly."],
+      "correctIndex": 1,
+      "explanation": "In formal second conditional sentences, \"were\" is preferred over \"was\" for all subjects, including \"she\".",
+      "grammarPoint": "second_conditional",
+      "timeLimitSeconds": 29
+    },
+    {
+      "question": "Which word describes the buying and combining of two companies into one?",
+      "options": ["Layoff", "Merger", "Recession", "Tariff"],
+      "correctIndex": 1,
+      "explanation": "A \"merger\" is when two companies combine to form a single new company.",
+      "grammarPoint": "business_economics_vocabulary",
+      "timeLimitSeconds": 26
+    },
+    {
+      "question": "Complete: If we ___ earlier, we wouldn't have missed the flight.",
+      "options": ["left", "would leave", "had left", "have left"],
+      "correctIndex": 2,
+      "explanation": "The if-clause of a third conditional requires the past perfect: \"had left\".",
+      "grammarPoint": "third_conditional",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word describes a tax placed on goods imported from another country?",
+      "options": ["Dividend", "Subsidy", "Tariff", "Audit"],
+      "correctIndex": 2,
+      "explanation": "A \"tariff\" is a tax imposed on imported goods.",
+      "grammarPoint": "business_economics_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Choose the sentence that correctly uses the third conditional:",
+      "options": ["If he had studied harder, he would pass the exam.", "If he studied harder, he would have passed the exam.", "If he has studied harder, he would have passed the exam.", "If he had studied harder, he would have passed the exam."],
+      "correctIndex": 3,
+      "explanation": "A complete third conditional needs \"had + past participle\" in the if-clause and \"would have + past participle\" in the main clause.",
+      "grammarPoint": "third_conditional",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word describes a short, catchy title above a news article?",
+      "options": ["Footnote", "Caption", "Byline", "Headline"],
+      "correctIndex": 3,
+      "explanation": "A \"headline\" is the title of a news article, usually printed in large text.",
+      "grammarPoint": "media_journalism_vocabulary",
+      "timeLimitSeconds": 27
+    },
+    {
+      "question": "Complete: When I arrived at the station, the train ___ already.",
+      "options": ["had left", "left", "has left", "was leaving"],
+      "correctIndex": 0,
+      "explanation": "Past perfect (\"had left\") shows the train's departure happened before another past action (my arrival).",
+      "grammarPoint": "past_perfect_simple",
+      "timeLimitSeconds": 29
+    },
+    {
+      "question": "Which word describes a journalist's personal opinion piece in a newspaper?",
+      "options": ["Editorial", "Bulletin", "Transcript", "Archive"],
+      "correctIndex": 0,
+      "explanation": "An \"editorial\" is an article expressing the opinion of the writer or publication.",
+      "grammarPoint": "media_journalism_vocabulary",
+      "timeLimitSeconds": 26
+    },
+    {
+      "question": "Choose the sentence that correctly uses the past perfect:",
+      "options": ["She has never seen such a beautiful sunset before that trip.", "She had never seen such a beautiful sunset before that trip.", "She never had seen such a beautiful sunset before that trip.", "She having never seen such a beautiful sunset before that trip."],
+      "correctIndex": 1,
+      "explanation": "Past perfect (\"had never seen\") correctly places the experience before a specific past moment (that trip).",
+      "grammarPoint": "past_perfect_simple",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word describes information deliberately spread to deceive the public?",
+      "options": ["Documentation", "Disinformation", "Circulation", "Publication"],
+      "correctIndex": 1,
+      "explanation": "\"Disinformation\" is false information spread on purpose to mislead people.",
+      "grammarPoint": "media_journalism_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Complete: They were soaked because they ___ in the rain for an hour.",
+      "options": ["walked", "had walked", "had been walking", "have walked"],
+      "correctIndex": 2,
+      "explanation": "Past perfect continuous (\"had been walking\") emphasizes the ongoing action leading up to another past moment.",
+      "grammarPoint": "past_perfect_continuous",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word describes the set of subjects taught in a course of study?",
+      "options": ["Faculty", "Tuition", "Curriculum", "Scholarship"],
+      "correctIndex": 2,
+      "explanation": "The \"curriculum\" is the content and subjects covered in an educational program.",
+      "grammarPoint": "education_vocabulary",
+      "timeLimitSeconds": 27
+    },
+    {
+      "question": "Choose the sentence that correctly uses the past perfect continuous:",
+      "options": ["He had felt unwell for days before he finally saw a doctor being.", "He has been feeling unwell for days before he finally saw a doctor.", "He had being feeling unwell for days before he finally saw a doctor.", "He had been feeling unwell for days before he finally saw a doctor."],
+      "correctIndex": 3,
+      "explanation": "Past perfect continuous (\"had been feeling\") correctly describes a condition continuing up to a past point.",
+      "grammarPoint": "past_perfect_continuous",
+      "timeLimitSeconds": 29
+    },
+    {
+      "question": "Which word describes money awarded to a student to help pay for their studies?",
+      "options": ["Mortgage", "Pension", "Premium", "Scholarship"],
+      "correctIndex": 3,
+      "explanation": "A \"scholarship\" is financial aid given to a student, often based on merit or need.",
+      "grammarPoint": "education_vocabulary",
+      "timeLimitSeconds": 26
+    },
+    {
+      "question": "Complete: The final decision ___ by the committee next Friday.",
+      "options": ["will be announced", "will announce", "is announcing", "announces"],
+      "correctIndex": 0,
+      "explanation": "Future passive is formed with \"will be + past participle\": \"will be announced\".",
+      "grammarPoint": "passive_voice",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word describes formally registering as a student at a school?",
+      "options": ["Enrollment", "Detention", "Graduation", "Suspension"],
+      "correctIndex": 0,
+      "explanation": "\"Enrollment\" refers to the process of registering to become a student.",
+      "grammarPoint": "education_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Choose the sentence that correctly uses the passive voice:",
+      "options": ["The results have been publish online.", "The results have been published online.", "The results has been published online.", "The results have being published online."],
+      "correctIndex": 1,
+      "explanation": "Present perfect passive requires \"have/has been + past participle\": \"have been published\".",
+      "grammarPoint": "passive_voice",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word describes the ability to understand and share someone else's feelings?",
+      "options": ["Apathy", "Empathy", "Arrogance", "Denial"],
+      "correctIndex": 1,
+      "explanation": "\"Empathy\" is the capacity to understand and share another person's emotions.",
+      "grammarPoint": "psychology_vocabulary",
+      "timeLimitSeconds": 27
+    },
+    {
+      "question": "Complete: He asked me ___ the museum was open on Mondays.",
+      "options": ["that", "what", "if", "so"],
+      "correctIndex": 2,
+      "explanation": "Reported yes/no questions use \"if\" or \"whether\", not \"that\".",
+      "grammarPoint": "reported_speech_questions",
+      "timeLimitSeconds": 29
+    },
+    {
+      "question": "Which word describes a persistent feeling of worry or unease?",
+      "options": ["Euphoria", "Confidence", "Anxiety", "Curiosity"],
+      "correctIndex": 2,
+      "explanation": "\"Anxiety\" refers to a state of ongoing worry, nervousness, or unease.",
+      "grammarPoint": "psychology_vocabulary",
+      "timeLimitSeconds": 26
+    },
+    {
+      "question": "Choose the correct reported question:",
+      "options": ["She asked where did I live.", "She asked where I did live.", "She asked where lived I.", "She asked where I lived."],
+      "correctIndex": 3,
+      "explanation": "Reported questions use normal statement word order (\"where I lived\"), not question word order.",
+      "grammarPoint": "reported_speech_questions",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word describes refusing to accept an unpleasant truth?",
+      "options": ["Empathy", "Motivation", "Perception", "Denial"],
+      "correctIndex": 3,
+      "explanation": "\"Denial\" is a psychological defense mechanism involving the refusal to accept reality.",
+      "grammarPoint": "psychology_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Complete: The manager told the staff ___ late again.",
+      "options": ["not to arrive", "to not arrive", "don't arrive", "not arrive"],
+      "correctIndex": 0,
+      "explanation": "Negative reported commands are formed with \"not to + infinitive\": \"not to arrive\".",
+      "grammarPoint": "reported_speech_commands",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word describes a formal accusation that someone committed a crime?",
+      "options": ["Allegation", "Acquittal", "Verdict", "Testimony"],
+      "correctIndex": 0,
+      "explanation": "An \"allegation\" is a claim that someone has done something wrong, not yet proven.",
+      "grammarPoint": "law_vocabulary",
+      "timeLimitSeconds": 27
+    },
+    {
+      "question": "Choose the correctly reported command:",
+      "options": ["The teacher told the students hand in their essays by Friday.", "The teacher told the students to hand in their essays by Friday.", "The teacher told to the students to hand in their essays by Friday.", "The teacher said the students to hand in their essays by Friday."],
+      "correctIndex": 1,
+      "explanation": "Reported commands follow \"tell + someone + to + infinitive\", with no preposition before the object.",
+      "grammarPoint": "reported_speech_commands",
+      "timeLimitSeconds": 29
+    },
+    {
+      "question": "Which word describes a jury's official decision in a trial?",
+      "options": ["Contract", "Verdict", "Statute", "Appeal"],
+      "correctIndex": 1,
+      "explanation": "A \"verdict\" is the formal decision made by a jury or judge in a legal case.",
+      "grammarPoint": "law_vocabulary",
+      "timeLimitSeconds": 26
+    },
+    {
+      "question": "Complete: The ground is wet, so it ___ during the night.",
+      "options": ["must rain", "must rained", "must have rained", "must be raining"],
+      "correctIndex": 2,
+      "explanation": "\"Must have + past participle\" expresses a confident deduction about the past.",
+      "grammarPoint": "modals_of_speculation_past",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word describes a court's decision that someone is not guilty?",
+      "options": ["Conviction", "Indictment", "Acquittal", "Subpoena"],
+      "correctIndex": 2,
+      "explanation": "An \"acquittal\" is a legal decision that clears a defendant of the charges against them.",
+      "grammarPoint": "law_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Choose the sentence that correctly speculates about the past:",
+      "options": ["She can't have forgot the appointment; she's very organized.", "She couldn't have forget the appointment; she's very organized.", "She mustn't have forgotten the appointment; she's very organized.", "She can't have forgotten the appointment; she's very organized."],
+      "correctIndex": 3,
+      "explanation": "\"Can't have + past participle\" expresses near-certainty that something did NOT happen; \"forgotten\" is the correct past participle.",
+      "grammarPoint": "modals_of_speculation_past",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word best describes a person's sense of who they are?",
+      "options": ["Currency", "Diversity", "Liability", "Identity"],
+      "correctIndex": 3,
+      "explanation": "\"Identity\" refers to the characteristics that define who a person is.",
+      "grammarPoint": "abstract_concepts_vocabulary",
+      "timeLimitSeconds": 27
+    },
+    {
+      "question": "Complete: The building ___ we held the conference has been renovated.",
+      "options": ["where", "which", "who", "whose"],
+      "correctIndex": 0,
+      "explanation": "\"Where\" introduces a relative clause referring to a place.",
+      "grammarPoint": "relative_clauses_advanced",
+      "timeLimitSeconds": 29
+    },
+    {
+      "question": "Which word describes the state of being fair and morally right?",
+      "options": ["Justice", "Deficit", "Inflation", "Statistic"],
+      "correctIndex": 0,
+      "explanation": "\"Justice\" refers to fairness and moral rightness, especially in how people are treated.",
+      "grammarPoint": "abstract_concepts_vocabulary",
+      "timeLimitSeconds": 26
+    },
+    {
+      "question": "Choose the sentence with the correct relative pronoun:",
+      "options": ["The author who's book won the award will speak tonight.", "The author whose book won the award will speak tonight.", "The author which book won the award will speak tonight.", "The author who book won the award will speak tonight."],
+      "correctIndex": 1,
+      "explanation": "\"Whose\" shows possession, referring to the author's book.",
+      "grammarPoint": "relative_clauses_advanced",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word describes the state of not being controlled or restricted by others?",
+      "options": ["Deficit", "Freedom", "Density", "Velocity"],
+      "correctIndex": 1,
+      "explanation": "\"Freedom\" is the state of being able to act and think without external control.",
+      "grammarPoint": "abstract_concepts_vocabulary",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Complete: The negotiations broke ___ after both sides failed to compromise.",
+      "options": ["up", "off", "down", "out"],
+      "correctIndex": 2,
+      "explanation": "\"Break down\" (of negotiations or talks) means to fail or stop working.",
+      "grammarPoint": "phrasal_verbs_advanced",
+      "timeLimitSeconds": 27
+    },
+    {
+      "question": "Which word describes a scientist's proposed explanation that has not yet been proven?",
+      "options": ["Formula", "Molecule", "Hypothesis", "Habitat"],
+      "correctIndex": 2,
+      "explanation": "A \"hypothesis\" is a tentative explanation tested through experiments.",
+      "grammarPoint": "science_vocabulary",
+      "timeLimitSeconds": 29
+    },
+    {
+      "question": "Which phrasal verb means \"to invent an excuse or story\"?",
+      "options": ["Make out", "Make for", "Make off", "Make up"],
+      "correctIndex": 3,
+      "explanation": "\"Make up\" can mean to invent something, such as a story or excuse.",
+      "grammarPoint": "phrasal_verbs_advanced",
+      "timeLimitSeconds": 26
+    },
+    {
+      "question": "Which word describes the smallest unit of a chemical element?",
+      "options": ["Organ", "Tissue", "Cell", "Atom"],
+      "correctIndex": 3,
+      "explanation": "An \"atom\" is the smallest unit of matter that retains the properties of an element.",
+      "grammarPoint": "science_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Complete: My grandmother ___ tell us stories by the fire every winter.",
+      "options": ["would", "was", "is", "used"],
+      "correctIndex": 0,
+      "explanation": "\"Would\" describes a repeated action in the past, similar to \"used to\".",
+      "grammarPoint": "used_to_would_habits",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which word describes a controlled procedure used to test a hypothesis?",
+      "options": ["Experiment", "Diagnosis", "Simulation", "Inspection"],
+      "correctIndex": 0,
+      "explanation": "An \"experiment\" is a controlled test used to support or refute a hypothesis.",
+      "grammarPoint": "science_vocabulary",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which sentence correctly describes a past state (not an action)?",
+      "options": ["I would live in a small village as a child.", "I used to live in a small village as a child.", "I would used to live in a small village as a child.", "I use to live in a small village as a child."],
+      "correctIndex": 1,
+      "explanation": "\"Used to\" (not \"would\") is required for describing past states, such as where someone lived.",
+      "grammarPoint": "used_to_would_habits",
+      "timeLimitSeconds": 27
+    },
+    {
+      "question": "Which word describes a strong feeling of annoyance mixed with impatience?",
+      "options": ["Nostalgia", "Frustration", "Relief", "Gratitude"],
+      "correctIndex": 1,
+      "explanation": "\"Frustration\" is the feeling of being upset because of an inability to change a situation.",
+      "grammarPoint": "emotions_vocabulary",
+      "timeLimitSeconds": 29
+    },
+    {
+      "question": "Complete: ___ people showed any interest in the proposal, so it was cancelled.",
+      "options": ["A few", "Much", "Few", "A little"],
+      "correctIndex": 2,
+      "explanation": "\"Few\" (without \"a\") has a negative meaning, implying an insufficient number.",
+      "grammarPoint": "quantifiers",
+      "timeLimitSeconds": 26
+    },
+    {
+      "question": "Which word describes a bittersweet longing for the past?",
+      "options": ["Frustration", "Indifference", "Nostalgia", "Resentment"],
+      "correctIndex": 2,
+      "explanation": "\"Nostalgia\" is a sentimental longing for a time or place from one's past.",
+      "grammarPoint": "emotions_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Choose the sentence with the correct quantifier:",
+      "options": ["A number of employees has requested remote work.", "A number of employee have requested remote work.", "The number of employees have requested remote work.", "A number of employees have requested remote work."],
+      "correctIndex": 3,
+      "explanation": "\"A number of + plural noun\" takes a plural verb: \"have requested\".",
+      "grammarPoint": "quantifiers",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word describes unfair treatment of people based on race, gender, or other traits?",
+      "options": ["Cooperation", "Migration", "Negotiation", "Discrimination"],
+      "correctIndex": 3,
+      "explanation": "\"Discrimination\" is the unjust treatment of people based on characteristics like race or gender.",
+      "grammarPoint": "social_issues_vocabulary",
+      "timeLimitSeconds": 27
+    },
+    {
+      "question": "Choose the correct cleft sentence:",
+      "options": ["It was the intern who spotted the error in the report.", "It was the intern spotted the error in the report.", "Was the intern who spotted the error in the report.", "It the intern who spotted the error in the report."],
+      "correctIndex": 0,
+      "explanation": "A cleft sentence follows the pattern \"It + was + noun + who/that + clause\" to add emphasis.",
+      "grammarPoint": "cleft_sentences",
+      "timeLimitSeconds": 29
+    },
+    {
+      "question": "Which word describes the movement of people from one country to settle in another?",
+      "options": ["Immigration", "Inflation", "Insulation", "Innovation"],
+      "correctIndex": 0,
+      "explanation": "\"Immigration\" refers to people moving to live permanently in a foreign country.",
+      "grammarPoint": "social_issues_vocabulary",
+      "timeLimitSeconds": 26
+    }
+  ]
+}

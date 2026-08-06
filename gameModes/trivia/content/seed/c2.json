@@ -1,0 +1,406 @@
+{
+  "level": "C2",
+  "title": "Advanced English Mastery Quiz",
+  "questions": [
+    {
+      "question": "Which term describes a self-contradictory phrase, like \"deafening silence\"?",
+      "options": ["Oxymoron", "Euphemism", "Hyperbole", "Innuendo"],
+      "correctIndex": 0,
+      "explanation": "An \"oxymoron\" combines seemingly contradictory terms.",
+      "grammarPoint": "rhetoric_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses inversion after a negative adverbial?",
+      "options": ["Never I have encountered such incompetence.", "Never have I encountered such incompetence.", "I never have encountered such incompetence.", "Never had encountered I such incompetence."],
+      "correctIndex": 1,
+      "explanation": "Negative adverbials like \"never\" at the start of a clause require inversion: \"Never have I encountered...\".",
+      "grammarPoint": "inversion",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly forms an inverted conditional?",
+      "options": ["Was she to accept the offer, she would relocate abroad.", "She were to accept the offer, would relocate abroad.", "Were she to accept the offer, she would relocate abroad.", "If she were to accept the offer, would she relocate abroad."],
+      "correctIndex": 2,
+      "explanation": "The inverted conditional \"Were she to accept\" replaces \"If she were to accept\" in formal register.",
+      "grammarPoint": "conditional_inversion",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence is a correctly formed it-cleft sentence emphasizing a cause?",
+      "options": ["It was her determination which ultimately win the case.", "Her determination it was that ultimately won the case.", "It was her determination ultimately won the case.", "It was her determination that ultimately won the case."],
+      "correctIndex": 3,
+      "explanation": "An it-cleft sentence follows the pattern \"It was + focus + that + clause\": \"It was her determination that won...\".",
+      "grammarPoint": "cleft_sentences",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which sentence correctly uses ellipsis?",
+      "options": ["He wanted to leave early, but she didn't.", "He wanted to leave early, but she didn't want.", "He wanted to leave early, but she didn't to.", "He wanted to leave early, but she not."],
+      "correctIndex": 0,
+      "explanation": "Ellipsis allows the verb phrase \"want to leave early\" to be omitted after \"didn't\", since it is understood.",
+      "grammarPoint": "ellipsis",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses the mandative subjunctive after a verb of command?",
+      "options": ["The court ordered that the documents are released immediately.", "The court ordered that the documents be released immediately.", "The court ordered that the documents were released immediately.", "The court ordered that the documents will be released immediately."],
+      "correctIndex": 1,
+      "explanation": "After verbs like \"order that\", the mandative subjunctive requires the base form \"be\".",
+      "grammarPoint": "mandative_subjunctive",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "In the sentence \"Passengers must fasten their seatbelts before takeoff,\" what does \"must\" express?",
+      "options": ["A logical deduction", "A polite suggestion", "An obligation imposed by a rule", "An impossibility"],
+      "correctIndex": 2,
+      "explanation": "Here \"must\" expresses deontic modality — an obligation required by a regulation.",
+      "grammarPoint": "deontic_modality",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "In the sentence \"He must be exhausted after that flight,\" what does \"must\" express?",
+      "options": ["An obligation to feel tired", "Permission to rest", "A polite request", "A confident deduction based on evidence"],
+      "correctIndex": 3,
+      "explanation": "Here \"must\" expresses epistemic modality — a logical conclusion drawn from available evidence.",
+      "grammarPoint": "epistemic_modality",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which word best completes: \"The plan was risky; ___, the team decided to proceed.\"",
+      "options": ["nonetheless", "therefore", "because", "although"],
+      "correctIndex": 0,
+      "explanation": "\"Nonetheless\" introduces a contrast, showing the decision was made despite the risk.",
+      "grammarPoint": "discourse_markers",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which is the correct nominalized form of \"to persist\"?",
+      "options": ["Persist", "Persistence", "Persisting", "Persistive"],
+      "correctIndex": 1,
+      "explanation": "\"Persistence\" is the standard noun form of the verb \"persist\".",
+      "grammarPoint": "nominalization",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses a subordinating conjunction?",
+      "options": ["Although the results were disappointing, but the team remained optimistic.", "The results were disappointing, although the team remained optimistic, but.", "Although the results were disappointing, the team remained optimistic.", "Despite the results were disappointing, the team remained optimistic."],
+      "correctIndex": 2,
+      "explanation": "\"Although\" alone introduces the subordinate clause; it should not be paired with \"but\", and \"despite\" cannot be followed by a full clause.",
+      "grammarPoint": "complex_subordination",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which sentence uses the most formal register?",
+      "options": ["Sorry, but you didn't get the job.", "Bad news, your application got rejected.", "Your application didn't make it, sorry about that.", "We regret to inform you that your application has been unsuccessful."],
+      "correctIndex": 3,
+      "explanation": "\"We regret to inform you\" is a formal, conventional phrase used in official correspondence.",
+      "grammarPoint": "formal_register",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term refers to the theory of knowledge, concerned with its nature and limits?",
+      "options": ["Epistemology", "Ontology", "Aesthetics", "Ethics"],
+      "correctIndex": 0,
+      "explanation": "\"Epistemology\" is the branch of philosophy studying the nature and scope of knowledge.",
+      "grammarPoint": "philosophy_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes a court order prohibiting a party from performing a specific act?",
+      "options": ["Indictment", "Injunction", "Deposition", "Subpoena"],
+      "correctIndex": 1,
+      "explanation": "An \"injunction\" is a judicial order restraining a party from a particular action.",
+      "grammarPoint": "legal_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes the practice of profiting from price differences of the same asset in different markets?",
+      "options": ["Inflation", "Austerity", "Arbitrage", "Subsidy"],
+      "correctIndex": 2,
+      "explanation": "\"Arbitrage\" involves exploiting price discrepancies of an asset across different markets for profit.",
+      "grammarPoint": "economics_vocabulary",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which term describes a recurring symbolic element that reinforces a work's central theme?",
+      "options": ["Denouement", "Verisimilitude", "Foreshadowing", "Motif"],
+      "correctIndex": 3,
+      "explanation": "A \"motif\" is a recurring element that helps develop a literary work's central theme.",
+      "grammarPoint": "literary_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word describes a state of having mixed or contradictory feelings about something?",
+      "options": ["Ambivalence", "Euphoria", "Apathy", "Indignation"],
+      "correctIndex": 0,
+      "explanation": "\"Ambivalence\" refers to holding simultaneously conflicting feelings or attitudes.",
+      "grammarPoint": "nuanced_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes a substance that speeds up a chemical reaction without itself being consumed?",
+      "options": ["Entropy", "Catalyst", "Symbiosis", "Homeostasis"],
+      "correctIndex": 1,
+      "explanation": "A \"catalyst\" accelerates a reaction while remaining chemically unchanged itself.",
+      "grammarPoint": "abstract_science_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses inversion with \"Rarely\"?",
+      "options": ["Rarely one does witness such generosity.", "Rarely witnesses one such generosity.", "Rarely does one witness such generosity.", "One rarely does witness such generosity."],
+      "correctIndex": 2,
+      "explanation": "\"Rarely\" at the front of a clause triggers inversion of subject and auxiliary: \"Rarely does one witness...\".",
+      "grammarPoint": "inversion",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which rhetorical device involves asking a question not to receive an answer, but to make a point?",
+      "options": ["An oxymoron", "A euphemism", "An analogy", "A rhetorical question"],
+      "correctIndex": 3,
+      "explanation": "A \"rhetorical question\" is posed for effect, not to elicit an actual answer.",
+      "grammarPoint": "rhetoric_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes the philosophical position that human actions are entirely determined by prior causes?",
+      "options": ["Determinism", "Nihilism", "Solipsism", "Empiricism"],
+      "correctIndex": 0,
+      "explanation": "\"Determinism\" holds that every event, including human action, is the inevitable result of preceding causes.",
+      "grammarPoint": "philosophy_vocabulary",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which word best completes: \"___ the initial setbacks, the project was completed ahead of schedule.\"",
+      "options": ["Therefore", "Notwithstanding", "Meanwhile", "Provided"],
+      "correctIndex": 1,
+      "explanation": "\"Notwithstanding\" means \"despite\" and is often placed before a noun phrase like \"the initial setbacks\".",
+      "grammarPoint": "discourse_markers",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes being legally responsible for an action or its consequences?",
+      "options": ["Indemnified", "Acquitted", "Liable", "Exempt"],
+      "correctIndex": 2,
+      "explanation": "\"Liable\" means legally responsible for something, especially in the context of damages.",
+      "grammarPoint": "legal_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes a sustained increase in the general price level of goods and services?",
+      "options": ["Deflation", "Arbitrage", "Austerity", "Inflation"],
+      "correctIndex": 3,
+      "explanation": "\"Inflation\" refers to a general, sustained rise in prices over time.",
+      "grammarPoint": "economics_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term refers to the final resolution of the plot in a narrative work?",
+      "options": ["Denouement", "Motif", "Verisimilitude", "Prologue"],
+      "correctIndex": 0,
+      "explanation": "The \"denouement\" is the concluding section where the plot's remaining tensions are resolved.",
+      "grammarPoint": "literary_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word describes deriving pleasure from another person's misfortune?",
+      "options": ["Empathy", "Schadenfreude", "Altruism", "Compassion"],
+      "correctIndex": 1,
+      "explanation": "\"Schadenfreude\" describes pleasure derived from someone else's misfortune.",
+      "grammarPoint": "nuanced_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes a system's tendency to maintain stable internal conditions despite external changes?",
+      "options": ["Entropy", "Catalyst", "Homeostasis", "Equilibrium"],
+      "correctIndex": 2,
+      "explanation": "\"Homeostasis\" refers to an organism's or system's ability to maintain stable internal conditions.",
+      "grammarPoint": "abstract_science_vocabulary",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which sentence correctly uses the mandative subjunctive after an impersonal expression?",
+      "options": ["It is essential that she arrives on time.", "It is essential that she arriving on time.", "It is essential that she will arrive on time.", "It is essential that she arrive on time."],
+      "correctIndex": 3,
+      "explanation": "After \"it is essential that\", the mandative subjunctive uses the base form \"arrive\".",
+      "grammarPoint": "mandative_subjunctive",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence is a correctly formed wh-cleft sentence?",
+      "options": ["What surprised everyone was his sudden resignation.", "What surprised everyone it was his sudden resignation.", "What surprised everyone was that his sudden resignation.", "His sudden resignation what surprised everyone."],
+      "correctIndex": 0,
+      "explanation": "A wh-cleft follows \"What + clause + be + focus\": \"What surprised everyone was his sudden resignation.\"",
+      "grammarPoint": "cleft_sentences",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses an inverted conditional with \"had\"?",
+      "options": ["Had they know the risks, they would never have invested.", "Had they known the risks, they would never have invested.", "They had known the risks, would never have invested.", "If had they known the risks, they would never have invested."],
+      "correctIndex": 1,
+      "explanation": "\"Had they known\" is an inverted past conditional equivalent to \"If they had known\".",
+      "grammarPoint": "conditional_inversion",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses ellipsis to avoid repetition?",
+      "options": ["Tom finished his homework before Sarah did it finished.", "Tom finished his homework before Sarah did finished.", "Tom finished his homework before Sarah did.", "Tom finished his homework before Sarah finished did."],
+      "correctIndex": 2,
+      "explanation": "\"Before Sarah did\" omits the repeated verb phrase \"finished her homework\", which ellipsis allows.",
+      "grammarPoint": "ellipsis",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses inversion after \"So + adjective\"?",
+      "options": ["So exhausted she was that she fell asleep at her desk.", "She was so exhausted that fell asleep at her desk.", "So was exhausted she that she fell asleep at her desk.", "So exhausted was she that she fell asleep at her desk."],
+      "correctIndex": 3,
+      "explanation": "When \"so + adjective\" begins a clause for emphasis, subject and verb invert: \"So exhausted was she...\".",
+      "grammarPoint": "inversion",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which sentence expresses deontic modality (obligation)?",
+      "options": ["Employees must complete the training by Friday.", "She must be the new manager, given how she carries herself.", "It must be raining outside; everyone has umbrellas.", "He must have forgotten about the meeting."],
+      "correctIndex": 0,
+      "explanation": "Only the first sentence expresses an obligation; the others express epistemic deductions.",
+      "grammarPoint": "deontic_modality",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence expresses epistemic modality (a deduction)?",
+      "options": ["You can't leave the building without a pass.", "That can't be true; I spoke to him myself yesterday.", "Students can't use their phones during the exam.", "Visitors can't park in the reserved spaces."],
+      "correctIndex": 1,
+      "explanation": "Only the second sentence uses \"can't\" to express a confident deduction; the rest express prohibition.",
+      "grammarPoint": "epistemic_modality",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which sentence best reflects formal written register?",
+      "options": ["Thanks a ton for all your help, guys.", "Big thanks for sticking with us.", "It could be argued that the data support an alternative interpretation.", "You guys are the best, thanks!"],
+      "correctIndex": 2,
+      "explanation": "\"It could be argued that\" is an impersonal, hedged construction typical of academic register.",
+      "grammarPoint": "formal_register",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which is the correct nominalized form of \"to analyze\"?",
+      "options": ["Analyzation", "Analyzing", "Analyzable", "Analysis"],
+      "correctIndex": 3,
+      "explanation": "\"Analysis\" is the standard noun form of the verb \"analyze\"; \"analyzation\" is not a recognized word.",
+      "grammarPoint": "nominalization",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses \"whereas\" to introduce a subordinate contrast?",
+      "options": ["Whereas the first draft was concise, the final version became overly verbose.", "Whereas the first draft was concise, but the final version became overly verbose.", "The first draft was concise, whereas but the final version became overly verbose.", "Whereas the first draft was concise, so the final version became overly verbose."],
+      "correctIndex": 0,
+      "explanation": "\"Whereas\" alone introduces the subordinate contrast; it should not be paired with another conjunction like \"but\" or \"so\".",
+      "grammarPoint": "complex_subordination",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which word best completes: \"The results were inconclusive; the study, ___, provided valuable groundwork for future research.\"",
+      "options": ["because", "nonetheless", "unless", "meanwhile"],
+      "correctIndex": 1,
+      "explanation": "\"Nonetheless\" signals that the study was still valuable despite inconclusive results.",
+      "grammarPoint": "discourse_markers",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term refers to the philosophical view that all knowledge derives primarily from sensory experience?",
+      "options": ["Rationalism", "Nihilism", "Empiricism", "Solipsism"],
+      "correctIndex": 2,
+      "explanation": "\"Empiricism\" holds that knowledge comes chiefly from sensory experience rather than reason alone.",
+      "grammarPoint": "philosophy_vocabulary",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which term describes formal compensation for a loss or damage, often specified in a contract?",
+      "options": ["Injunction", "Deposition", "Acquittal", "Indemnity"],
+      "correctIndex": 3,
+      "explanation": "\"Indemnity\" refers to compensation or security against loss, frequently outlined in contracts.",
+      "grammarPoint": "legal_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes a market structure dominated by a single seller with no significant competition?",
+      "options": ["Monopoly", "Oligopoly", "Arbitrage", "Recession"],
+      "correctIndex": 0,
+      "explanation": "A \"monopoly\" exists when a single seller dominates a market without meaningful competition.",
+      "grammarPoint": "economics_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes hints or clues about events that will occur later in a narrative?",
+      "options": ["Denouement", "Foreshadowing", "Motif", "Verisimilitude"],
+      "correctIndex": 1,
+      "explanation": "\"Foreshadowing\" gives the reader hints about events that will unfold later in the story.",
+      "grammarPoint": "literary_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word describes a feeling of uneasy anticipation or dread about something that may happen?",
+      "options": ["Elation", "Complacency", "Trepidation", "Indifference"],
+      "correctIndex": 2,
+      "explanation": "\"Trepidation\" describes a feeling of fear or anxiety about something uncertain.",
+      "grammarPoint": "nuanced_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes a state of balance between opposing forces or influences within a system?",
+      "options": ["Entropy", "Catalyst", "Symbiosis", "Equilibrium"],
+      "correctIndex": 3,
+      "explanation": "\"Equilibrium\" refers to a state of balance between opposing forces or processes.",
+      "grammarPoint": "abstract_science_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes deliberate exaggeration used for emphasis rather than to be taken literally?",
+      "options": ["Hyperbole", "Litotes", "Oxymoron", "Euphemism"],
+      "correctIndex": 0,
+      "explanation": "\"Hyperbole\" is intentional exaggeration used for emphasis or dramatic effect.",
+      "grammarPoint": "rhetoric_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses inversion after \"Only then\"?",
+      "options": ["Only then she did realize her mistake.", "Only then did she realize her mistake.", "Only then she realized did her mistake.", "Only then realized she did her mistake."],
+      "correctIndex": 1,
+      "explanation": "\"Only then\" at the start of a clause requires inversion: \"Only then did she realize...\".",
+      "grammarPoint": "inversion",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses the mandative subjunctive after a verb of recommendation?",
+      "options": ["The manual recommends that the machine is inspected annually.", "The manual recommends that the machine inspected annually.", "The manual recommends that the machine be inspected annually.", "The manual recommends that the machine will be inspected annually."],
+      "correctIndex": 2,
+      "explanation": "After \"recommends that\", the mandative subjunctive requires the base form \"be\".",
+      "grammarPoint": "mandative_subjunctive",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence is a correctly formed it-cleft sentence emphasizing a quality?",
+      "options": ["It is patience which separate a good negotiator from a great one.", "Patience it is that separates a good negotiator from a great one.", "It patience is that separates a good negotiator from a great one.", "It is patience that separates a good negotiator from a great one."],
+      "correctIndex": 3,
+      "explanation": "An it-cleft follows the pattern \"It is + focus + that + clause\": \"It is patience that separates...\".",
+      "grammarPoint": "cleft_sentences",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which sentence uses formal, impersonal register typical of academic writing?",
+      "options": ["It could be argued that the data support an alternative interpretation.", "I reckon the data kind of back up a different idea.", "Honestly, the data seem to point somewhere else.", "The data are like, pointing another way."],
+      "correctIndex": 0,
+      "explanation": "\"It could be argued that\" is an impersonal, hedged construction typical of academic register.",
+      "grammarPoint": "formal_register",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word best completes: \"The findings were preliminary; ___, they warranted further investigation.\"",
+      "options": ["unless", "nonetheless", "whereas", "provided"],
+      "correctIndex": 1,
+      "explanation": "\"Nonetheless\" signals that further investigation was warranted despite the preliminary nature of the findings.",
+      "grammarPoint": "discourse_markers",
+      "timeLimitSeconds": 30
+    }
+  ]
+}

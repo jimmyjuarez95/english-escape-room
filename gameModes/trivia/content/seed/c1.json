@@ -1,0 +1,406 @@
+{
+  "level": "C1",
+  "title": "Advanced Minds Trivia",
+  "questions": [
+    {
+      "question": "Which sentence correctly uses the third conditional?",
+      "options": ["If she had studied harder, she would have passed the exam.", "If she studied harder, she would have passed the exam.", "If she had studied harder, she would pass the exam.", "If she studies harder, she would have passed the exam."],
+      "correctIndex": 0,
+      "explanation": "The third conditional requires \"had + past participle\" in the if-clause and \"would have + past participle\" in the main clause.",
+      "grammarPoint": "third_conditional",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which philosophical term describes the view that human beings are fundamentally free and must create their own meaning in life?",
+      "options": ["Existentialism", "Empiricism", "Stoicism", "Utilitarianism"],
+      "correctIndex": 0,
+      "explanation": "\"Existentialism\" emphasizes individual freedom and the responsibility to create one's own meaning.",
+      "grammarPoint": "philosophy_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Complete: \"If they ___ about the merger sooner, they could have prepared a response.\"",
+      "options": ["had known", "knew", "have known", "would know"],
+      "correctIndex": 0,
+      "explanation": "The third conditional if-clause uses \"had + past participle\": \"had known\".",
+      "grammarPoint": "third_conditional",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term refers to the belief that every event is the inevitable result of prior causes, leaving no room for free will?",
+      "options": ["Determinism", "Idealism", "Rationalism", "Skepticism"],
+      "correctIndex": 0,
+      "explanation": "\"Determinism\" holds that all events, including human choices, are caused by preceding factors.",
+      "grammarPoint": "philosophy_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence best illustrates a mixed conditional combining a past condition with a present result?",
+      "options": ["If he hadn't quit his job, he would be much wealthier today.", "If he quits his job, he will be much wealthier today.", "If he quit his job, he would have been much wealthier.", "If he had quit his job, he would have been much wealthier."],
+      "correctIndex": 0,
+      "explanation": "A mixed conditional combines a past condition (\"hadn't quit\") with a present result (\"would be... today\").",
+      "grammarPoint": "mixed_conditional",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which term refers to a person's awareness of their own thoughts, feelings, and existence?",
+      "options": ["Consciousness", "Cognition", "Perception", "Intuition"],
+      "correctIndex": 0,
+      "explanation": "\"Consciousness\" is the state of being aware of one's own existence, thoughts, and surroundings.",
+      "grammarPoint": "philosophy_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Complete: \"If I ___ more cautious as a young investor, I wouldn't be struggling financially now.\"",
+      "options": ["had been", "was", "were being", "have been"],
+      "correctIndex": 0,
+      "explanation": "The past unreal condition uses \"had been\", paired with a present result (\"wouldn't be struggling now\").",
+      "grammarPoint": "mixed_conditional",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which ethical theory holds that moral truths are absolute and apply universally, regardless of culture?",
+      "options": ["Moral absolutism", "Moral relativism", "Nihilism", "Hedonism"],
+      "correctIndex": 0,
+      "explanation": "\"Moral absolutism\" is the view that certain actions are inherently right or wrong for everyone, everywhere.",
+      "grammarPoint": "philosophy_vocabulary",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which sentence uses inversion correctly after a negative adverbial?",
+      "options": ["Rarely have I encountered such dedication.", "Rarely I have encountered such dedication.", "Rarely I encountered such dedication.", "Rarely did I have encountered such dedication."],
+      "correctIndex": 0,
+      "explanation": "After the negative adverbial \"rarely\" at the start of a sentence, the auxiliary inverts with the subject: \"have I encountered\".",
+      "grammarPoint": "inversion",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes the mental discomfort experienced when a person holds two contradictory beliefs at the same time?",
+      "options": ["Cognitive dissonance", "Confirmation bias", "Groupthink", "Selective memory"],
+      "correctIndex": 0,
+      "explanation": "\"Cognitive dissonance\" is the psychological tension caused by conflicting beliefs or attitudes.",
+      "grammarPoint": "psychology_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Complete: \"___ had the plane landed when the storm hit the runway.\"",
+      "options": ["No sooner", "As soon as", "Hardly ever", "Not only"],
+      "correctIndex": 0,
+      "explanation": "\"No sooner... than\" is a negative adverbial construction that requires inversion: \"No sooner had the plane landed\".",
+      "grammarPoint": "inversion",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which term describes an intense, irrational fear of a specific object or situation?",
+      "options": ["Phobia", "Delusion", "Obsession", "Compulsion"],
+      "correctIndex": 0,
+      "explanation": "A \"phobia\" is an excessive and often irrational fear of a particular object or situation.",
+      "grammarPoint": "psychology_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses \"not only... but also\" with inversion?",
+      "options": ["Not only did she win the award, but she also broke the record.", "Not only she did win the award, but she also broke the record.", "Not only she won the award, but she also broke the record.", "Not only won she the award, but she also broke the record."],
+      "correctIndex": 0,
+      "explanation": "\"Not only\" at the start of a clause requires subject-auxiliary inversion: \"did she win\".",
+      "grammarPoint": "inversion",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term refers to the tendency to seek out information that confirms one's existing beliefs?",
+      "options": ["Confirmation bias", "Cognitive dissonance", "Hindsight bias", "Anchoring effect"],
+      "correctIndex": 0,
+      "explanation": "\"Confirmation bias\" describes the tendency to favor information that supports pre-existing views.",
+      "grammarPoint": "psychology_vocabulary",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Complete: \"Not only ___ the deadline, but he also submitted incomplete work.\"",
+      "options": ["did he miss", "he missed", "he did miss", "missed he"],
+      "correctIndex": 0,
+      "explanation": "\"Not only\" triggers inversion of the auxiliary and subject: \"did he miss\".",
+      "grammarPoint": "inversion",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes the phenomenon where individuals in a group make poor decisions due to a desire for harmony?",
+      "options": ["Groupthink", "Peer pressure", "Social loafing", "Herd immunity"],
+      "correctIndex": 0,
+      "explanation": "\"Groupthink\" occurs when the desire for consensus overrides realistic evaluation of alternatives.",
+      "grammarPoint": "psychology_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses the subjunctive mood?",
+      "options": ["The committee recommended that he submit his resignation.", "The committee recommended that he submits his resignation.", "The committee recommended that he submitted his resignation.", "The committee recommended that he will submit his resignation."],
+      "correctIndex": 0,
+      "explanation": "After verbs of recommendation, the subjunctive uses the base form of the verb: \"submit\".",
+      "grammarPoint": "subjunctive_mood",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes the manipulation of electoral district boundaries to favor a particular political party?",
+      "options": ["Gerrymandering", "Federalism", "Suffrage", "Filibustering"],
+      "correctIndex": 0,
+      "explanation": "\"Gerrymandering\" refers to redrawing voting district lines for political advantage.",
+      "grammarPoint": "politics_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Complete: \"It is vital that the patient ___ the medication exactly as prescribed.\"",
+      "options": ["take", "takes", "took", "taking"],
+      "correctIndex": 0,
+      "explanation": "The subjunctive after expressions like \"it is vital that\" requires the base form: \"take\".",
+      "grammarPoint": "subjunctive_mood",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term refers to a government system administered by unelected officials following rigid procedures?",
+      "options": ["Bureaucracy", "Democracy", "Monarchy", "Theocracy"],
+      "correctIndex": 0,
+      "explanation": "\"Bureaucracy\" refers to administration carried out through officials and fixed procedures.",
+      "grammarPoint": "politics_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence is a correctly formed \"what\" cleft sentence?",
+      "options": ["What surprised the audience most was the plot twist.", "What surprised the audience most were the plot twist.", "What the audience surprised most was the plot twist.", "What was surprised the audience most the plot twist."],
+      "correctIndex": 0,
+      "explanation": "The cleft sentence structure \"What... was...\" places emphasis on \"the plot twist\", with singular verb agreement.",
+      "grammarPoint": "cleft_sentences",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes a prolonged speech used to delay or obstruct a legislative vote?",
+      "options": ["Filibuster", "Referendum", "Coalition", "Mandate"],
+      "correctIndex": 0,
+      "explanation": "A \"filibuster\" is a tactic of extended debate used to delay or block a vote.",
+      "grammarPoint": "politics_vocabulary",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which sentence is a correctly formed \"it is... that\" cleft sentence?",
+      "options": ["It was her determination that impressed the panel.", "It was her determination which impressed the panel that.", "It her determination was that impressed the panel.", "It was that her determination impressed the panel."],
+      "correctIndex": 0,
+      "explanation": "The \"it was... that\" structure emphasizes \"her determination\" as the cause of the panel's impression.",
+      "grammarPoint": "cleft_sentences",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes a sustained increase in the general price level of goods and services?",
+      "options": ["Inflation", "Deflation", "Recession", "Depreciation"],
+      "correctIndex": 0,
+      "explanation": "\"Inflation\" refers to a continuous rise in prices throughout an economy.",
+      "grammarPoint": "economics_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence uses an advanced passive construction correctly?",
+      "options": ["The manuscript is believed to have been written centuries ago.", "The manuscript is believe to have been written centuries ago.", "The manuscript is believed to have wrote centuries ago.", "The manuscript believed to have been written centuries ago."],
+      "correctIndex": 0,
+      "explanation": "The passive construction \"is believed to have been written\" correctly combines a passive report verb with a perfect passive infinitive.",
+      "grammarPoint": "advanced_passive",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which term describes a significant decline in economic activity lasting several months or more?",
+      "options": ["Recession", "Inflation", "Surplus", "Appreciation"],
+      "correctIndex": 0,
+      "explanation": "A \"recession\" is a period of significant decline in economic activity across an economy.",
+      "grammarPoint": "economics_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Complete: \"The suspect ___ to have left the country before the investigation began.\"",
+      "options": ["is thought", "is think", "thinks", "thought"],
+      "correctIndex": 0,
+      "explanation": "The passive reporting structure requires \"is thought to have left\", not the active verb form.",
+      "grammarPoint": "advanced_passive",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term refers to the total value of goods and services produced by a country in a given period?",
+      "options": ["Gross domestic product", "Trade deficit", "Interest rate", "Market share"],
+      "correctIndex": 0,
+      "explanation": "\"Gross domestic product\" (GDP) measures the total economic output of a country.",
+      "grammarPoint": "economics_vocabulary",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which sentence correctly uses \"should have\" to express regret about the past?",
+      "options": ["You should have told me about the change earlier.", "You should have tell me about the change earlier.", "You should had told me about the change earlier.", "You should have telling me about the change earlier."],
+      "correctIndex": 0,
+      "explanation": "\"Should have\" is followed by a past participle: \"should have told\".",
+      "grammarPoint": "modal_perfect",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which literary device involves saying the opposite of what is truly meant, often for emphasis or humor?",
+      "options": ["Irony", "Simile", "Alliteration", "Hyperbole"],
+      "correctIndex": 0,
+      "explanation": "\"Irony\" occurs when the intended meaning contrasts with the literal words used.",
+      "grammarPoint": "literature_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Complete: \"They ___ the risks more carefully before investing all their savings.\"",
+      "options": ["should have considered", "should consider", "should considering", "should had considered"],
+      "correctIndex": 0,
+      "explanation": "Regret about a past action uses \"should have + past participle\": \"should have considered\".",
+      "grammarPoint": "modal_perfect",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which literary device describes something by referring to it as something else, without using \"like\" or \"as\"?",
+      "options": ["Metaphor", "Simile", "Onomatopoeia", "Personification"],
+      "correctIndex": 0,
+      "explanation": "A \"metaphor\" directly describes one thing in terms of another, without using \"like\" or \"as\".",
+      "grammarPoint": "literature_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence correctly uses \"needn't have\" to describe an unnecessary past action?",
+      "options": ["You needn't have worried; everything worked out fine.", "You needn't worried; everything worked out fine.", "You needn't have worry; everything worked out fine.", "You didn't need have worried; everything worked out fine."],
+      "correctIndex": 0,
+      "explanation": "\"Needn't have\" is followed by a past participle to show an action that was unnecessary but was still done: \"needn't have worried\".",
+      "grammarPoint": "modal_perfect",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which term refers to the sequence of events that make up a story?",
+      "options": ["Narrative", "Motif", "Genre", "Prose"],
+      "correctIndex": 0,
+      "explanation": "\"Narrative\" refers to the connected account or sequence of events that forms a story.",
+      "grammarPoint": "literature_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Complete: \"She ___ so early; the meeting was postponed until noon.\"",
+      "options": ["needn't have arrived", "needn't arrive", "needn't have arriving", "didn't need arrived"],
+      "correctIndex": 0,
+      "explanation": "\"Needn't have arrived\" indicates the early arrival, though it happened, turned out to be unnecessary.",
+      "grammarPoint": "modal_perfect",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes a recurring symbol or idea that develops a story's central theme?",
+      "options": ["Motif", "Prologue", "Epilogue", "Genre"],
+      "correctIndex": 0,
+      "explanation": "A \"motif\" is a recurring element that helps develop and reinforce a story's central theme.",
+      "grammarPoint": "literature_vocabulary",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which discourse marker best completes: \"The results were disappointing; ___, the team remained optimistic.\"",
+      "options": ["nevertheless", "furthermore", "similarly", "therefore"],
+      "correctIndex": 0,
+      "explanation": "\"Nevertheless\" introduces a contrast, showing the team stayed optimistic despite disappointing results.",
+      "grammarPoint": "discourse_markers",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which ethical theory evaluates the morality of an action based solely on its outcomes?",
+      "options": ["Consequentialism", "Deontology", "Virtue ethics", "Relativism"],
+      "correctIndex": 0,
+      "explanation": "\"Consequentialism\" judges whether an action is right based on the results it produces.",
+      "grammarPoint": "ethics_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence uses \"albeit\" correctly?",
+      "options": ["The plan succeeded, albeit with a few unexpected complications.", "The plan succeeded, albeit of a few unexpected complications.", "Albeit the plan succeeded, with a few unexpected complications.", "The plan succeeded albeit that a few unexpected complications."],
+      "correctIndex": 0,
+      "explanation": "\"Albeit\" means \"although\" and is followed directly by a phrase, as in \"albeit with a few complications\".",
+      "grammarPoint": "discourse_markers",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which ethical theory holds that actions are right or wrong based on adherence to moral rules or duties, regardless of consequences?",
+      "options": ["Deontology", "Consequentialism", "Utilitarianism", "Hedonism"],
+      "correctIndex": 0,
+      "explanation": "\"Deontology\" judges actions based on whether they follow moral rules or duties, not on their outcomes.",
+      "grammarPoint": "ethics_vocabulary",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which sentence correctly uses nominalization?",
+      "options": ["The implementation of the new system improved efficiency significantly.", "The implement of the new system improved efficiency significantly.", "The implementing of the new system improve efficiency significantly.", "The implemented of the new system improved efficiency significantly."],
+      "correctIndex": 0,
+      "explanation": "\"Implementation\" is the correct nominalized (noun) form of the verb \"implement\".",
+      "grammarPoint": "nominalization",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes a moral principle that justifies an action by the greatest overall good it produces?",
+      "options": ["Utilitarianism", "Absolutism", "Nihilism", "Egoism"],
+      "correctIndex": 0,
+      "explanation": "\"Utilitarianism\" justifies actions based on producing the greatest overall good or happiness.",
+      "grammarPoint": "ethics_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word is the correct nominalization of the verb \"to deteriorate\"?",
+      "options": ["Deterioration", "Deteriorating", "Deteriorative", "Deteriorate"],
+      "correctIndex": 0,
+      "explanation": "\"Deterioration\" is the noun form derived from the verb \"deteriorate\".",
+      "grammarPoint": "nominalization",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term refers to the complete set of genetic material present in an organism?",
+      "options": ["Genome", "Enzyme", "Molecule", "Organism"],
+      "correctIndex": 0,
+      "explanation": "The \"genome\" is the full collection of an organism's hereditary genetic information.",
+      "grammarPoint": "science_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which sentence has correct subject-verb agreement?",
+      "options": ["The list of applicants, along with their references, is under review.", "The list of applicants, along with their references, are under review.", "The list of applicants, along with their references, were under review.", "The list of applicants, along with their references, have been under review."],
+      "correctIndex": 0,
+      "explanation": "The subject \"the list\" is singular; phrases like \"along with...\" do not change the verb to plural, so \"is\" is correct.",
+      "grammarPoint": "subject_verb_agreement",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Which term describes a substance that speeds up a chemical reaction without being consumed in the process?",
+      "options": ["Catalyst", "Solvent", "Isotope", "Reagent"],
+      "correctIndex": 0,
+      "explanation": "A \"catalyst\" accelerates a chemical reaction while remaining chemically unchanged.",
+      "grammarPoint": "science_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Complete this cleft sentence: \"What the company needs most ___ a clear long-term strategy.\"",
+      "options": ["is", "are", "were", "have been"],
+      "correctIndex": 0,
+      "explanation": "In a \"what...\" cleft sentence, the verb agrees with the singular complement that follows: \"is a clear long-term strategy\".",
+      "grammarPoint": "cleft_sentences",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term refers to the branch of physics dealing with the behavior of matter and energy at the atomic and subatomic scale?",
+      "options": ["Quantum mechanics", "Thermodynamics", "Astrophysics", "Fluid dynamics"],
+      "correctIndex": 0,
+      "explanation": "\"Quantum mechanics\" studies the behavior of particles at atomic and subatomic scales.",
+      "grammarPoint": "science_vocabulary",
+      "timeLimitSeconds": 35
+    },
+    {
+      "question": "Complete this cleft sentence: \"It was not the salary but the flexible schedule ___ attracted her to the job.\"",
+      "options": ["that", "which then", "who", "it"],
+      "correctIndex": 0,
+      "explanation": "In an \"it was... that\" cleft sentence, \"that\" introduces the clause identifying the true reason.",
+      "grammarPoint": "cleft_sentences",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which term describes a scientific explanation that has been repeatedly tested and confirmed through observation and experimentation?",
+      "options": ["Theory", "Hypothesis", "Guess", "Assumption"],
+      "correctIndex": 0,
+      "explanation": "In science, a \"theory\" is a well-substantiated explanation supported by extensive evidence.",
+      "grammarPoint": "science_vocabulary",
+      "timeLimitSeconds": 30
+    }
+  ]
+}

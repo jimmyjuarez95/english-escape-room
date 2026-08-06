@@ -21,7 +21,7 @@ export default function FillBlank({ prompt, onSubmit, disabled }: ChallengeInput
         onChange={(e) => setText(e.target.value)}
         disabled={disabled}
         required
-        aria-label="Tu respuesta"
+        aria-label="Your answer"
         className="rounded-xl border-2 border-border bg-background px-4 py-3 text-center text-lg font-semibold text-foreground focus:border-brand focus:outline-none disabled:opacity-50"
       />
       <button
@@ -29,7 +29,7 @@ export default function FillBlank({ prompt, onSubmit, disabled }: ChallengeInput
         disabled={disabled}
         className="rounded-xl bg-brand px-6 py-3 font-display font-bold text-brand-foreground transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
       >
-        Responder
+        Answer
       </button>
     </form>
   );

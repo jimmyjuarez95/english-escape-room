@@ -1,0 +1,656 @@
+{
+  "level": "B1",
+  "title": "Intermediate Challenge",
+  "questions": [
+    {
+      "question": "Choose the correct sentence.",
+      "options": [
+        "I have went to Paris.",
+        "I have been to Paris last year.",
+        "I have go to Paris.",
+        "I have been to Paris three times."
+      ],
+      "correctIndex": 3,
+      "explanation": "Present perfect (\"have been\") is used for life experience without a specific past time; \"three times\" fits, but \"last year\" needs the simple past.",
+      "grammarPoint": "present_perfect",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which sentence correctly uses the present perfect to talk about an unfinished period of time?",
+      "options": [
+        "She living here since 2019.",
+        "She lived here since 2019.",
+        "She has lived here since 2019.",
+        "She has lived here in 2019."
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Since\" + a point in time pairs with the present perfect to show an action continuing to the present.",
+      "grammarPoint": "present_perfect",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Complete the sentence: \"We ___ (never/try) sushi before.\"",
+      "options": [
+        "has never tried",
+        "are never trying",
+        "never tried",
+        "have never tried"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Have never tried\" is the correct present perfect form for \"we\".",
+      "grammarPoint": "present_perfect",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which sentence best emphasizes how long an action has been happening?",
+      "options": [
+        "I read this book for a week.",
+        "I have read this book a week.",
+        "I've been reading this book for a week.",
+        "I am reading this book a week."
+      ],
+      "correctIndex": 2,
+      "explanation": "Present perfect continuous highlights the duration of an ongoing activity.",
+      "grammarPoint": "present_perfect_continuous",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Complete: \"It ___ raining since this morning.\"",
+      "options": [
+        "have been",
+        "is",
+        "was",
+        "has been"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Has been raining\" (present perfect continuous) shows an action that started in the past and is still happening.",
+      "grammarPoint": "present_perfect_continuous",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which sentence correctly describes an interrupted action in the past?",
+      "options": [
+        "I watched TV when the power was going out.",
+        "I have watched TV when the power went out.",
+        "I am watching TV when the power went out.",
+        "I was watching TV when the power went out."
+      ],
+      "correctIndex": 3,
+      "explanation": "Past continuous (\"was watching\") sets the background action interrupted by a simple past event (\"went out\").",
+      "grammarPoint": "past_continuous",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Complete: \"At 8 p.m. last night, I ___ (do) my homework.\"",
+      "options": [
+        "have done",
+        "did",
+        "was doing",
+        "do"
+      ],
+      "correctIndex": 2,
+      "explanation": "Past continuous describes an action in progress at a specific past moment.",
+      "grammarPoint": "past_continuous",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Complete: \"If you don't hurry, you ___ the train.\"",
+      "options": [
+        "miss",
+        "would miss",
+        "will miss",
+        "missed"
+      ],
+      "correctIndex": 2,
+      "explanation": "First conditional: present simple in the \"if\" clause, \"will\" + base verb in the result clause.",
+      "grammarPoint": "first_conditional",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which sentence is a correct first conditional?",
+      "options": [
+        "If it rains, we will stay inside.",
+        "If it rains, we would stay inside.",
+        "If it will rain, we stay inside.",
+        "If it rained, we will stay inside."
+      ],
+      "correctIndex": 0,
+      "explanation": "The \"if\" clause uses the present simple, and the result clause uses \"will\".",
+      "grammarPoint": "first_conditional",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Complete: \"I'll help you if you ___ me first.\"",
+      "options": [
+        "asked",
+        "would ask",
+        "ask",
+        "will ask"
+      ],
+      "correctIndex": 2,
+      "explanation": "In first conditional sentences, the \"if\" clause always takes the present simple.",
+      "grammarPoint": "first_conditional",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which sentence correctly uses \"as...as\" to show equality?",
+      "options": [
+        "This test is as more difficult as the last one.",
+        "This test is as difficulter as the last one.",
+        "This test is difficult as the last one.",
+        "This test is as difficult as the last one."
+      ],
+      "correctIndex": 3,
+      "explanation": "The structure \"as + adjective + as\" uses the base form of the adjective, not the comparative.",
+      "grammarPoint": "comparatives_as_as",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Complete: \"My new phone isn't ___ my old one.\"",
+      "options": [
+        "fast than",
+        "as faster as",
+        "faster than as",
+        "as fast as"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Not as + adjective + as\" is used to show that one thing has less of a quality than another.",
+      "grammarPoint": "comparatives_as_as",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which modal verb best expresses a confident deduction, as in \"The lights are on, so someone ___ be home\"?",
+      "options": [
+        "would",
+        "might",
+        "must",
+        "should"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Must\" expresses a strong, confident deduction based on evidence.",
+      "grammarPoint": "modals_of_deduction",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which sentence expresses a possibility, not a certainty?",
+      "options": [
+        "She is at the gym.",
+        "She has been at the gym.",
+        "She must be at the gym.",
+        "She might be at the gym."
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Might\" expresses a possibility, while \"must\" expresses a strong deduction.",
+      "grammarPoint": "modals_of_deduction",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Complete: \"He ___ be the new manager — he doesn't have an office or a badge yet.\"",
+      "options": [
+        "can't",
+        "must",
+        "should",
+        "might"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Can't\" expresses a confident negative deduction, the opposite of \"must\".",
+      "grammarPoint": "modals_of_deduction",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which relative pronoun correctly completes: \"The book ___ I bought yesterday is fantastic\"?",
+      "options": [
+        "whose",
+        "that",
+        "where",
+        "who"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"That\" (or \"which\") refers to things, so it correctly introduces a clause about a book.",
+      "grammarPoint": "relative_clauses",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which relative pronoun refers to a place?",
+      "options": [
+        "who",
+        "whose",
+        "which",
+        "where"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Where\" introduces a relative clause that describes a location.",
+      "grammarPoint": "relative_clauses",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "In the sentence \"She had to put off the meeting until Friday,\" what does \"put off\" mean?",
+      "options": [
+        "Cancel",
+        "Organize",
+        "Postpone",
+        "Attend"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Put off\" means to delay or postpone something to a later time.",
+      "grammarPoint": "phrasal_verbs",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "What does the phrasal verb \"run into\" mean in \"I ran into an old friend at the mall\"?",
+      "options": [
+        "Call on the phone",
+        "Collide with a car",
+        "Avoid",
+        "Meet by chance"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Run into\" means to meet someone unexpectedly.",
+      "grammarPoint": "phrasal_verbs",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "What does \"come across\" mean in \"I came across an interesting article yesterday\"?",
+      "options": [
+        "Find by chance",
+        "Write",
+        "Delete",
+        "Ignore"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Come across\" means to find or encounter something unexpectedly.",
+      "grammarPoint": "phrasal_verbs",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which sentence is in the simple present passive?",
+      "options": [
+        "The reports are checked every morning.",
+        "The reports were checked every morning.",
+        "The reports have checked every morning.",
+        "The reports check every morning."
+      ],
+      "correctIndex": 0,
+      "explanation": "Simple present passive uses \"am/is/are + past participle\"; here it's \"are checked\".",
+      "grammarPoint": "passive_voice_present",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Complete: \"This product ___ in three different colors.\"",
+      "options": [
+        "is made",
+        "is making",
+        "made",
+        "makes"
+      ],
+      "correctIndex": 0,
+      "explanation": "The passive form \"is made\" is used because the product doesn't perform the action itself.",
+      "grammarPoint": "passive_voice_present",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which sentence correctly uses the simple past passive?",
+      "options": [
+        "The window broke was during the storm.",
+        "The window has broken during the storm.",
+        "The window is broken during the storm.",
+        "The window was broken during the storm."
+      ],
+      "correctIndex": 3,
+      "explanation": "Simple past passive is formed with \"was/were + past participle\".",
+      "grammarPoint": "passive_voice_past",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Complete: \"The email ___ by mistake yesterday.\"",
+      "options": [
+        "is deleted",
+        "has deleted",
+        "was deleted",
+        "deleted"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Was deleted\" is the simple past passive, used because the focus is on the email, not who deleted it.",
+      "grammarPoint": "passive_voice_past",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Tom said, \"I am busy today.\" How is this reported?",
+      "options": [
+        "Tom said he has been busy today.",
+        "Tom said he was busy that day.",
+        "Tom said he is busy today.",
+        "Tom said he will be busy today."
+      ],
+      "correctIndex": 1,
+      "explanation": "In reported speech, present tense usually shifts to past, and \"today\" often changes to \"that day\".",
+      "grammarPoint": "reported_speech",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Maria said, \"I will call you tomorrow.\" How is this reported?",
+      "options": [
+        "Maria said she will call me tomorrow.",
+        "Maria said she is calling me tomorrow.",
+        "Maria said she would call me the next day.",
+        "Maria said she calls me tomorrow."
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Will\" in direct speech usually becomes \"would\" in reported speech.",
+      "grammarPoint": "reported_speech",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Complete: \"I look forward to ___ you soon.\"",
+      "options": [
+        "saw",
+        "seen",
+        "see",
+        "seeing"
+      ],
+      "correctIndex": 3,
+      "explanation": "The expression \"look forward to\" is followed by a gerund (-ing form).",
+      "grammarPoint": "gerunds_vs_infinitives",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Complete: \"She decided ___ a new language this year.\"",
+      "options": [
+        "learning",
+        "learned",
+        "to learn",
+        "learn"
+      ],
+      "correctIndex": 2,
+      "explanation": "The verb \"decide\" is followed by a \"to\" infinitive.",
+      "grammarPoint": "gerunds_vs_infinitives",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which sentence correctly uses the past perfect?",
+      "options": [
+        "When I arrived, she was already leaving.",
+        "When I arrived, she already left.",
+        "When I arrived, she had already left.",
+        "When I arrived, she has already left."
+      ],
+      "correctIndex": 2,
+      "explanation": "Past perfect (\"had already left\") shows an action completed before another past action (\"arrived\").",
+      "grammarPoint": "past_perfect",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Complete: \"By the time the firefighters arrived, the fire ___ most of the building.\"",
+      "options": [
+        "had destroyed",
+        "destroyed",
+        "has destroyed",
+        "was destroying"
+      ],
+      "correctIndex": 0,
+      "explanation": "Past perfect shows the fire's destruction happened before the firefighters arrived.",
+      "grammarPoint": "past_perfect",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word describes food that has all the nutrients your body needs to stay healthy?",
+      "options": [
+        "Frozen",
+        "Nutritious",
+        "Processed",
+        "Spicy"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Nutritious\" describes food that provides valuable nutrients for good health.",
+      "grammarPoint": "health_fitness_vocabulary",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word means to gradually recover your strength and health after an illness?",
+      "options": [
+        "Recover",
+        "Infect",
+        "Faint",
+        "Collapse"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Recover\" means to return to a normal, healthy state after being sick or injured.",
+      "grammarPoint": "health_fitness_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which word refers to gases released into the air that cause pollution?",
+      "options": [
+        "Emissions",
+        "Nutrients",
+        "Reflections",
+        "Vibrations"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Emissions\" are gases or particles released into the atmosphere, often causing pollution.",
+      "grammarPoint": "environment_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which word means the variety of plants and animals living in a particular area?",
+      "options": [
+        "Population",
+        "Territory",
+        "Biodiversity",
+        "Density"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Biodiversity\" refers to the range of different living species in an environment.",
+      "grammarPoint": "environment_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word means to install the newest version of software on a device?",
+      "options": [
+        "Delete",
+        "Format",
+        "Update",
+        "Restart"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Update\" means to install the latest version of an app or program.",
+      "grammarPoint": "technology_vocabulary",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word describes a device or app that is no longer supported or useful?",
+      "options": [
+        "Advanced",
+        "Wireless",
+        "Portable",
+        "Outdated"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Outdated\" describes something old-fashioned that has been replaced by something newer.",
+      "grammarPoint": "technology_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which word describes a disagreement or argument between two people?",
+      "options": [
+        "Compliment",
+        "Conflict",
+        "Celebration",
+        "Compromise"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Conflict\" refers to a disagreement or clash between people.",
+      "grammarPoint": "relationships_vocabulary",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word means to end a romantic relationship?",
+      "options": [
+        "Break up",
+        "Grow up",
+        "Make up",
+        "Show up"
+      ],
+      "correctIndex": 0,
+      "explanation": "\"Break up\" is a phrasal verb meaning to end a romantic relationship.",
+      "grammarPoint": "relationships_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which word describes a person's list of qualifications, jobs, and experience, usually sent when applying for a job?",
+      "options": [
+        "Invoice",
+        "Resume",
+        "Memo",
+        "Contract"
+      ],
+      "correctIndex": 1,
+      "explanation": "A resume (or CV) summarizes a person's education, skills, and work experience.",
+      "grammarPoint": "work_careers_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which word means to officially leave your job?",
+      "options": [
+        "Interview",
+        "Hire",
+        "Promote",
+        "Resign"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Resign\" means to formally announce that you are leaving a job.",
+      "grammarPoint": "work_careers_vocabulary",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word refers to a detailed plan of a trip, including dates and places to visit?",
+      "options": [
+        "Luggage",
+        "Passport",
+        "Itinerary",
+        "Visa"
+      ],
+      "correctIndex": 2,
+      "explanation": "An \"itinerary\" is a planned schedule or route for a journey.",
+      "grammarPoint": "travel_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which word means a flight or trip that stops in another city before reaching the final destination?",
+      "options": [
+        "Arrival",
+        "Departure",
+        "Layover",
+        "Boarding"
+      ],
+      "correctIndex": 2,
+      "explanation": "A \"layover\" is a stop between flights before continuing to the final destination.",
+      "grammarPoint": "travel_vocabulary",
+      "timeLimitSeconds": 30
+    },
+    {
+      "question": "Which word describes someone who likes to plan things carefully and pays attention to detail?",
+      "options": [
+        "Forgetful",
+        "Careless",
+        "Clumsy",
+        "Organized"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Organized\" describes someone who plans and manages things carefully.",
+      "grammarPoint": "personality_vocabulary",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word describes someone who is willing to try new and different things?",
+      "options": [
+        "Shy",
+        "Open-minded",
+        "Arrogant",
+        "Stubborn"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Open-minded\" describes a person willing to consider new ideas and experiences.",
+      "grammarPoint": "personality_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which word describes the feeling of being extremely happy and excited?",
+      "options": [
+        "Bored",
+        "Thrilled",
+        "Embarrassed",
+        "Ashamed"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Thrilled\" describes intense excitement and happiness.",
+      "grammarPoint": "emotions_vocabulary",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word describes feeling sad because you miss someone or something from the past?",
+      "options": [
+        "Confident",
+        "Nostalgic",
+        "Grateful",
+        "Furious"
+      ],
+      "correctIndex": 1,
+      "explanation": "\"Nostalgic\" describes a sentimental longing for the past.",
+      "grammarPoint": "emotions_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which word describes a group of people living in the same area who share resources and support each other?",
+      "options": [
+        "Committee",
+        "Corporation",
+        "Audience",
+        "Community"
+      ],
+      "correctIndex": 3,
+      "explanation": "A \"community\" is a group of people living in the same area, often sharing common interests.",
+      "grammarPoint": "society_community_vocabulary",
+      "timeLimitSeconds": 25
+    },
+    {
+      "question": "Which word means the act of giving money or time to help people in need?",
+      "options": [
+        "Taxation",
+        "Investment",
+        "Charity",
+        "Inheritance"
+      ],
+      "correctIndex": 2,
+      "explanation": "\"Charity\" refers to helping people in need, often through donations.",
+      "grammarPoint": "society_community_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which word describes a long period without rain that causes water shortages?",
+      "options": [
+        "Thunderstorm",
+        "Drought",
+        "Flood",
+        "Blizzard"
+      ],
+      "correctIndex": 1,
+      "explanation": "A \"drought\" is an extended period of low rainfall leading to water shortages.",
+      "grammarPoint": "weather_vocabulary",
+      "timeLimitSeconds": 28
+    },
+    {
+      "question": "Which word describes small ice crystals that form on surfaces on very cold mornings?",
+      "options": [
+        "Fog",
+        "Humidity",
+        "Hail",
+        "Frost"
+      ],
+      "correctIndex": 3,
+      "explanation": "\"Frost\" refers to the thin layer of ice that forms on cold surfaces.",
+      "grammarPoint": "weather_vocabulary",
+      "timeLimitSeconds": 25
+    }
+  ]
+}

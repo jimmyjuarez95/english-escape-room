@@ -30,7 +30,7 @@ export default function PlayRoomPage() {
       : await supabase.from('rooms').select().eq('pin', pin).neq('status', 'finished').maybeSingle();
 
     if (roomError || !roomData) {
-      setError('Esta sala ya no está activa.');
+      setError('This room is no longer active.');
       return;
     }
     roomIdRef.current = roomData.id;
@@ -40,7 +40,7 @@ export default function PlayRoomPage() {
   useEffect(() => {
     // localStorage only exists client-side, so this must run post-mount, not
     // during render — the state update here is what lets a page that starts
-    // as "Cargando..." on the server pick up the stored player after hydration.
+    // as "Loading..." on the server pick up the stored player after hydration.
     const raw = localStorage.getItem(`player:${pin}`);
     if (!raw) {
       router.replace(`/play?pin=${pin}`);
@@ -67,7 +67,7 @@ export default function PlayRoomPage() {
   if (!room || !player) {
     return (
       <main className="flex flex-1 items-center justify-center">
-        <p className="text-muted">Cargando...</p>
+        <p className="text-muted">Loading...</p>
       </main>
     );
   }
@@ -79,7 +79,7 @@ export default function PlayRoomPage() {
         {mode ? (
           <mode.PlayerView room={room} player={player} />
         ) : (
-          <p className="text-error">Modo de juego desconocido.</p>
+          <p className="text-error">Unknown game mode.</p>
         )}
         <Footer />
       </main>
@@ -89,7 +89,7 @@ export default function PlayRoomPage() {
   if (room.status === 'finished') {
     return (
       <main className="mx-auto flex w-full max-w-md flex-1 flex-col px-4 py-6">
-        {results ? <ResultsScreen results={results} /> : <p className="text-muted">Cargando resultados...</p>}
+        {results ? <ResultsScreen results={results} /> : <p className="text-muted">Loading results...</p>}
         <Footer />
       </main>
     );
@@ -98,18 +98,18 @@ export default function PlayRoomPage() {
   return (
     <main className="mx-auto flex w-full max-w-sm flex-1 flex-col items-center justify-center gap-6 px-6 py-12 text-center">
       <p className="text-lg">
-        Hola, <span className="font-display font-bold text-brand">{player.name}</span> 👋
+        Hi, <span className="font-display font-bold text-brand">{player.name}</span> 👋
       </p>
       <div className="rounded-2xl bg-surface border border-border px-6 py-4">
         <p className="text-sm font-semibold uppercase tracking-wide text-muted">PIN</p>
         <p className="font-display text-3xl font-extrabold tracking-widest text-brand">{room.pin}</p>
       </div>
-      <p className="text-muted">Esperando a que el host inicie el juego...</p>
+      <p className="text-muted">Waiting for the host to start the game...</p>
       <button
         onClick={refresh}
         className="rounded-xl border border-border px-6 py-2 text-sm font-semibold text-muted transition hover:text-foreground"
       >
-        Refrescar
+        Refresh
       </button>
       <Footer />
     </main>

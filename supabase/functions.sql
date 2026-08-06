@@ -68,27 +68,25 @@ begin
     -- same instant both attempt this UPDATE; Postgres row-locking serializes
     -- them, and only the first to commit still finds a match — the second
     -- updates 0 rows. No advisory locks or mutex table needed.
+    --
+    -- challenge_sequence is the short, randomly-sampled subset of the
+    -- (much larger) track chosen once at onStart — see
+    -- gameModes/escape-room/session.ts — so "next challenge" is an array
+    -- lookup, not a query by order_index. Postgres arrays are 1-indexed, so
+    -- the item after current_index (0-based) sits at current_index + 2;
+    -- indexing past the end returns NULL, which is exactly "track finished".
     update escape_room_sessions ers
        set current_index = ers.current_index + 1,
-           current_challenge_id = (
-             select c.id from escape_room_challenges c
-              where c.track_id = ers.track_id
-                and c.order_index = ers.current_index + 1
-           ),
+           current_challenge_id = ers.challenge_sequence[ers.current_index + 2],
            -- Deadline for whichever challenge the room just moved to — null
-           -- (no countdown shown) once the track is finished.
+           -- (no countdown shown) once the sequence is finished.
            challenge_deadline = (
              select now() + make_interval(secs => c.time_limit_seconds)
                from escape_room_challenges c
-              where c.track_id = ers.track_id
-                and c.order_index = ers.current_index + 1
+              where c.id = ers.challenge_sequence[ers.current_index + 2]
            ),
            finished_at = case
-             when not exists (
-               select 1 from escape_room_challenges c
-                where c.track_id = ers.track_id
-                  and c.order_index = ers.current_index + 1
-             ) then now()
+             when ers.challenge_sequence[ers.current_index + 2] is null then now()
              else ers.finished_at
            end
      where ers.room_id = p_room_id

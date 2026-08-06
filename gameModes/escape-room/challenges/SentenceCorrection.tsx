@@ -15,7 +15,7 @@ export default function SentenceCorrection({ prompt, onSubmit, disabled }: Chall
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-      <p className="text-center text-muted">Corrige esta oración:</p>
+      <p className="text-center text-muted">Correct this sentence:</p>
       <p className="text-center text-lg font-semibold text-error">
         &ldquo;{prompt.incorrectSentence}&rdquo;
       </p>
@@ -24,7 +24,7 @@ export default function SentenceCorrection({ prompt, onSubmit, disabled }: Chall
         onChange={(e) => setText(e.target.value)}
         disabled={disabled}
         required
-        aria-label="Oración corregida"
+        aria-label="Corrected sentence"
         className="rounded-xl border-2 border-border bg-background px-4 py-3 text-center text-lg font-semibold text-foreground focus:border-brand focus:outline-none disabled:opacity-50"
       />
       <button
@@ -32,7 +32,7 @@ export default function SentenceCorrection({ prompt, onSubmit, disabled }: Chall
         disabled={disabled}
         className="rounded-xl bg-brand px-6 py-3 font-display font-bold text-brand-foreground transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
       >
-        Enviar corrección
+        Submit correction
       </button>
     </form>
   );
