@@ -35,6 +35,23 @@ export async function POST(
     return NextResponse.json({ error: 'Unknown game mode' }, { status: 500 });
   }
 
+  // Checked here rather than left to onStart so a roster that's too small is a
+  // 409 the host can act on, not a 500 from deep inside mode setup.
+  if (mode.minPlayers) {
+    const supabase = createServiceRoleClient();
+    const { count, error: countError } = await supabase
+      .from('players')
+      .select('id', { count: 'exact', head: true })
+      .eq('room_id', room.id);
+    if (countError) throw countError;
+    if ((count ?? 0) < mode.minPlayers) {
+      return NextResponse.json(
+        { error: `This game mode needs at least ${mode.minPlayers} players` },
+        { status: 409 }
+      );
+    }
+  }
+
   try {
     if (room.play_style === 'teams') {
       await assignRandomTeams(room.id);

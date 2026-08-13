@@ -10,10 +10,14 @@ export function useRoomResults(pin: string, enabled: boolean) {
     if (!enabled) return;
     let cancelled = false;
     fetch(`/api/rooms/${pin}/results`)
-      .then((res) => res.json())
+      // An error body is JSON too, and `{ error }` has no `players`, so storing
+      // it unchecked crashed ResultsScreen on results.players.map. Staying null
+      // keeps the "Loading results..." branch, which is the honest state.
+      .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
-        if (!cancelled) setResults(data);
-      });
+        if (!cancelled && data) setResults(data);
+      })
+      .catch(() => {});
     return () => {
       cancelled = true;
     };

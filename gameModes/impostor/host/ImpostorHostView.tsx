@@ -14,7 +14,7 @@ interface RevealData {
   roundIndex: number;
   word: string;
   category: string;
-  impostor: { id: string; name: string };
+  impostors: { id: string; name: string; caught: boolean }[];
   tally: { playerId: string; name: string; count: number }[];
   caught: boolean;
 }
@@ -106,11 +106,23 @@ export default function ImpostorHostView({ room, players }: { room: Room; player
               The word was <span className="font-display font-extrabold text-brand">{reveal.word}</span>{' '}
               ({reveal.category})
             </p>
-            <p
-              className={`font-display text-xl font-extrabold ${reveal.caught ? 'text-success' : 'text-error'}`}
-            >
-              {reveal.impostor.name} was the impostor{reveal.caught ? ' and was caught ✅' : ' and got away 🕵️'}
-            </p>
+            <div className="flex flex-col gap-1">
+              <p className="font-display text-lg font-extrabold text-foreground">
+                {reveal.impostors.length === 1 ? 'The impostor was' : 'The impostors were'}
+              </p>
+              <ul className="flex flex-col gap-1">
+                {reveal.impostors.map((imp) => (
+                  <li
+                    key={imp.id}
+                    className={`font-display text-xl font-extrabold ${
+                      imp.caught ? 'text-success' : 'text-error'
+                    }`}
+                  >
+                    {imp.name} {imp.caught ? '— caught ✅' : '— got away 🕵️'}
+                  </li>
+                ))}
+              </ul>
+            </div>
             {reveal.tally.length > 0 && (
               <ul className="mx-auto flex flex-col gap-1 text-sm text-muted">
                 {reveal.tally.map((t) => (

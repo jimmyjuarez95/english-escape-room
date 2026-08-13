@@ -13,6 +13,7 @@ interface MeState {
   roundIndex: number;
   phase: 'discussion' | 'voting' | 'reveal';
   isImpostor: boolean;
+  impostorCount: number;
   category: string;
   word: string | null;
   deadline: string | null;
@@ -21,7 +22,7 @@ interface MeState {
 interface RevealData {
   word: string;
   category: string;
-  impostor: { id: string; name: string };
+  impostors: { id: string; name: string; caught: boolean }[];
   caught: boolean;
 }
 
@@ -35,11 +36,17 @@ export default function ImpostorPlayerView({ room, player }: { room: Room; playe
 
   const loadMe = useCallback(async () => {
     const [meRes, roundRes, playersRes] = await Promise.all([
+      // A new round inserts impostor_rounds (which is realtime-published, so
+      // every player refetches immediately) a moment before it inserts the
+      // matching secret row, and /me answers 500 in that gap. Keeping the old
+      // state on a failed response means the next realtime event recovers;
+      // storing the error body used to leave phase/isImpostor undefined and
+      // strand the player for the whole round.
       fetch(`/api/rooms/${room.pin}/impostor/me`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ playerId: player.playerId, clientToken: player.clientToken }),
-      }).then((res) => res.json()),
+      }).then((res) => (res.ok ? res.json() : null)),
       supabase
         .from('impostor_rounds')
         .select('phase_deadline')
@@ -51,6 +58,8 @@ export default function ImpostorPlayerView({ room, player }: { room: Room; playe
     ]);
 
     setPlayers(playersRes.data ?? []);
+    if (!meRes) return;
+
     setMe((previous) => {
       if (previous?.roundIndex !== meRes.roundIndex) {
         setVotedFor(null);
@@ -60,8 +69,10 @@ export default function ImpostorPlayerView({ room, player }: { room: Room; playe
     });
 
     if (meRes.phase === 'reveal') {
-      const revealRes = await fetch(`/api/rooms/${room.pin}/impostor/reveal`).then((res) => res.json());
-      setReveal(revealRes.reveal ?? null);
+      const revealRes = await fetch(`/api/rooms/${room.pin}/impostor/reveal`).then((res) =>
+        res.ok ? res.json() : null
+      );
+      setReveal(revealRes?.reveal ?? null);
     } else {
       setReveal(null);
     }
@@ -113,7 +124,7 @@ export default function ImpostorPlayerView({ room, player }: { room: Room; playe
         <div className="flex flex-col items-center gap-3 rounded-2xl bg-surface border border-border p-6 text-center">
           {me.isImpostor ? (
             <>
-              <p className="font-display text-xl font-extrabold text-error">You are the impostor 🕵️</p>
+              <p className="font-display text-xl font-extrabold text-error">You are an impostor 🕵️</p>
               <p className="text-muted">Category: {me.category}</p>
               <p className="text-sm text-muted">
                 You don&apos;t know the word — describe something generic and try not to get caught.
@@ -126,6 +137,13 @@ export default function ImpostorPlayerView({ room, player }: { room: Room; playe
               <p className="text-sm text-muted">Describe it out loud in English, without saying it.</p>
             </>
           )}
+          {/* How many impostors there are is public — you need it to read the
+              vote — but who they are is not, so impostors get no partner list. */}
+          <p className="text-sm font-semibold text-muted">
+            {me.impostorCount === 1
+              ? 'There is 1 impostor in the group'
+              : `There are ${me.impostorCount} impostors in the group`}
+          </p>
         </div>
       )}
 
@@ -163,12 +181,24 @@ export default function ImpostorPlayerView({ room, player }: { room: Room; playe
           <p className="text-lg text-foreground">
             The word was <span className="font-display font-extrabold text-brand">{reveal.word}</span>
           </p>
-          <p className={`font-display text-xl font-extrabold ${reveal.caught ? 'text-success' : 'text-error'}`}>
-            {reveal.impostor.name} was the impostor{reveal.caught ? ' and was caught ✅' : ' and got away 🕵️'}
+          <p className="font-display text-lg font-extrabold text-foreground">
+            {reveal.impostors.length === 1 ? 'The impostor was' : 'The impostors were'}
           </p>
+          <ul className="flex flex-col gap-1">
+            {reveal.impostors.map((imp) => (
+              <li
+                key={imp.id}
+                className={`font-display font-extrabold ${imp.caught ? 'text-success' : 'text-error'}`}
+              >
+                {imp.name} {imp.caught ? '— caught ✅' : '— got away 🕵️'}
+              </li>
+            ))}
+          </ul>
           {votedFor && (
             <p className="text-sm text-muted">
-              {votedFor === reveal.impostor.id ? 'You voted correctly 🎉' : 'Your vote was not correct'}
+              {reveal.impostors.some((imp) => imp.id === votedFor)
+                ? 'You voted correctly 🎉'
+                : 'Your vote was not correct'}
             </p>
           )}
         </div>

@@ -129,6 +129,12 @@ export default function HostRoomPage() {
     );
   }
 
+  // Some modes can't be played below a certain roster (Impostor needs enough
+  // people for the deduction to work). Surfaced here as a disabled button with
+  // a reason, rather than letting the host find out by pressing Start.
+  const minPlayers = getClientGameMode(room.game_mode)?.minPlayers ?? 1;
+  const needsMorePlayers = players.length < minPlayers;
+
   return (
     <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col items-center gap-8 px-6 py-12 text-center">
       <PinDisplay pin={room.pin} />
@@ -147,11 +153,17 @@ export default function HostRoomPage() {
       <div className="flex w-full max-w-xs flex-col gap-3">
         <button
           onClick={handleStart}
-          disabled={starting || players.length === 0}
+          disabled={starting || needsMorePlayers}
           className="rounded-xl bg-brand px-6 py-4 font-display font-bold text-brand-foreground shadow-sm transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
         >
           {starting ? 'Starting...' : 'Start game'}
         </button>
+        {needsMorePlayers && (
+          <p className="text-sm text-muted">
+            This game mode needs at least {minPlayers}{' '}
+            {minPlayers === 1 ? 'player' : 'players'} to start.
+          </p>
+        )}
         <button
           onClick={refresh}
           className="rounded-xl border border-border px-6 py-2 text-sm font-semibold text-muted transition hover:text-foreground"

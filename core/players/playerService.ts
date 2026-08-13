@@ -1,4 +1,6 @@
 import { createServiceRoleClient } from '../supabase/server';
+import { pickRandomSubset } from '../random/pickRandomSubset';
+import type { Team } from '../supabase/types';
 
 const UNIQUE_VIOLATION = '23505';
 const MAX_NAME_LENGTH = 30;
@@ -31,14 +33,34 @@ export async function joinRoom(params: { roomId: string; name: string }) {
   return { player, clientToken: tokenRow.client_token };
 }
 
-export async function verifyClientToken(playerId: string, clientToken: string) {
+/**
+ * Authenticates a player *for a specific room*. The room scoping is the point:
+ * a token proves "I am this player", not "this player belongs here", so without
+ * the room_id check a player holding a valid token for room X could act inside
+ * any room Y whose PIN they knew — submitting answers, reading impostor roles,
+ * or voting there.
+ *
+ * Returns the player's team as well, so callers never have to take it from the
+ * request body (which let a player drive the opposing team's session).
+ */
+export async function verifyPlayerInRoom(
+  roomId: string,
+  playerId: string,
+  clientToken: string
+): Promise<{ ok: true; team: Team } | { ok: false; team: null }> {
   const supabase = createServiceRoleClient();
-  const { data } = await supabase
-    .from('player_tokens')
-    .select('client_token')
-    .eq('player_id', playerId)
-    .maybeSingle();
-  return !!data && data.client_token === clientToken;
+  // Two plain queries rather than a PostgREST embed: core/supabase/types.ts
+  // declares Relationships: [] on every table, so an embedded select does not
+  // type-check against the generated Database type.
+  const [{ data: player }, { data: token }] = await Promise.all([
+    supabase.from('players').select('team').eq('id', playerId).eq('room_id', roomId).maybeSingle(),
+    supabase.from('player_tokens').select('client_token').eq('player_id', playerId).maybeSingle(),
+  ]);
+
+  if (!player || !token || token.client_token !== clientToken) {
+    return { ok: false, team: null };
+  }
+  return { ok: true, team: player.team };
 }
 
 export async function assignRandomTeams(roomId: string) {
@@ -50,7 +72,9 @@ export async function assignRandomTeams(roomId: string) {
   if (error) throw error;
   if (!players || players.length === 0) return;
 
-  const shuffled = [...players].sort(() => Math.random() - 0.5);
+  // Fisher-Yates via the shared helper: sort(() => Math.random() - 0.5) is a
+  // biased shuffle, and an unfair split is exactly what it biases towards.
+  const shuffled = pickRandomSubset(players, players.length);
   await Promise.all(
     shuffled.map((player, index) =>
       supabase

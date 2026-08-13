@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import type { Database } from '@/core/supabase/types';
 import type { StoredPlayer } from '@/core/gameModes/clientTypes';
 import Timer from '@/core/components/Timer';
@@ -18,18 +18,18 @@ export default function TriviaPlayerView({ room, player }: { room: Room; player:
   const [feedback, setFeedback] = useState<{ correct: boolean; explanation: string } | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [alreadyAnswered, setAlreadyAnswered] = useState(false);
-  // Set for real in loadState whenever the question id changes — 0 here is
-  // just a placeholder, never Date.now() at render time.
-  const questionStartRef = useRef<number>(0);
 
   const loadState = useCallback(async () => {
     const res = await fetch(`/api/rooms/${room.pin}/trivia/state`);
+    // Keep the last good state on a failed response: an error body has no
+    // `question`, so storing it would blank the screen and look like the round
+    // ended, with nothing to recover from until the next realtime event.
+    if (!res.ok) return;
     const data: TriviaState = await res.json();
     setState((previous) => {
       if (previous?.question?.id !== data.question?.id) {
         setFeedback(null);
         setAlreadyAnswered(false);
-        questionStartRef.current = Date.now();
       }
       return data;
     });
@@ -38,6 +38,7 @@ export default function TriviaPlayerView({ room, player }: { room: Room; player:
   useEffect(() => {
     // Runs whenever the parent page re-renders `room` after a realtime event
     // — same idiom as EscapeRoomPlayerView.loadCurrentChallenge.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     loadState();
   }, [loadState, room]);
 
@@ -48,8 +49,9 @@ export default function TriviaPlayerView({ room, player }: { room: Room; player:
   async function handleAnswer(index: number) {
     if (!state?.question) return;
     setSubmitting(true);
-    const timeTakenMs = Date.now() - questionStartRef.current;
     try {
+      // No timeTakenMs: the server derives elapsed time from the deadline it set
+      // itself. A client-reported stopwatch was trivially forgeable for points.
       const res = await fetch(`/api/rooms/${room.pin}/trivia/answer`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -58,7 +60,6 @@ export default function TriviaPlayerView({ room, player }: { room: Room; player:
           clientToken: player.clientToken,
           questionId: state.question.id,
           index,
-          timeTakenMs,
         }),
       });
       const data = await res.json();

@@ -16,6 +16,9 @@ export interface StoredPlayer {
 // client, onStart) into the browser bundle, and vice versa.
 export interface GameModeClientDefinition {
   id: string;
+  /** Mirrors GameModeServerDefinition.minPlayers so the lobby can disable
+   * "Start game" below it. The server enforces the same rule independently. */
+  minPlayers?: number;
   HostView: ComponentType<{ room: Room; players: Player[] }>;
   PlayerView: ComponentType<{ room: Room; player: StoredPlayer }>;
 }

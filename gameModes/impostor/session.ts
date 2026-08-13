@@ -2,10 +2,10 @@ import { createServiceRoleClient } from '@/core/supabase/server';
 import { pickRandomSubset } from '@/core/random/pickRandomSubset';
 import type { Database } from '@/core/supabase/types';
 import type { GameModeServerDefinition } from '@/core/gameModes/types';
+import { IMPOSTOR_MIN_PLAYERS, pickImpostorIds } from './rules';
 
 type Room = Database['public']['Tables']['rooms']['Row'];
 
-const MIN_PLAYERS = 3;
 // A level's word bank holds 50+ words for variety across many games; one
 // room only ever plays this many rounds, randomly sampled at onStart.
 const SESSION_LENGTH = 6;
@@ -13,13 +13,15 @@ const SESSION_LENGTH = 6;
 async function onStart(room: Room) {
   const supabase = createServiceRoleClient();
 
+  // The roster is re-read here rather than trusted from /start's own count:
+  // minPlayers is enforced there, this is the fallback if it ever isn't.
   const { data: players, error: playersError } = await supabase
     .from('players')
     .select('id')
     .eq('room_id', room.id);
   if (playersError) throw playersError;
-  if (!players || players.length < MIN_PLAYERS) {
-    throw new Error(`Impostor needs at least ${MIN_PLAYERS} players`);
+  if (!players || players.length < IMPOSTOR_MIN_PLAYERS) {
+    throw new Error(`Impostor needs at least ${IMPOSTOR_MIN_PLAYERS} players`);
   }
 
   const { data: track, error: trackError } = await supabase
@@ -49,7 +51,7 @@ async function onStart(room: Room) {
   });
   if (sessionError) throw sessionError;
 
-  const impostor = players[Math.floor(Math.random() * players.length)];
+  const impostorIds = pickImpostorIds(players.map((p) => p.id));
   const deadline = new Date(Date.now() + sequence[0].discussion_seconds * 1000).toISOString();
 
   const { error: roundError } = await supabase.from('impostor_rounds').insert({
@@ -65,12 +67,13 @@ async function onStart(room: Room) {
     round_index: 0,
     track_id: track.id,
     word_id: wordSequence[0],
-    impostor_player_id: impostor.id,
+    impostor_player_ids: impostorIds,
   });
   if (secretError) throw secretError;
 }
 
 export const impostorMode: GameModeServerDefinition = {
   id: 'impostor',
+  minPlayers: IMPOSTOR_MIN_PLAYERS,
   onStart,
 };

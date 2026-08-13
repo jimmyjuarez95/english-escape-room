@@ -222,14 +222,27 @@ create table impostor_rounds (
   primary key (room_id, round_index)
 );
 
--- SECRET: no anon policy, excluded from realtime — impostor_player_id is
+-- SECRET: no anon policy, excluded from realtime — who the impostors are is
 -- exactly the kind of secret this file's header warns never to expose.
+--
+-- An array rather than a child table (and rather than the single scalar this
+-- started as): how many impostors a round gets scales with the roster, see
+-- gameModes/impostor/rules.ts. supabase-js sends each statement separately with
+-- no transaction, so a child table could leave a round with zero impostors if
+-- the follow-up insert failed; the array is written in the same insert as the
+-- rest of the secret. Same trade as word_sequence/challenge_sequence, which also
+-- give up their FK for atomicity.
+--
+-- The check is load-bearing: `uuid[] not null` is satisfied by '{}', so without
+-- it the "at least one impostor" guarantee the old scalar column gave for free
+-- would be gone. cardinality(), not array_length(x, 1), which returns NULL for
+-- '{}' and would let the check pass.
 create table impostor_round_secrets (
   room_id uuid not null,
   round_index int not null,
   track_id uuid not null references impostor_tracks(id),
   word_id uuid not null references impostor_words(id),
-  impostor_player_id uuid not null references players(id),
+  impostor_player_ids uuid[] not null check (cardinality(impostor_player_ids) > 0),
   primary key (room_id, round_index),
   foreign key (room_id, round_index) references impostor_rounds(room_id, round_index) on delete cascade
 );
@@ -268,6 +281,14 @@ create index attempts_mistakes_idx on attempts(room_id, is_correct, grammar_poin
 -- the same player conflicts here rather than needing an app-level lock.
 create unique index attempts_trivia_unique_idx on attempts(player_id, trivia_question_id)
   where trivia_question_id is not null;
+-- Escape-room equivalent, but narrower: submit_answer pays out on every correct
+-- submission, so without this the same winning answer could be replayed for
+-- points indefinitely. Only repeat CORRECT attempts collide — retrying after a
+-- wrong answer stays allowed, and two players answering the same challenge
+-- never conflict with each other.
+create unique index attempts_escape_room_correct_unique_idx
+  on attempts (player_id, escape_room_challenge_id)
+  where escape_room_challenge_id is not null and is_correct;
 
 -- ============================================================
 -- Row Level Security

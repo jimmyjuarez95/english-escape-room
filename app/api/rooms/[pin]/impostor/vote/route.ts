@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getActiveRoomByPin } from '@/core/rooms/roomService';
-import { verifyClientToken } from '@/core/players/playerService';
+import { verifyPlayerInRoom } from '@/core/players/playerService';
 import { createServiceRoleClient } from '@/core/supabase/server';
 
 const UNIQUE_VIOLATION = '23505';
@@ -33,8 +33,8 @@ export async function POST(request: Request, { params }: { params: Promise<{ pin
     return NextResponse.json({ error: 'This room is not in progress' }, { status: 409 });
   }
 
-  const isPlayer = await verifyClientToken(playerId, clientToken);
-  if (!isPlayer) {
+  const { ok } = await verifyPlayerInRoom(room.id, playerId, clientToken);
+  if (!ok) {
     return NextResponse.json({ error: 'Invalid player credentials' }, { status: 403 });
   }
 

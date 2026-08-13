@@ -1,23 +1,13 @@
 import { NextResponse } from 'next/server';
 import { getActiveRoomByPin, verifyHostSecret } from '@/core/rooms/roomService';
 import { createServiceRoleClient } from '@/core/supabase/server';
-
-const CAUGHT_VOTER_POINTS = 100;
-const IMPOSTOR_EVADED_POINTS = 150;
-
-async function awardPoints(
-  supabase: ReturnType<typeof createServiceRoleClient>,
-  playerId: string,
-  points: number
-) {
-  const { data: player, error } = await supabase.from('players').select('score').eq('id', playerId).single();
-  if (error) throw error;
-  const { error: updateError } = await supabase
-    .from('players')
-    .update({ score: player.score + points })
-    .eq('id', playerId);
-  if (updateError) throw updateError;
-}
+import {
+  CAUGHT_VOTER_POINTS,
+  IMPOSTOR_EVADED_POINTS,
+  IMPOSTOR_MIN_PLAYERS,
+  pickImpostorIds,
+  resolveRound,
+} from '@/gameModes/impostor/rules';
 
 // Host-paced state machine, each transition a conditional update keyed on
 // the phase it expects (no-ops harmlessly on a double-tap):
@@ -59,7 +49,7 @@ export async function POST(request: Request, { params }: { params: Promise<{ pin
 
   const { data: secret, error: secretError } = await supabase
     .from('impostor_round_secrets')
-    .select('track_id, word_id, impostor_player_id')
+    .select('track_id, word_id, impostor_player_ids')
     .eq('room_id', room.id)
     .eq('round_index', round.round_index)
     .maybeSingle();
@@ -88,6 +78,23 @@ export async function POST(request: Request, { params }: { params: Promise<{ pin
   }
 
   if (round.phase === 'voting') {
+    // Flip the phase BEFORE scoring, and score only if this request is the one
+    // that flipped it. Scoring first meant two taps on "Reveal result" both saw
+    // phase === 'voting' (read once, up at the top) and both paid out, while
+    // only one won the conditional update — the state machine no-ops on a
+    // double-tap, but the points did not.
+    const { data: flipped, error } = await supabase
+      .from('impostor_rounds')
+      .update({ phase: 'reveal', finished_at: new Date().toISOString() })
+      .eq('room_id', room.id)
+      .eq('round_index', round.round_index)
+      .eq('phase', 'voting')
+      .select('round_index');
+    if (error) throw error;
+    if (!flipped?.length) {
+      return NextResponse.json({ ok: true });
+    }
+
     const { data: votes, error: votesError } = await supabase
       .from('impostor_votes')
       .select('voter_player_id, voted_player_id')
@@ -95,30 +102,22 @@ export async function POST(request: Request, { params }: { params: Promise<{ pin
       .eq('round_index', round.round_index);
     if (votesError) throw votesError;
 
-    const tally = new Map<string, number>();
-    for (const vote of votes ?? []) {
-      tally.set(vote.voted_player_id, (tally.get(vote.voted_player_id) ?? 0) + 1);
-    }
-    const topCount = Math.max(0, ...tally.values());
-    const topPlayers = [...tally.entries()].filter(([, count]) => count === topCount);
-    const caught = topPlayers.length === 1 && topPlayers[0][0] === secret.impostor_player_id;
+    // Same verdict the /reveal route shows the players — one definition, so the
+    // payout and the screen can never disagree.
+    const { evadedImpostorIds, correctVoterIds } = resolveRound({
+      votes: votes ?? [],
+      impostorIds: secret.impostor_player_ids,
+    });
 
-    if (caught) {
-      const correctVoters = (votes ?? []).filter((v) => v.voted_player_id === secret.impostor_player_id);
-      for (const voter of correctVoters) {
-        await awardPoints(supabase, voter.voter_player_id, CAUGHT_VOTER_POINTS);
-      }
-    } else {
-      await awardPoints(supabase, secret.impostor_player_id, IMPOSTOR_EVADED_POINTS);
-    }
+    await Promise.all([
+      ...correctVoterIds.map((playerId) =>
+        supabase.rpc('award_points', { p_player_id: playerId, p_points: CAUGHT_VOTER_POINTS })
+      ),
+      ...evadedImpostorIds.map((playerId) =>
+        supabase.rpc('award_points', { p_player_id: playerId, p_points: IMPOSTOR_EVADED_POINTS })
+      ),
+    ]);
 
-    const { error } = await supabase
-      .from('impostor_rounds')
-      .update({ phase: 'reveal', finished_at: new Date().toISOString() })
-      .eq('room_id', room.id)
-      .eq('round_index', round.round_index)
-      .eq('phase', 'voting');
-    if (error) throw error;
     return NextResponse.json({ ok: true });
   }
 
@@ -149,9 +148,19 @@ export async function POST(request: Request, { params }: { params: Promise<{ pin
       .select('id')
       .eq('room_id', room.id);
     if (playersError) throw playersError;
-    if (!players || players.length === 0) throw new Error('No players left in this room');
+    if (!players || players.length < IMPOSTOR_MIN_PLAYERS) {
+      // Checked every round, not just at start: players drop off mid-game, and
+      // a round with fewer than three people has no deduction left in it.
+      return NextResponse.json(
+        { error: `Impostor needs at least ${IMPOSTOR_MIN_PLAYERS} players to continue` },
+        { status: 409 }
+      );
+    }
 
-    const impostor = players[Math.floor(Math.random() * players.length)];
+    // Re-drawn every round from the current roster, so the count follows the
+    // room if people leave, and nobody is stuck being the impostor twice by
+    // construction.
+    const impostorIds = pickImpostorIds(players.map((p) => p.id));
     const nextRoundIndex = round.round_index + 1;
     const deadline = new Date(Date.now() + nextWord.discussion_seconds * 1000).toISOString();
 
@@ -168,7 +177,7 @@ export async function POST(request: Request, { params }: { params: Promise<{ pin
       round_index: nextRoundIndex,
       track_id: secret.track_id,
       word_id: nextWord.id,
-      impostor_player_id: impostor.id,
+      impostor_player_ids: impostorIds,
     });
     if (nextSecretError) throw nextSecretError;
   } else {

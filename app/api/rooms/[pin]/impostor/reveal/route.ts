@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getActiveRoomByPin } from '@/core/rooms/roomService';
 import { createServiceRoleClient } from '@/core/supabase/server';
+import { resolveRound } from '@/gameModes/impostor/rules';
 
 // Phase-gated read, same idea as trivia's /state reveal field: the word and
 // who the impostor was become genuinely public the moment phase is 'reveal'
@@ -30,7 +31,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ pin:
 
   const { data: secret, error: secretError } = await supabase
     .from('impostor_round_secrets')
-    .select('word_id, impostor_player_id')
+    .select('word_id, impostor_player_ids')
     .eq('room_id', room.id)
     .eq('round_index', round.round_index)
     .maybeSingle();
@@ -39,46 +40,44 @@ export async function GET(request: Request, { params }: { params: Promise<{ pin:
     return NextResponse.json({ reveal: null });
   }
 
-  const [{ data: word, error: wordError }, { data: impostorPlayer, error: impostorError }, { data: votes, error: votesError }] =
-    await Promise.all([
-      supabase.from('impostor_words').select('word, category').eq('id', secret.word_id).single(),
-      supabase.from('players').select('id, name').eq('id', secret.impostor_player_id).single(),
-      supabase
-        .from('impostor_votes')
-        .select('voted_player_id')
-        .eq('room_id', room.id)
-        .eq('round_index', round.round_index),
-    ]);
+  const [{ data: word, error: wordError }, { data: votes, error: votesError }] = await Promise.all([
+    supabase.from('impostor_words').select('word, category').eq('id', secret.word_id).single(),
+    supabase
+      .from('impostor_votes')
+      .select('voter_player_id, voted_player_id')
+      .eq('room_id', room.id)
+      .eq('round_index', round.round_index),
+  ]);
   if (wordError) throw wordError;
-  if (impostorError) throw impostorError;
   if (votesError) throw votesError;
 
-  const tallyByPlayer = new Map<string, number>();
-  for (const vote of votes ?? []) {
-    tallyByPlayer.set(vote.voted_player_id, (tallyByPlayer.get(vote.voted_player_id) ?? 0) + 1);
-  }
-  const votedPlayerIds = [...tallyByPlayer.keys()];
-  const { data: votedPlayers } = votedPlayerIds.length
-    ? await supabase.from('players').select('id, name').in('id', votedPlayerIds)
+  const { tally: rawTally, caughtImpostorIds } = resolveRound({
+    votes: votes ?? [],
+    impostorIds: secret.impostor_player_ids,
+  });
+
+  // One lookup for both the impostors and everyone who received a vote. Names
+  // come from a Map with a fallback rather than a per-id .single(), so a player
+  // row that has gone missing degrades to '?' instead of failing the whole
+  // reveal — the same treatment the voted players already got.
+  const namedIds = [...new Set([...secret.impostor_player_ids, ...rawTally.map((t) => t.playerId)])];
+  const { data: namedPlayers } = namedIds.length
+    ? await supabase.from('players').select('id, name').in('id', namedIds)
     : { data: [] };
-  const nameById = new Map((votedPlayers ?? []).map((p) => [p.id, p.name]));
-
-  const tally = [...tallyByPlayer.entries()]
-    .map(([playerId, count]) => ({ playerId, name: nameById.get(playerId) ?? '?', count }))
-    .sort((a, b) => b.count - a.count);
-
-  const topCount = tally[0]?.count ?? 0;
-  const topPlayers = tally.filter((t) => t.count === topCount);
-  const caught = topPlayers.length === 1 && topPlayers[0].playerId === secret.impostor_player_id;
+  const nameById = new Map((namedPlayers ?? []).map((p) => [p.id, p.name]));
 
   return NextResponse.json({
     reveal: {
       roundIndex: round.round_index,
       word: word.word,
       category: word.category,
-      impostor: { id: impostorPlayer.id, name: impostorPlayer.name },
-      tally,
-      caught,
+      impostors: secret.impostor_player_ids.map((id) => ({
+        id,
+        name: nameById.get(id) ?? '?',
+        caught: caughtImpostorIds.includes(id),
+      })),
+      tally: rawTally.map((t) => ({ ...t, name: nameById.get(t.playerId) ?? '?' })),
+      caught: caughtImpostorIds.length > 0,
     },
   });
 }

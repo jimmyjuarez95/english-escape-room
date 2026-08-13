@@ -297,14 +297,18 @@ export interface Database {
           round_index: number;
           track_id: string;
           word_id: string;
-          impostor_player_id: string;
+          // How many impostors a round has scales with the roster — see
+          // gameModes/impostor/rules.ts. Written in the same insert as the rest
+          // of the secret, which a child table could not guarantee without a
+          // transaction supabase-js does not give us.
+          impostor_player_ids: string[];
         };
         Insert: {
           room_id: string;
           round_index: number;
           track_id: string;
           word_id: string;
-          impostor_player_id: string;
+          impostor_player_ids: string[];
         };
         Update: Partial<Database['public']['Tables']['impostor_round_secrets']['Insert']>;
         Relationships: [];
@@ -377,9 +381,21 @@ export interface Database {
           p_team: string;
           p_challenge_id: string;
           p_answer: Json;
+          /** @deprecated Ignored since 004 — elapsed time is derived
+           * server-side from the deadline. Kept only because the SQL signature
+           * cannot drop it without creating an ambiguous overload. */
           p_time_taken_ms?: number | null;
         };
         Returns: Json;
+      };
+      /** Atomic `score = score + n`. Replaces read-then-write score updates,
+       * which lost points whenever two players were scored concurrently. */
+      award_points: {
+        Args: {
+          p_player_id: string;
+          p_points: number;
+        };
+        Returns: undefined;
       };
     };
   };

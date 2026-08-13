@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { supabase } from '@/core/supabase/client';
 import type { Database } from '@/core/supabase/types';
 import type { StoredPlayer } from '@/core/gameModes/clientTypes';
@@ -21,15 +21,12 @@ export default function EscapeRoomPlayerView({
 }) {
   const [session, setSession] = useState<Session | null>(null);
   const [challenge, setChallenge] = useState<ChallengeRow | null>(null);
-  const [team, setTeam] = useState<Session['team']>('');
   const [feedback, setFeedback] = useState<{ correct: boolean; explanation: string } | null>(null);
   const [submitting, setSubmitting] = useState(false);
-  // Set for real in loadCurrentChallenge (an effect) whenever the challenge
-  // id changes — 0 here is just a placeholder, never Date.now() at render
-  // time (that would be an impure render call).
-  const challengeStartRef = useRef<number>(0);
 
   const loadCurrentChallenge = useCallback(async () => {
+    // Read locally only to pick which session row to display. The server no
+    // longer accepts a team from the client — it reads the player's own row.
     let playerTeam: Session['team'] = '';
     if (room.play_style === 'teams') {
       const { data: playerRow } = await supabase
@@ -39,7 +36,6 @@ export default function EscapeRoomPlayerView({
         .maybeSingle();
       playerTeam = playerRow?.team ?? '';
     }
-    setTeam(playerTeam);
 
     const { data: sessionRow } = await supabase
       .from('escape_room_sessions')
@@ -58,7 +54,6 @@ export default function EscapeRoomPlayerView({
       setChallenge((previous) => {
         if (previous?.id !== challengeRow?.id) {
           setFeedback(null);
-          challengeStartRef.current = Date.now();
         }
         return challengeRow ?? null;
       });
@@ -82,13 +77,15 @@ export default function EscapeRoomPlayerView({
       const res = await fetch(`/api/rooms/${room.pin}/attempts`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        // Neither team nor a stopwatch is sent any more: the server reads the
+        // player's real team and derives elapsed time from its own deadline.
+        // Both used to be attacker-controlled inputs to scoring and to which
+        // team's session got advanced.
         body: JSON.stringify({
           playerId: player.playerId,
           clientToken: player.clientToken,
-          team,
           challengeId: challenge.id,
           answer,
-          timeTakenMs: Date.now() - challengeStartRef.current,
         }),
       });
       const data = await res.json();

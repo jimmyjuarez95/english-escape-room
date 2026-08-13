@@ -9,16 +9,21 @@ export async function GET(
   const { pin } = await params;
   const supabase = createServiceRoleClient();
 
-  const { data: room, error: roomError } = await supabase
+  // PINs are recycled once a room finishes, so several finished rooms can share
+  // one. maybeSingle() over a bare pin match errors as soon as that happens and
+  // the route starts answering 404 for perfectly good rooms — take the most
+  // recently finished one instead.
+  const { data: rooms, error: roomError } = await supabase
     .from('rooms')
     .select()
     .eq('pin', pin)
-    .maybeSingle();
-  if (roomError || !room) {
-    return NextResponse.json({ error: 'Room not found' }, { status: 404 });
-  }
-  if (room.status !== 'finished') {
-    return NextResponse.json({ error: 'This room has not finished yet' }, { status: 409 });
+    .eq('status', 'finished')
+    .order('finished_at', { ascending: false })
+    .limit(1);
+  if (roomError) throw roomError;
+  const room = rooms?.[0];
+  if (!room) {
+    return NextResponse.json({ error: 'No finished room found with that PIN' }, { status: 404 });
   }
 
   const { data: players, error: playersError } = await supabase
